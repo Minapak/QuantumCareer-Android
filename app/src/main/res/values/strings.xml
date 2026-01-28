@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuantumCareer</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="publish">Publish</string>
+    <string name="circuits">Circuits</string>
+    <string name="peer_review">Peer Review</string>
+    <string name="badges">Badges</string>
+    <string name="citations">Citations</string>
+    <string name="talent">Talent</string>
+    <string name="profile">Profile</string>
+
+    <!-- Dashboard -->
+    <string name="total_publications">Total Publications</string>
+    <string name="total_citations">Total Citations</string>
+    <string name="h_index">h-Index</string>
+    <string name="i10_index">i10-Index</string>
+    <string name="pending_reviews">Pending Reviews</string>
+    <string name="career_overview">Career Overview</string>
+
+    <!-- Publish -->
+    <string name="publish_circuit">Publish Circuit</string>
+    <string name="circuit_title">Circuit Title</string>
+    <string name="circuit_description">Description</string>
+    <string name="circuit_qasm">QASM Code</string>
+    <string name="circuit_tags">Tags (comma separated)</string>
+    <string name="submit_for_review">Submit for Review</string>
+
+    <!-- Circuits -->
+    <string name="my_circuits">My Circuits</string>
+    <string name="published">Published</string>
+    <string name="under_review">Under Review</string>
+    <string name="draft">Draft</string>
+
+    <!-- Peer Review -->
+    <string name="review_circuits">Review Circuits</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="approve">Approve</string>
+    <string name="request_changes">Request Changes</string>
+    <string name="reject">Reject</string>
+    <string name="review_comment">Review Comment</string>
+
+    <!-- Badges -->
+    <string name="badge_collection">Badge Collection</string>
+    <string name="bronze_badge">Bronze</string>
+    <string name="silver_badge">Silver</string>
+    <string name="gold_badge">Gold</string>
+    <string name="platinum_badge">Platinum</string>
+    <string name="badge_progress">Progress</string>
+
+    <!-- Citations -->
+    <string name="citation_stats">Citation Statistics</string>
+    <string name="citation_history">Citation History</string>
+
+    <!-- Talent -->
+    <string name="talent_search">Talent Search</string>
+    <string name="scout_researcher">Scout Researcher</string>
+    <string name="my_offers">My Offers</string>
+    <string name="send_offer">Send Offer</string>
+
+    <!-- Profile -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="public_profile">Public Profile</string>
+    <string name="profile_visibility">Profile Visibility</string>
+    <string name="share_profile">Share Profile</string>
+
+    <!-- Common -->
+    <string name="loading">Loading...</string>
+    <string name="error">Error</string>
+    <string name="retry">Retry</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="doi_prefix">DOI: 10.5281/sqc.2026.</string>
+</resources>

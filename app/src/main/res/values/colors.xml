@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="quantum_primary">#6200EE</color>
+    <color name="quantum_primary_variant">#3700B3</color>
+    <color name="quantum_secondary">#03DAC6</color>
+    <color name="quantum_secondary_variant">#018786</color>
+
+    <!-- Background Colors -->
+    <color name="quantum_background">#FFFFFF</color>
+    <color name="quantum_surface">#FFFFFF</color>
+    <color name="quantum_error">#B00020</color>
+
+    <!-- Text Colors -->
+    <color name="quantum_on_primary">#FFFFFF</color>
+    <color name="quantum_on_secondary">#000000</color>
+    <color name="quantum_on_background">#000000</color>
+    <color name="quantum_on_surface">#000000</color>
+    <color name="quantum_on_error">#FFFFFF</color>
+
+    <!-- Badge Colors -->
+    <color name="badge_bronze">#CD7F32</color>
+    <color name="badge_silver">#C0C0C0</color>
+    <color name="badge_gold">#FFD700</color>
+    <color name="badge_platinum">#E5E4E2</color>
+
+    <!-- Status Colors -->
+    <color name="status_published">#4CAF50</color>
+    <color name="status_under_review">#FF9800</color>
+    <color name="status_draft">#9E9E9E</color>
+    <color name="status_rejected">#F44336</color>
+</resources>
