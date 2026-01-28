@@ -506,4 +506,126 @@
     <string name="browse_available_jobs">Verfügbare Jobs durchsuchen</string>
     <string name="save_jobs_for_later">Jobs für später speichern</string>
     <string name="start_applying">Mit Bewerbungen beginnen</string>
+
+    <!-- Missing Keys - Status -->
+    <string name="not_connected">Nicht verbunden</string>
+    <string name="connect">Verbinden</string>
+
+    <!-- Missing Keys - Settings -->
+    <string name="app_tagline">Ihre Quantenkarriere beginnt hier</string>
+    <string name="sign_in_to_sync">Anmelden, um Daten geräteübergreifend zu synchronisieren</string>
+    <string name="current_plan">Aktueller Plan</string>
+    <string name="pro_features_intro">Leistungsstarke Funktionen mit Pro freischalten:</string>
+    <string name="account_security">Kontosicherheit</string>
+    <string name="notifications_subtitle">Alle Benachrichtigungen aktivieren oder deaktivieren</string>
+    <string name="email_notifications_subtitle">Updates per E-Mail erhalten</string>
+    <string name="push_notifications_subtitle">Push-Benachrichtigungen auf Ihrem Gerät erhalten</string>
+    <string name="dark_mode_subtitle">Zwischen hellem und dunklem Design wechseln</string>
+    <string name="help_faq">Hilfe und FAQ</string>
+    <string name="send_feedback">Feedback senden</string>
+    <string name="privacy_settings">Datenschutzeinstellungen</string>
+    <string name="public_profile_subtitle">Anderen erlauben, Ihr Profil und Portfolio zu sehen</string>
+    <string name="available_for_hire">Verfügbar für Einstellung</string>
+    <string name="available_for_hire_subtitle">Personalvermittlern mitteilen, dass Sie nach Möglichkeiten suchen</string>
+    <string name="sign_out">Abmelden</string>
+    <string name="sign_in_to_build_portfolio">Anmelden, um Ihr Quanten-Karriere-Portfolio aufzubauen</string>
+
+    <!-- Missing Keys - Jobs -->
+    <string name="no_jobs_found_message">Versuchen Sie, Ihre Suche oder Filter anzupassen</string>
+    <string name="search_jobs_placeholder">Nach Titel, Unternehmen oder Fähigkeiten suchen...</string>
+    <string name="clear">Löschen</string>
+    <string name="no_recommendations">Keine Empfehlungen</string>
+    <string name="no_recommendations_message">Vervollständigen Sie Ihr Profil, um personalisierte Jobempfehlungen zu erhalten</string>
+    <string name="no_saved_jobs_message">Speichern Sie Jobs, um sie später zu überprüfen</string>
+    <string name="no_applications_message">Beginnen Sie mit Bewerbungen, um Ihre Bewerbungen hier zu verfolgen</string>
+    <string name="view_details">Details anzeigen</string>
+    <string name="applied">Beworben</string>
+    <string name="match">Übereinstimmung</string>
+    <string name="days_ago">vor %d Tagen</string>
+    <string name="withdraw">Zurückziehen</string>
+    <string name="interview_scheduled">Interview geplant</string>
+    <string name="job_description">Stellenbeschreibung</string>
+    <string name="posted">Veröffentlicht</string>
+    <string name="days_left">%d Tage übrig</string>
+    <string name="ai_match_score">KI-Übereinstimmungswert</string>
+    <string name="interviews">Interviews</string>
+    <string name="offers">Angebote</string>
+
+    <!-- Missing Keys - Application -->
+    <string name="optional">Optional</string>
+    <string name="or_paste_url">Oder URL einfügen</string>
+    <string name="application_info_message">Ihre Profildaten und Ihr Quanten-Portfolio werden zusammen mit Ihrer Bewerbung an den Arbeitgeber weitergegeben.</string>
+    <string name="submitting">Wird eingereicht...</string>
+    <string name="add_skill_placeholder">Fähigkeit eingeben und Hinzufügen drücken</string>
+    <string name="add">Hinzufügen</string>
+    <string name="remove">Entfernen</string>
+    <string name="skills">Fähigkeiten</string>
+    <string name="certifications">Zertifizierungen</string>
+
+    <!-- Missing Keys - Circuits/Review -->
+    <string name="circuits_waiting">Schaltkreise warten auf Überprüfung</string>
+    <string name="no_circuits">Keine Schaltkreise</string>
+    <string name="no_circuits_message">Veröffentlichen Sie Ihren ersten Schaltkreis, um Ihre Quantencomputing-Fähigkeiten zu präsentieren</string>
+
+    <!-- Missing Keys - Certificates -->
+    <string name="certificates">Zertifikate</string>
+    <string name="no_certificates">Keine Zertifikate</string>
+    <string name="no_certificates_message">Schließen Sie Zertifizierungstests ab, um verifizierbare Nachweise zu erhalten</string>
+    <string name="issued">Ausgestellt</string>
+    <string name="expires">Läuft ab</string>
+    <string name="view">Anzeigen</string>
+    <string name="linkedin">LinkedIn</string>
+
+    <!-- Missing Keys - Badges -->
+    <string name="no_badges">Keine Abzeichen</string>
+    <string name="no_badges_message">Beginnen Sie mit Beiträgen, um Ihr erstes Abzeichen zu verdienen</string>
+    <string name="in_progress">In Bearbeitung</string>
+
+    <!-- Missing Keys - Contribution -->
+    <string name="less">Weniger</string>
+    <string name="more">Mehr</string>
+
+    <!-- Missing Keys - Misc -->
+    <string name="timestamp">Zeitstempel</string>
+
+    <!-- Repository Error Messages -->
+    <string name="error_get_pending_reviews">Fehler beim Abrufen der ausstehenden Reviews</string>
+    <string name="error_get_my_reviews">Fehler beim Abrufen meiner Reviews</string>
+    <string name="error_review_not_found">Review nicht gefunden</string>
+    <string name="error_submit_review">Fehler beim Einreichen des Reviews</string>
+    <string name="error_get_reviewer_stats">Fehler beim Abrufen der Reviewer-Statistiken</string>
+    <string name="error_claim_review">Fehler beim Beanspruchen des Reviews</string>
+    <string name="error_get_leaderboard">Fehler beim Abrufen der Bestenliste</string>
+    <string name="error_get_user_rank">Fehler beim Abrufen des Benutzerrangs</string>
+    <string name="error_get_friends_rankings">Fehler beim Abrufen der Freundes-Rangliste</string>
+    <string name="error_get_countries">Fehler beim Abrufen der Länderliste</string>
+    <string name="error_get_institutions">Fehler beim Abrufen der Institutionsliste</string>
+    <string name="error_get_achievements">Fehler beim Abrufen der Erfolge</string>
+    <string name="error_get_certificates">Fehler beim Abrufen der Zertifikate</string>
+    <string name="error_certificate_not_found">Zertifikat nicht gefunden</string>
+    <string name="error_verify_certificate">Fehler beim Verifizieren des Zertifikats</string>
+    <string name="error_share_certificate">Fehler beim Teilen des Zertifikats</string>
+    <string name="error_get_renewal_info">Fehler beim Abrufen der Erneuerungsinformationen</string>
+    <string name="error_get_pdf_url">Fehler beim Abrufen der PDF-URL</string>
+    <string name="error_start_test">Fehler beim Starten des Tests</string>
+    <string name="error_submit_answer">Fehler beim Einreichen der Antwort</string>
+    <string name="error_finish_test">Fehler beim Abschließen des Tests</string>
+    <string name="error_get_test_history">Fehler beim Abrufen des Testverlaufs</string>
+    <string name="error_get_practice_questions">Fehler beim Abrufen der Übungsfragen</string>
+    <string name="error_get_current_session">Fehler beim Abrufen der aktuellen Sitzung</string>
+    <string name="error_get_test_result">Fehler beim Abrufen des Testergebnisses</string>
+    <string name="error_get_categories">Fehler beim Abrufen der Kategorien</string>
+    <string name="error_get_jobs">Fehler beim Abrufen der Jobs</string>
+    <string name="error_get_job_detail">Fehler beim Abrufen der Job-Details</string>
+    <string name="error_apply_for_job">Fehler bei der Bewerbung</string>
+    <string name="error_save_job">Fehler beim Speichern des Jobs</string>
+    <string name="error_unsave_job">Fehler beim Aufheben der Speicherung des Jobs</string>
+    <string name="error_get_saved_jobs">Fehler beim Abrufen der gespeicherten Jobs</string>
+    <string name="error_get_applications">Fehler beim Abrufen der Bewerbungen</string>
+    <string name="error_get_talents">Fehler beim Abrufen der Talentliste</string>
+    <string name="error_send_offer">Fehler beim Senden des Angebots</string>
+    <string name="error_get_offers">Fehler beim Abrufen der Angebote</string>
+    <string name="error_get_career_passport">Fehler beim Abrufen des Karrierepasses</string>
+    <string name="error_update_profile">Fehler beim Aktualisieren des Profils</string>
+    <string name="error_get_profile">Fehler beim Abrufen des Profils</string>
 </resources>

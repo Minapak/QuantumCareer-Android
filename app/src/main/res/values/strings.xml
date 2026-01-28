@@ -555,6 +555,47 @@
     <string name="error_server">Server error. Please try again later.</string>
     <string name="error_unknown">An unknown error occurred</string>
 
+    <!-- Repository Error Messages -->
+    <string name="error_get_pending_reviews">Error getting pending reviews</string>
+    <string name="error_get_my_reviews">Error getting my reviews</string>
+    <string name="error_review_not_found">Review not found</string>
+    <string name="error_submit_review">Error submitting review</string>
+    <string name="error_get_reviewer_stats">Error getting reviewer stats</string>
+    <string name="error_claim_review">Error claiming review</string>
+    <string name="error_get_leaderboard">Error getting leaderboard</string>
+    <string name="error_get_user_rank">Error getting user rank</string>
+    <string name="error_get_friends_rankings">Error getting friends rankings</string>
+    <string name="error_get_countries">Error getting countries</string>
+    <string name="error_get_institutions">Error getting institutions</string>
+    <string name="error_get_achievements">Error getting achievements</string>
+    <string name="error_get_certificates">Error getting certificates</string>
+    <string name="error_certificate_not_found">Certificate not found</string>
+    <string name="error_verify_certificate">Error verifying certificate</string>
+    <string name="error_share_certificate">Error sharing certificate</string>
+    <string name="error_get_renewal_info">Error getting renewal info</string>
+    <string name="error_get_pdf_url">Error getting PDF URL</string>
+    <string name="error_start_test">Error starting test</string>
+    <string name="error_submit_answer">Error submitting answer</string>
+    <string name="error_finish_test">Error finishing test</string>
+    <string name="error_get_test_history">Error getting test history</string>
+    <string name="error_get_practice_questions">Error getting practice questions</string>
+    <string name="error_get_current_session">Error getting current session</string>
+    <string name="error_get_test_result">Error getting test result</string>
+    <string name="error_get_categories">Error getting categories</string>
+    <string name="error_get_jobs">Error getting jobs</string>
+    <string name="error_get_job_detail">Error getting job detail</string>
+    <string name="error_apply_for_job">Error applying for job</string>
+    <string name="error_save_job">Error saving job</string>
+    <string name="error_unsave_job">Error unsaving job</string>
+    <string name="error_get_saved_jobs">Error getting saved jobs</string>
+    <string name="error_get_applications">Error getting applications</string>
+    <string name="error_get_talents">Error getting talents</string>
+    <string name="error_send_offer">Error sending offer</string>
+    <string name="error_get_offers">Error getting offers</string>
+    <string name="error_get_career_passport">Error getting career passport</string>
+    <string name="error_update_profile">Error updating profile</string>
+    <string name="error_get_profile">Error getting profile</string>
+
     <!-- Circuits Tab -->
     <string name="no_circuits">No Circuits</string>
     <string name="no_circuits_message">Publish your first circuit to showcase your quantum computing skills</string>

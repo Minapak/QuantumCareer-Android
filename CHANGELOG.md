@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.1] - 2026-01-29
+
+### Added
+- Complete 5-language localization with 629+ string keys per language
+- Added 67 missing keys + 40 error message keys to all non-English languages
+
+### Fixed
+- All error messages properly localized across Korean, Japanese, Chinese, German
+- Job application flow messages and validation errors localized
+
 ## [1.1.0] - 2026-01-28
 
 ### Added

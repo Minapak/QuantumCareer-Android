@@ -506,4 +506,126 @@
     <string name="browse_available_jobs">浏览可用职位</string>
     <string name="save_jobs_for_later">保存职位以便稍后查看</string>
     <string name="start_applying">开始申请职位</string>
+
+    <!-- Missing Keys - Status -->
+    <string name="not_connected">未连接</string>
+    <string name="connect">连接</string>
+
+    <!-- Missing Keys - Settings -->
+    <string name="app_tagline">您的量子职业从这里开始</string>
+    <string name="sign_in_to_sync">登录以在设备间同步数据</string>
+    <string name="current_plan">当前计划</string>
+    <string name="pro_features_intro">使用Pro解锁强大功能:</string>
+    <string name="account_security">账户安全</string>
+    <string name="notifications_subtitle">启用或禁用所有通知</string>
+    <string name="email_notifications_subtitle">通过邮件接收更新</string>
+    <string name="push_notifications_subtitle">在设备上接收推送通知</string>
+    <string name="dark_mode_subtitle">在浅色和深色主题之间切换</string>
+    <string name="help_faq">帮助和常见问题</string>
+    <string name="send_feedback">发送反馈</string>
+    <string name="privacy_settings">隐私设置</string>
+    <string name="public_profile_subtitle">允许其他人查看您的个人资料和作品集</string>
+    <string name="available_for_hire">可接受聘用</string>
+    <string name="available_for_hire_subtitle">让招聘人员知道您正在寻找机会</string>
+    <string name="sign_out">退出登录</string>
+    <string name="sign_in_to_build_portfolio">登录以构建您的量子职业作品集</string>
+
+    <!-- Missing Keys - Jobs -->
+    <string name="no_jobs_found_message">尝试调整您的搜索或筛选条件</string>
+    <string name="search_jobs_placeholder">按职位、公司或技能搜索...</string>
+    <string name="clear">清除</string>
+    <string name="no_recommendations">暂无推荐</string>
+    <string name="no_recommendations_message">完善您的个人资料以获取个性化的职位推荐</string>
+    <string name="no_saved_jobs_message">保存职位以便稍后查看</string>
+    <string name="no_applications_message">开始申请职位以在此处跟踪您的申请</string>
+    <string name="view_details">查看详情</string>
+    <string name="applied">已申请</string>
+    <string name="match">匹配</string>
+    <string name="days_ago">%d天前</string>
+    <string name="withdraw">撤回</string>
+    <string name="interview_scheduled">面试已安排</string>
+    <string name="job_description">职位描述</string>
+    <string name="posted">发布</string>
+    <string name="days_left">剩余%d天</string>
+    <string name="ai_match_score">AI匹配分数</string>
+    <string name="interviews">面试</string>
+    <string name="offers">录用</string>
+
+    <!-- Missing Keys - Application -->
+    <string name="optional">可选</string>
+    <string name="or_paste_url">或粘贴URL</string>
+    <string name="application_info_message">您的个人资料数据和量子作品集将与申请一起分享给雇主。</string>
+    <string name="submitting">提交中...</string>
+    <string name="add_skill_placeholder">输入技能并按添加</string>
+    <string name="add">添加</string>
+    <string name="remove">移除</string>
+    <string name="skills">技能</string>
+    <string name="certifications">认证</string>
+
+    <!-- Missing Keys - Circuits/Review -->
+    <string name="circuits_waiting">等待审核的电路</string>
+    <string name="no_circuits">暂无电路</string>
+    <string name="no_circuits_message">发布您的第一个电路以展示您的量子计算技能</string>
+
+    <!-- Missing Keys - Certificates -->
+    <string name="certificates">证书</string>
+    <string name="no_certificates">暂无证书</string>
+    <string name="no_certificates_message">完成认证测试以获取可验证的凭证</string>
+    <string name="issued">已颁发</string>
+    <string name="expires">到期</string>
+    <string name="view">查看</string>
+    <string name="linkedin">LinkedIn</string>
+
+    <!-- Missing Keys - Badges -->
+    <string name="no_badges">暂无徽章</string>
+    <string name="no_badges_message">开始贡献以获得您的第一个徽章</string>
+    <string name="in_progress">进行中</string>
+
+    <!-- Missing Keys - Contribution -->
+    <string name="less">少</string>
+    <string name="more">多</string>
+
+    <!-- Missing Keys - Misc -->
+    <string name="timestamp">时间戳</string>
+
+    <!-- Repository Error Messages -->
+    <string name="error_get_pending_reviews">获取待审核项时出错</string>
+    <string name="error_get_my_reviews">获取我的审核时出错</string>
+    <string name="error_review_not_found">未找到审核</string>
+    <string name="error_submit_review">提交审核时出错</string>
+    <string name="error_get_reviewer_stats">获取审核者统计时出错</string>
+    <string name="error_claim_review">认领审核时出错</string>
+    <string name="error_get_leaderboard">获取排行榜时出错</string>
+    <string name="error_get_user_rank">获取用户排名时出错</string>
+    <string name="error_get_friends_rankings">获取好友排名时出错</string>
+    <string name="error_get_countries">获取国家列表时出错</string>
+    <string name="error_get_institutions">获取机构列表时出错</string>
+    <string name="error_get_achievements">获取成就时出错</string>
+    <string name="error_get_certificates">获取证书时出错</string>
+    <string name="error_certificate_not_found">未找到证书</string>
+    <string name="error_verify_certificate">验证证书时出错</string>
+    <string name="error_share_certificate">分享证书时出错</string>
+    <string name="error_get_renewal_info">获取续期信息时出错</string>
+    <string name="error_get_pdf_url">获取PDF链接时出错</string>
+    <string name="error_start_test">开始测试时出错</string>
+    <string name="error_submit_answer">提交答案时出错</string>
+    <string name="error_finish_test">完成测试时出错</string>
+    <string name="error_get_test_history">获取测试历史时出错</string>
+    <string name="error_get_practice_questions">获取练习题时出错</string>
+    <string name="error_get_current_session">获取当前会话时出错</string>
+    <string name="error_get_test_result">获取测试结果时出错</string>
+    <string name="error_get_categories">获取类别时出错</string>
+    <string name="error_get_jobs">获取职位时出错</string>
+    <string name="error_get_job_detail">获取职位详情时出错</string>
+    <string name="error_apply_for_job">申请职位时出错</string>
+    <string name="error_save_job">保存职位时出错</string>
+    <string name="error_unsave_job">取消保存职位时出错</string>
+    <string name="error_get_saved_jobs">获取已保存职位时出错</string>
+    <string name="error_get_applications">获取申请时出错</string>
+    <string name="error_get_talents">获取人才列表时出错</string>
+    <string name="error_send_offer">发送邀请时出错</string>
+    <string name="error_get_offers">获取邀请时出错</string>
+    <string name="error_get_career_passport">获取职业护照时出错</string>
+    <string name="error_update_profile">更新个人资料时出错</string>
+    <string name="error_get_profile">获取个人资料时出错</string>
 </resources>

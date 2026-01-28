@@ -506,4 +506,126 @@
     <string name="browse_available_jobs">利用可能な求人を閲覧</string>
     <string name="save_jobs_for_later">後で見るために求人を保存</string>
     <string name="start_applying">求人への応募を開始</string>
+
+    <!-- Missing Keys - Status -->
+    <string name="not_connected">未接続</string>
+    <string name="connect">接続</string>
+
+    <!-- Missing Keys - Settings -->
+    <string name="app_tagline">あなたの量子キャリアはここから始まります</string>
+    <string name="sign_in_to_sync">デバイス間でデータを同期するにはサインインしてください</string>
+    <string name="current_plan">現在のプラン</string>
+    <string name="pro_features_intro">Proで強力な機能をアンロック:</string>
+    <string name="account_security">アカウントセキュリティ</string>
+    <string name="notifications_subtitle">すべての通知を有効または無効にする</string>
+    <string name="email_notifications_subtitle">メールで更新を受け取る</string>
+    <string name="push_notifications_subtitle">デバイスでプッシュ通知を受け取る</string>
+    <string name="dark_mode_subtitle">ライトテーマとダークテーマを切り替える</string>
+    <string name="help_faq">ヘルプとFAQ</string>
+    <string name="send_feedback">フィードバックを送信</string>
+    <string name="privacy_settings">プライバシー設定</string>
+    <string name="public_profile_subtitle">他の人があなたのプロフィールとポートフォリオを見ることを許可</string>
+    <string name="available_for_hire">採用可能</string>
+    <string name="available_for_hire_subtitle">採用担当者に機会を探していることを知らせる</string>
+    <string name="sign_out">サインアウト</string>
+    <string name="sign_in_to_build_portfolio">量子キャリアポートフォリオを構築するにはサインイン</string>
+
+    <!-- Missing Keys - Jobs -->
+    <string name="no_jobs_found_message">検索またはフィルターを調整してみてください</string>
+    <string name="search_jobs_placeholder">タイトル、会社、またはスキルで検索...</string>
+    <string name="clear">クリア</string>
+    <string name="no_recommendations">おすすめなし</string>
+    <string name="no_recommendations_message">パーソナライズされた求人のおすすめを受け取るにはプロフィールを完成させてください</string>
+    <string name="no_saved_jobs_message">後で確認するために求人を保存してください</string>
+    <string name="no_applications_message">応募を追跡するには求人に応募してください</string>
+    <string name="view_details">詳細を見る</string>
+    <string name="applied">応募済み</string>
+    <string name="match">マッチ</string>
+    <string name="days_ago">%d日前</string>
+    <string name="withdraw">取り下げ</string>
+    <string name="interview_scheduled">面接予定</string>
+    <string name="job_description">職務内容</string>
+    <string name="posted">投稿</string>
+    <string name="days_left">残り%d日</string>
+    <string name="ai_match_score">AIマッチスコア</string>
+    <string name="interviews">面接</string>
+    <string name="offers">オファー</string>
+
+    <!-- Missing Keys - Application -->
+    <string name="optional">任意</string>
+    <string name="or_paste_url">またはURLを貼り付け</string>
+    <string name="application_info_message">あなたのプロフィールデータと量子ポートフォリオは応募とともに雇用主に共有されます。</string>
+    <string name="submitting">送信中...</string>
+    <string name="add_skill_placeholder">スキルを入力して追加を押してください</string>
+    <string name="add">追加</string>
+    <string name="remove">削除</string>
+    <string name="skills">スキル</string>
+    <string name="certifications">認定資格</string>
+
+    <!-- Missing Keys - Circuits/Review -->
+    <string name="circuits_waiting">レビュー待ちの回路</string>
+    <string name="no_circuits">回路なし</string>
+    <string name="no_circuits_message">量子コンピューティングスキルを示すために最初の回路を発行してください</string>
+
+    <!-- Missing Keys - Certificates -->
+    <string name="certificates">認定証</string>
+    <string name="no_certificates">認定証なし</string>
+    <string name="no_certificates_message">検証可能な資格を取得するには認定テストを完了してください</string>
+    <string name="issued">発行済み</string>
+    <string name="expires">有効期限</string>
+    <string name="view">表示</string>
+    <string name="linkedin">LinkedIn</string>
+
+    <!-- Missing Keys - Badges -->
+    <string name="no_badges">バッジなし</string>
+    <string name="no_badges_message">最初のバッジを獲得するには貢献を始めてください</string>
+    <string name="in_progress">進行中</string>
+
+    <!-- Missing Keys - Contribution -->
+    <string name="less">少ない</string>
+    <string name="more">多い</string>
+
+    <!-- Missing Keys - Misc -->
+    <string name="timestamp">タイムスタンプ</string>
+
+    <!-- Repository Error Messages -->
+    <string name="error_get_pending_reviews">保留中のレビューの取得中にエラーが発生しました</string>
+    <string name="error_get_my_reviews">マイレビューの取得中にエラーが発生しました</string>
+    <string name="error_review_not_found">レビューが見つかりません</string>
+    <string name="error_submit_review">レビューの送信中にエラーが発生しました</string>
+    <string name="error_get_reviewer_stats">レビュアー統計の取得中にエラーが発生しました</string>
+    <string name="error_claim_review">レビューの申請中にエラーが発生しました</string>
+    <string name="error_get_leaderboard">リーダーボードの取得中にエラーが発生しました</string>
+    <string name="error_get_user_rank">ユーザーランクの取得中にエラーが発生しました</string>
+    <string name="error_get_friends_rankings">友達ランキングの取得中にエラーが発生しました</string>
+    <string name="error_get_countries">国リストの取得中にエラーが発生しました</string>
+    <string name="error_get_institutions">機関リストの取得中にエラーが発生しました</string>
+    <string name="error_get_achievements">実績の取得中にエラーが発生しました</string>
+    <string name="error_get_certificates">認定証の取得中にエラーが発生しました</string>
+    <string name="error_certificate_not_found">認定証が見つかりません</string>
+    <string name="error_verify_certificate">認定証の確認中にエラーが発生しました</string>
+    <string name="error_share_certificate">認定証の共有中にエラーが発生しました</string>
+    <string name="error_get_renewal_info">更新情報の取得中にエラーが発生しました</string>
+    <string name="error_get_pdf_url">PDF URLの取得中にエラーが発生しました</string>
+    <string name="error_start_test">テストの開始中にエラーが発生しました</string>
+    <string name="error_submit_answer">回答の送信中にエラーが発生しました</string>
+    <string name="error_finish_test">テストの完了中にエラーが発生しました</string>
+    <string name="error_get_test_history">テスト履歴の取得中にエラーが発生しました</string>
+    <string name="error_get_practice_questions">練習問題の取得中にエラーが発生しました</string>
+    <string name="error_get_current_session">現在のセッションの取得中にエラーが発生しました</string>
+    <string name="error_get_test_result">テスト結果の取得中にエラーが発生しました</string>
+    <string name="error_get_categories">カテゴリの取得中にエラーが発生しました</string>
+    <string name="error_get_jobs">求人の取得中にエラーが発生しました</string>
+    <string name="error_get_job_detail">求人詳細の取得中にエラーが発生しました</string>
+    <string name="error_apply_for_job">求人への応募中にエラーが発生しました</string>
+    <string name="error_save_job">求人の保存中にエラーが発生しました</string>
+    <string name="error_unsave_job">求人の保存解除中にエラーが発生しました</string>
+    <string name="error_get_saved_jobs">保存した求人の取得中にエラーが発生しました</string>
+    <string name="error_get_applications">応募の取得中にエラーが発生しました</string>
+    <string name="error_get_talents">人材リストの取得中にエラーが発生しました</string>
+    <string name="error_send_offer">オファーの送信中にエラーが発生しました</string>
+    <string name="error_get_offers">オファーの取得中にエラーが発生しました</string>
+    <string name="error_get_career_passport">キャリアパスポートの取得中にエラーが発生しました</string>
+    <string name="error_update_profile">プロフィールの更新中にエラーが発生しました</string>
+    <string name="error_get_profile">プロフィールの取得中にエラーが発生しました</string>
 </resources>

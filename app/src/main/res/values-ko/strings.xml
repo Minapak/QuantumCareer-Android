@@ -506,4 +506,126 @@
     <string name="browse_available_jobs">채용 정보 둘러보기</string>
     <string name="save_jobs_for_later">나중을 위해 채용 저장</string>
     <string name="start_applying">채용 지원 시작</string>
+
+    <!-- Missing Keys - Status -->
+    <string name="not_connected">연결 안됨</string>
+    <string name="connect">연결</string>
+
+    <!-- Missing Keys - Settings -->
+    <string name="app_tagline">당신의 양자 커리어가 여기서 시작됩니다</string>
+    <string name="sign_in_to_sync">기기 간 데이터 동기화를 위해 로그인하세요</string>
+    <string name="current_plan">현재 플랜</string>
+    <string name="pro_features_intro">Pro로 강력한 기능을 잠금 해제하세요:</string>
+    <string name="account_security">계정 보안</string>
+    <string name="notifications_subtitle">모든 알림 활성화 또는 비활성화</string>
+    <string name="email_notifications_subtitle">이메일로 업데이트 수신</string>
+    <string name="push_notifications_subtitle">기기에서 푸시 알림 수신</string>
+    <string name="dark_mode_subtitle">라이트 모드와 다크 모드 간 전환</string>
+    <string name="help_faq">도움말 및 FAQ</string>
+    <string name="send_feedback">피드백 보내기</string>
+    <string name="privacy_settings">개인정보 설정</string>
+    <string name="public_profile_subtitle">다른 사람들이 프로필과 포트폴리오를 볼 수 있도록 허용</string>
+    <string name="available_for_hire">채용 가능</string>
+    <string name="available_for_hire_subtitle">채용 담당자에게 기회를 찾고 있음을 알리세요</string>
+    <string name="sign_out">로그아웃</string>
+    <string name="sign_in_to_build_portfolio">양자 커리어 포트폴리오를 구축하려면 로그인하세요</string>
+
+    <!-- Missing Keys - Jobs -->
+    <string name="no_jobs_found_message">검색이나 필터를 조정해 보세요</string>
+    <string name="search_jobs_placeholder">직책, 회사 또는 기술로 검색...</string>
+    <string name="clear">지우기</string>
+    <string name="no_recommendations">추천 없음</string>
+    <string name="no_recommendations_message">맞춤 채용 추천을 받으려면 프로필을 완성하세요</string>
+    <string name="no_saved_jobs_message">나중에 검토하기 위해 채용을 저장하세요</string>
+    <string name="no_applications_message">지원서를 추적하려면 채용에 지원하세요</string>
+    <string name="view_details">상세 보기</string>
+    <string name="applied">지원됨</string>
+    <string name="match">매칭</string>
+    <string name="days_ago">%d일 전</string>
+    <string name="withdraw">철회</string>
+    <string name="interview_scheduled">면접 예정</string>
+    <string name="job_description">직무 설명</string>
+    <string name="posted">게시됨</string>
+    <string name="days_left">%d일 남음</string>
+    <string name="ai_match_score">AI 매칭 점수</string>
+    <string name="interviews">면접</string>
+    <string name="offers">오퍼</string>
+
+    <!-- Missing Keys - Application -->
+    <string name="optional">선택 사항</string>
+    <string name="or_paste_url">또는 URL 붙여넣기</string>
+    <string name="application_info_message">지원서와 함께 프로필 데이터와 양자 포트폴리오가 고용주에게 공유됩니다.</string>
+    <string name="submitting">제출 중...</string>
+    <string name="add_skill_placeholder">기술을 입력하고 추가를 누르세요</string>
+    <string name="add">추가</string>
+    <string name="remove">제거</string>
+    <string name="skills">기술</string>
+    <string name="certifications">자격증</string>
+
+    <!-- Missing Keys - Circuits/Review -->
+    <string name="circuits_waiting">검토 대기 중인 회로</string>
+    <string name="no_circuits">회로 없음</string>
+    <string name="no_circuits_message">양자 컴퓨팅 기술을 보여주기 위해 첫 번째 회로를 발행하세요</string>
+
+    <!-- Missing Keys - Certificates -->
+    <string name="certificates">자격증</string>
+    <string name="no_certificates">자격증 없음</string>
+    <string name="no_certificates_message">검증 가능한 자격증을 얻으려면 인증 시험을 완료하세요</string>
+    <string name="issued">발급됨</string>
+    <string name="expires">만료</string>
+    <string name="view">보기</string>
+    <string name="linkedin">LinkedIn</string>
+
+    <!-- Missing Keys - Badges -->
+    <string name="no_badges">배지 없음</string>
+    <string name="no_badges_message">첫 번째 배지를 얻으려면 기여를 시작하세요</string>
+    <string name="in_progress">진행 중</string>
+
+    <!-- Missing Keys - Contribution -->
+    <string name="less">적음</string>
+    <string name="more">많음</string>
+
+    <!-- Missing Keys - Misc -->
+    <string name="timestamp">타임스탬프</string>
+
+    <!-- Repository Error Messages -->
+    <string name="error_get_pending_reviews">대기 중인 리뷰를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_my_reviews">내 리뷰를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_review_not_found">리뷰를 찾을 수 없습니다</string>
+    <string name="error_submit_review">리뷰 제출 중 오류가 발생했습니다</string>
+    <string name="error_get_reviewer_stats">리뷰어 통계를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_claim_review">리뷰 신청 중 오류가 발생했습니다</string>
+    <string name="error_get_leaderboard">리더보드를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_user_rank">사용자 순위를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_friends_rankings">친구 순위를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_countries">국가 목록을 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_institutions">기관 목록을 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_achievements">업적을 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_certificates">자격증을 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_certificate_not_found">자격증을 찾을 수 없습니다</string>
+    <string name="error_verify_certificate">자격증 인증 중 오류가 발생했습니다</string>
+    <string name="error_share_certificate">자격증 공유 중 오류가 발생했습니다</string>
+    <string name="error_get_renewal_info">갱신 정보를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_pdf_url">PDF URL을 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_start_test">테스트 시작 중 오류가 발생했습니다</string>
+    <string name="error_submit_answer">답변 제출 중 오류가 발생했습니다</string>
+    <string name="error_finish_test">테스트 완료 중 오류가 발생했습니다</string>
+    <string name="error_get_test_history">테스트 기록을 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_practice_questions">연습 문제를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_current_session">현재 세션을 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_test_result">테스트 결과를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_categories">카테고리를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_jobs">채용 정보를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_job_detail">채용 상세를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_apply_for_job">채용 지원 중 오류가 발생했습니다</string>
+    <string name="error_save_job">채용 저장 중 오류가 발생했습니다</string>
+    <string name="error_unsave_job">채용 저장 취소 중 오류가 발생했습니다</string>
+    <string name="error_get_saved_jobs">저장된 채용을 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_applications">지원서를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_talents">인재 목록을 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_send_offer">오퍼 전송 중 오류가 발생했습니다</string>
+    <string name="error_get_offers">오퍼를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_get_career_passport">커리어 패스포트를 가져오는 중 오류가 발생했습니다</string>
+    <string name="error_update_profile">프로필 업데이트 중 오류가 발생했습니다</string>
+    <string name="error_get_profile">프로필을 가져오는 중 오류가 발생했습니다</string>
 </resources>
