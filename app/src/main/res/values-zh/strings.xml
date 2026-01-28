@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuantumCareer</string>
+    <string name="dashboard">仪表板</string>
+    <string name="publish">发布</string>
+    <string name="circuits">电路</string>
+    <string name="peer_review">同行评审</string>
+    <string name="badges">徽章</string>
+    <string name="citations">引用</string>
+    <string name="talent">人才</string>
+    <string name="profile">个人资料</string>
+
+    <!-- Dashboard -->
+    <string name="total_publications">总发表数</string>
+    <string name="total_citations">总引用数</string>
+    <string name="h_index">h指数</string>
+    <string name="i10_index">i10指数</string>
+    <string name="pending_reviews">待审核</string>
+    <string name="career_overview">职业概览</string>
+
+    <!-- Publish -->
+    <string name="publish_circuit">发布电路</string>
+    <string name="circuit_title">电路标题</string>
+    <string name="circuit_description">描述</string>
+    <string name="circuit_qasm">QASM代码</string>
+    <string name="circuit_tags">标签（用逗号分隔）</string>
+    <string name="submit_for_review">提交审核</string>
+
+    <!-- Circuits -->
+    <string name="my_circuits">我的电路</string>
+    <string name="published">已发布</string>
+    <string name="under_review">审核中</string>
+    <string name="draft">草稿</string>
+
+    <!-- Peer Review -->
+    <string name="review_circuits">审核电路</string>
+    <string name="submit_review">提交审核</string>
+    <string name="approve">批准</string>
+    <string name="request_changes">请求修改</string>
+    <string name="reject">拒绝</string>
+    <string name="review_comment">审核评论</string>
+
+    <!-- Badges -->
+    <string name="badge_collection">徽章收藏</string>
+    <string name="bronze_badge">铜牌</string>
+    <string name="silver_badge">银牌</string>
+    <string name="gold_badge">金牌</string>
+    <string name="platinum_badge">白金</string>
+    <string name="badge_progress">进度</string>
+
+    <!-- Citations -->
+    <string name="citation_stats">引用统计</string>
+    <string name="citation_history">引用历史</string>
+
+    <!-- Talent -->
+    <string name="talent_search">人才搜索</string>
+    <string name="scout_researcher">寻访研究员</string>
+    <string name="my_offers">我的邀请</string>
+    <string name="send_offer">发送邀请</string>
+
+    <!-- Profile -->
+    <string name="edit_profile">编辑资料</string>
+    <string name="public_profile">公开资料</string>
+    <string name="profile_visibility">资料可见性</string>
+    <string name="share_profile">分享资料</string>
+
+    <!-- Common -->
+    <string name="loading">加载中...</string>
+    <string name="error">错误</string>
+    <string name="retry">重试</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="search">搜索</string>
+    <string name="doi_prefix">DOI: 10.5281/sqc.2026.</string>
+</resources>

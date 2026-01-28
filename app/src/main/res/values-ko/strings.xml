@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuantumCareer</string>
+    <string name="dashboard">대시보드</string>
+    <string name="publish">발행</string>
+    <string name="circuits">회로</string>
+    <string name="peer_review">피어 리뷰</string>
+    <string name="badges">배지</string>
+    <string name="citations">인용</string>
+    <string name="talent">인재</string>
+    <string name="profile">프로필</string>
+
+    <!-- Dashboard -->
+    <string name="total_publications">총 발행 수</string>
+    <string name="total_citations">총 인용 수</string>
+    <string name="h_index">h-지수</string>
+    <string name="i10_index">i10-지수</string>
+    <string name="pending_reviews">대기 중인 리뷰</string>
+    <string name="career_overview">경력 개요</string>
+
+    <!-- Publish -->
+    <string name="publish_circuit">회로 발행</string>
+    <string name="circuit_title">회로 제목</string>
+    <string name="circuit_description">설명</string>
+    <string name="circuit_qasm">QASM 코드</string>
+    <string name="circuit_tags">태그 (쉼표로 구분)</string>
+    <string name="submit_for_review">리뷰 제출</string>
+
+    <!-- Circuits -->
+    <string name="my_circuits">내 회로</string>
+    <string name="published">발행됨</string>
+    <string name="under_review">검토 중</string>
+    <string name="draft">초안</string>
+
+    <!-- Peer Review -->
+    <string name="review_circuits">회로 검토</string>
+    <string name="submit_review">리뷰 제출</string>
+    <string name="approve">승인</string>
+    <string name="request_changes">수정 요청</string>
+    <string name="reject">거부</string>
+    <string name="review_comment">리뷰 코멘트</string>
+
+    <!-- Badges -->
+    <string name="badge_collection">배지 컬렉션</string>
+    <string name="bronze_badge">브론즈</string>
+    <string name="silver_badge">실버</string>
+    <string name="gold_badge">골드</string>
+    <string name="platinum_badge">플래티넘</string>
+    <string name="badge_progress">진행률</string>
+
+    <!-- Citations -->
+    <string name="citation_stats">인용 통계</string>
+    <string name="citation_history">인용 히스토리</string>
+
+    <!-- Talent -->
+    <string name="talent_search">인재 검색</string>
+    <string name="scout_researcher">연구원 스카웃</string>
+    <string name="my_offers">내 제안</string>
+    <string name="send_offer">제안 보내기</string>
+
+    <!-- Profile -->
+    <string name="edit_profile">프로필 편집</string>
+    <string name="public_profile">공개 프로필</string>
+    <string name="profile_visibility">프로필 공개 설정</string>
+    <string name="share_profile">프로필 공유</string>
+
+    <!-- Common -->
+    <string name="loading">로딩 중...</string>
+    <string name="error">오류</string>
+    <string name="retry">재시도</string>
+    <string name="save">저장</string>
+    <string name="cancel">취소</string>
+    <string name="search">검색</string>
+    <string name="doi_prefix">DOI: 10.5281/sqc.2026.</string>
+</resources>

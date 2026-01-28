@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuantumCareer</string>
+    <string name="dashboard">ダッシュボード</string>
+    <string name="publish">発行</string>
+    <string name="circuits">回路</string>
+    <string name="peer_review">ピアレビュー</string>
+    <string name="badges">バッジ</string>
+    <string name="citations">引用</string>
+    <string name="talent">人材</string>
+    <string name="profile">プロフィール</string>
+
+    <!-- Dashboard -->
+    <string name="total_publications">総発行数</string>
+    <string name="total_citations">総引用数</string>
+    <string name="h_index">h指数</string>
+    <string name="i10_index">i10指数</string>
+    <string name="pending_reviews">保留中のレビュー</string>
+    <string name="career_overview">キャリア概要</string>
+
+    <!-- Publish -->
+    <string name="publish_circuit">回路を発行</string>
+    <string name="circuit_title">回路タイトル</string>
+    <string name="circuit_description">説明</string>
+    <string name="circuit_qasm">QASMコード</string>
+    <string name="circuit_tags">タグ（カンマ区切り）</string>
+    <string name="submit_for_review">レビュー申請</string>
+
+    <!-- Circuits -->
+    <string name="my_circuits">マイ回路</string>
+    <string name="published">発行済み</string>
+    <string name="under_review">レビュー中</string>
+    <string name="draft">下書き</string>
+
+    <!-- Peer Review -->
+    <string name="review_circuits">回路をレビュー</string>
+    <string name="submit_review">レビュー提出</string>
+    <string name="approve">承認</string>
+    <string name="request_changes">変更リクエスト</string>
+    <string name="reject">却下</string>
+    <string name="review_comment">レビューコメント</string>
+
+    <!-- Badges -->
+    <string name="badge_collection">バッジコレクション</string>
+    <string name="bronze_badge">ブロンズ</string>
+    <string name="silver_badge">シルバー</string>
+    <string name="gold_badge">ゴールド</string>
+    <string name="platinum_badge">プラチナ</string>
+    <string name="badge_progress">進捗</string>
+
+    <!-- Citations -->
+    <string name="citation_stats">引用統計</string>
+    <string name="citation_history">引用履歴</string>
+
+    <!-- Talent -->
+    <string name="talent_search">人材検索</string>
+    <string name="scout_researcher">研究者をスカウト</string>
+    <string name="my_offers">マイオファー</string>
+    <string name="send_offer">オファーを送信</string>
+
+    <!-- Profile -->
+    <string name="edit_profile">プロフィール編集</string>
+    <string name="public_profile">公開プロフィール</string>
+    <string name="profile_visibility">プロフィール公開設定</string>
+    <string name="share_profile">プロフィールを共有</string>
+
+    <!-- Common -->
+    <string name="loading">読み込み中...</string>
+    <string name="error">エラー</string>
+    <string name="retry">再試行</string>
+    <string name="save">保存</string>
+    <string name="cancel">キャンセル</string>
+    <string name="search">検索</string>
+    <string name="doi_prefix">DOI: 10.5281/sqc.2026.</string>
+</resources>
