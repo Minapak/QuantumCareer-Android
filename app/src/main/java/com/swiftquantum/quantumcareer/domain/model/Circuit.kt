@@ -21,6 +21,9 @@ data class PublishedCircuit(
     val authorName: String,
     val status: CircuitStatus,
     val citationCount: Int,
+    val qubitCount: Int = 2,
+    val viewCount: Int = 0,
+    val forkCount: Int = 0,
     val publishedAt: LocalDateTime?,
     val createdAt: LocalDateTime,
     val updatedAt: LocalDateTime

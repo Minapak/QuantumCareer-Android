@@ -4,7 +4,7 @@ Quantum Computing Career Portfolio Platform for Android
 
 ## Overview
 
-QuantumCareer Android is the Android port of the iOS QuantumCareer app, providing career development tools for quantum computing professionals with DOI-based publishing, peer review, and talent matching.
+QuantumCareer Android is the Android port of the iOS QuantumCareer app, providing career development tools for quantum computing professionals with DOI-based publishing, peer review, and talent matching. Part of the SwiftQuantum Ecosystem.
 
 ## Features
 
@@ -14,6 +14,14 @@ QuantumCareer Android is the Android port of the iOS QuantumCareer app, providin
 - **Citation Tracking**: h-Index and i10-Index metrics
 - **Talent Matching**: Search and scout quantum talent
 - **Public Profile**: Shareable career profiles
+- **Jobs Feature**: Full job search, filtering, and application system
+- **Enhanced Profile**: Contribution heatmap, skill breakdown, portfolio tabs
+- **Settings Screen**: Full configuration with account, notifications, language
+- **Certification Tests**: Timed quizzes with multiple tiers
+- **Rankings System**: Global and local leaderboards
+- **5 Languages**: EN, KO, JA, ZH, DE
+- **Unified Navigation Drawer**: Deep link integration with ecosystem apps
+- **Cross-App Authentication**: Single sign-on across all SwiftQuantum apps
 
 ## Requirements
 

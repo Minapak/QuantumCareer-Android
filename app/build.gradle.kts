@@ -88,10 +88,19 @@ dependencies {
     // Image Loading
     implementation(libs.coil.compose)
 
+    // Lottie for animations
+    implementation("com.airbnb.android:lottie-compose:6.3.0")
+
+    // Adaptive Layout / Window Size Class
+    implementation("androidx.compose.material3:material3-window-size-class")
+
     // Charts
     implementation(libs.vico.compose)
     implementation(libs.vico.compose.m3)
     implementation(libs.vico.core)
+
+    // QR Code
+    implementation(libs.zxing.core)
 
     // Testing
     testImplementation(libs.junit)

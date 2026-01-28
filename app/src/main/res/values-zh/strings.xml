@@ -72,4 +72,438 @@
     <string name="cancel">取消</string>
     <string name="search">搜索</string>
     <string name="doi_prefix">DOI: 10.5281/sqc.2026.</string>
+
+    <!-- Quiz/Test -->
+    <string name="start_test">开始测试</string>
+    <string name="question_x_of_50">问题 %1$d / 50</string>
+    <string name="time_remaining">剩余时间</string>
+    <string name="test_result">测试结果</string>
+    <string name="your_score">您的分数</string>
+    <string name="passing_score">及格分数</string>
+
+    <!-- Certificates -->
+    <string name="certificate_bronze">铜牌证书</string>
+    <string name="certificate_silver">银牌证书</string>
+    <string name="certificate_gold">金牌证书</string>
+    <string name="certificate_platinum">白金证书</string>
+
+    <!-- Rankings -->
+    <string name="global_rankings">全球排名</string>
+    <string name="leaderboard">排行榜</string>
+    <string name="my_rank">我的排名</string>
+    <string name="top_100">前100名</string>
+
+    <!-- Certificate Actions -->
+    <string name="verify_certificate">验证证书</string>
+    <string name="share_certificate">分享证书</string>
+    <string name="download_pdf">下载PDF</string>
+
+    <!-- Additional Common Actions -->
+    <string name="ok">确定</string>
+    <string name="close">关闭</string>
+    <string name="confirm">确认</string>
+    <string name="back">返回</string>
+    <string name="next">下一步</string>
+    <string name="done">完成</string>
+    <string name="success">成功</string>
+    <string name="submit">提交</string>
+    <string name="send">发送</string>
+    <string name="share">分享</string>
+    <string name="copy">复制</string>
+    <string name="download">下载</string>
+    <string name="upload">上传</string>
+    <string name="continue_action">继续</string>
+    <string name="continue_test">继续测试</string>
+    <string name="dismiss">关闭</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="open">打开</string>
+    <string name="accept">接受</string>
+    <string name="decline">拒绝</string>
+    <string name="see_all">查看全部</string>
+    <string name="clear_filters">清除筛选</string>
+    <string name="apply_filters">应用筛选</string>
+    <string name="resume">恢复</string>
+    <string name="abandon">放弃</string>
+
+    <!-- Auth Extended -->
+    <string name="sign_in">登录</string>
+    <string name="sign_up">注册</string>
+    <string name="login">登录</string>
+    <string name="logout">登出</string>
+    <string name="guest_mode">访客模式</string>
+    <string name="name">姓名</string>
+    <string name="email">邮箱</string>
+    <string name="password">密码</string>
+
+    <!-- Navigation Extended -->
+    <string name="home">首页</string>
+    <string name="quiz">测验</string>
+    <string name="rankings">排名</string>
+    <string name="certs">证书</string>
+    <string name="settings">设置</string>
+
+    <!-- Status -->
+    <string name="online">在线</string>
+    <string name="offline">离线</string>
+    <string name="connected">已连接</string>
+    <string name="disconnected">未连接</string>
+    <string name="processing">处理中...</string>
+
+    <!-- Time -->
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="just_now">刚刚</string>
+    <string name="minutes_ago">%1$d分钟前</string>
+    <string name="hours_ago">%1$d小时前</string>
+
+    <!-- Drawer/Navigation -->
+    <string name="features">功能</string>
+    <string name="swiftquantum_ecosystem">SwiftQuantum生态系统</string>
+    <string name="version">版本</string>
+    <string name="about">关于</string>
+    <string name="refresh">刷新</string>
+
+    <!-- Profile Screen -->
+    <string name="display_name">显示名称</string>
+    <string name="bio">简介</string>
+    <string name="bio_placeholder">介绍一下自己...</string>
+    <string name="institution">机构</string>
+    <string name="institution_placeholder">大学、公司或研究机构</string>
+    <string name="location">位置</string>
+    <string name="location_placeholder">城市、国家</string>
+    <string name="website">网站</string>
+    <string name="website_placeholder">https://...</string>
+    <string name="specializations">专长</string>
+    <string name="specializations_placeholder">量子算法、纠错...</string>
+    <string name="separate_commas">用逗号分隔</string>
+
+    <!-- Publish Screen -->
+    <string name="publish_circuit_title">发布电路</string>
+    <string name="enter_descriptive_title">输入描述性标题</string>
+    <string name="describe_circuit">描述您的电路功能...</string>
+    <string name="tags">标签</string>
+    <string name="tags_placeholder">量子、算法、优化</string>
+    <string name="separate_tags_commas">用逗号分隔标签</string>
+
+    <!-- Talent Screen -->
+    <string name="scout_researcher_title">寻访研究员</string>
+    <string name="talent_title">人才</string>
+    <string name="organization">组织</string>
+    <string name="organization_placeholder">您的公司或机构</string>
+    <string name="position_optional">职位（可选）</string>
+    <string name="position_placeholder">例如：高级量子研究员</string>
+    <string name="message">消息</string>
+    <string name="message_placeholder">介绍自己并说明联系原因...</string>
+    <string name="additional_details_optional">附加信息（可选）</string>
+    <string name="additional_details_placeholder">薪酬、福利、项目详情...</string>
+    <string name="search_by_name">按姓名、机构搜索...</string>
+    <string name="min_h_index">最小h指数</string>
+    <string name="min_publications">最小发表数</string>
+    <string name="all">全部</string>
+    <string name="no_results">无结果</string>
+    <string name="received">已收到</string>
+    <string name="sent">已发送</string>
+
+    <!-- Peer Review Screen -->
+    <string name="submit_review_title">提交评审</string>
+    <string name="peer_review_title">同行评审</string>
+    <string name="pending_reviews_count">待处理（%1$d）</string>
+    <string name="my_reviews">我的评审</string>
+    <string name="claim_review">认领评审</string>
+    <string name="provide_feedback">提供详细反馈...</string>
+    <string name="technical_quality">技术质量</string>
+    <string name="innovation">创新性</string>
+    <string name="documentation">文档</string>
+    <string name="no_pending_reviews">没有待处理的评审</string>
+    <string name="no_reviews_yet">暂无评审</string>
+
+    <!-- Rankings Screen -->
+    <string name="my_rank_title">我的排名</string>
+    <string name="tests_completed">完成测试</string>
+    <string name="avg_score">平均分</string>
+    <string name="local_rankings">地区排名</string>
+    <string name="ranking_achievements">排名成就</string>
+    <string name="friends_ranking">好友排名</string>
+    <string name="all_countries">所有国家</string>
+
+    <!-- Certificates Screen -->
+    <string name="no_certificates_yet">暂无证书</string>
+    <string name="take_certification_test">参加认证测试</string>
+    <string name="active_certificates">有效证书</string>
+    <string name="expired_certificates">过期证书</string>
+    <string name="verification">验证</string>
+
+    <!-- Test/Quiz Screen -->
+    <string name="certification_test">认证测试</string>
+    <string name="question_number">问题 %1$d</string>
+    <string name="submit_answer">提交答案</string>
+    <string name="abandon_test">放弃测试？</string>
+    <string name="abandon_test_message">确定要放弃此测试吗？您的进度将丢失，并计为未完成的尝试。</string>
+    <string name="test_rules">测试规则</string>
+    <string name="start_test_button">开始测试</string>
+    <string name="certification_tiers">认证等级</string>
+    <string name="your_history">历史记录</string>
+    <string name="attempts">尝试次数</string>
+    <string name="best_score">最高分</string>
+    <string name="pass_rate">通过率</string>
+    <string name="question_categories">问题类别</string>
+
+    <!-- Test Results Screen -->
+    <string name="test_results">测试结果</string>
+    <string name="view_certificate">查看证书</string>
+    <string name="take_another_test">参加其他测试</string>
+    <string name="back_to_dashboard">返回仪表板</string>
+    <string name="score_breakdown">分数明细</string>
+    <string name="performance_by_category">按类别表现</string>
+    <string name="test_statistics">测试统计</string>
+    <string name="time_spent">用时</string>
+    <string name="accuracy">准确率</string>
+
+    <!-- Circuits Screen -->
+    <string name="no_circuits_yet">暂无电路</string>
+    <string name="all_circuits">所有电路</string>
+    <string name="delete_circuit">删除电路</string>
+
+    <!-- Badges Screen -->
+    <string name="next_achievement">下一个成就</string>
+    <string name="badge_requirements">徽章要求</string>
+    <string name="all_badges">所有徽章</string>
+
+    <!-- Citations Screen -->
+    <string name="top_cited_circuits">引用最多的电路</string>
+    <string name="summary">摘要</string>
+    <string name="publications">发表</string>
+    <string name="this_month">本月 +%1$d</string>
+    <string name="recent_activity">最近活动</string>
+
+    <!-- Dashboard Screen -->
+    <string name="quick_actions">快速操作</string>
+    <string name="featured_jobs">精选职位</string>
+    <string name="industry_readiness">行业准备度</string>
+    <string name="industry_readiness_score">行业准备度分数</string>
+    <string name="quick_stats">快速统计</string>
+    <string name="global_rank">全球排名</string>
+    <string name="certificates_count">证书</string>
+    <string name="view_jobs">查看职位</string>
+    <string name="see_breakdown">查看详情</string>
+    <string name="evidence_breakdown">证据详情</string>
+
+    <!-- Jobs Screen -->
+    <string name="jobs">职位</string>
+    <string name="browse_jobs">浏览职位</string>
+    <string name="recommended">推荐</string>
+    <string name="saved_jobs">已保存职位</string>
+    <string name="applications">申请</string>
+    <string name="search_jobs">搜索职位...</string>
+    <string name="filter_jobs">筛选职位</string>
+    <string name="no_jobs_found">未找到职位</string>
+    <string name="no_recommended_jobs">暂无推荐职位</string>
+    <string name="no_saved_jobs">暂无已保存职位</string>
+    <string name="no_applications">暂无申请</string>
+    <string name="job_match">%d%%匹配</string>
+    <string name="jobs_count">%d个职位</string>
+    <string name="active_applications">进行中的申请</string>
+    <string name="total_applications">全部申请</string>
+    <string name="interview_rate">面试率</string>
+
+    <!-- Job Detail Screen -->
+    <string name="job_details">职位详情</string>
+    <string name="about_role">关于职位</string>
+    <string name="requirements">要求</string>
+    <string name="responsibilities">职责</string>
+    <string name="required_skills">必备技能</string>
+    <string name="preferred_skills">优先技能</string>
+    <string name="benefits">福利</string>
+    <string name="about_company">公司简介</string>
+    <string name="company_size">公司规模</string>
+    <string name="industry">行业</string>
+    <string name="founded">成立于</string>
+    <string name="headquarters">总部</string>
+    <string name="salary_range">薪资范围</string>
+    <string name="apply_now">立即申请</string>
+    <string name="save_job">保存职位</string>
+    <string name="unsave_job">取消保存</string>
+    <string name="job_saved">职位已保存</string>
+    <string name="job_unsaved">已从保存中移除</string>
+    <string name="application_deadline">申请截止日期</string>
+    <string name="posted_date">发布于 %s</string>
+    <string name="applicants_count">%d人申请</string>
+    <string name="match_score">匹配分数</string>
+    <string name="why_good_match">为什么您很适合</string>
+    <string name="skill_match">技能匹配</string>
+    <string name="experience_match">经验匹配</string>
+    <string name="certification_match">证书匹配</string>
+
+    <!-- Job Filter -->
+    <string name="filter">筛选</string>
+    <string name="location_type">工作地点</string>
+    <string name="remote">远程</string>
+    <string name="hybrid">混合</string>
+    <string name="on_site">现场</string>
+    <string name="employment_type">雇佣类型</string>
+    <string name="full_time">全职</string>
+    <string name="part_time">兼职</string>
+    <string name="contract">合同</string>
+    <string name="internship">实习</string>
+    <string name="freelance">自由职业</string>
+    <string name="experience_level">经验级别</string>
+    <string name="entry_level">初级</string>
+    <string name="mid_level">中级</string>
+    <string name="senior_level">高级</string>
+    <string name="lead">主管</string>
+    <string name="executive">高管</string>
+    <string name="skills_filter">技能</string>
+    <string name="add_skill">添加技能</string>
+    <string name="minimum_salary">最低薪资</string>
+    <string name="clear_all">全部清除</string>
+
+    <!-- Job Application -->
+    <string name="apply_to_job">申请职位</string>
+    <string name="cover_letter">求职信</string>
+    <string name="cover_letter_placeholder">在这里写您的求职信...</string>
+    <string name="include_cover_letter">包含求职信</string>
+    <string name="resume_url">简历URL</string>
+    <string name="resume_url_placeholder">简历链接（可选）</string>
+    <string name="upload_resume">上传简历</string>
+    <string name="submit_application">提交申请</string>
+    <string name="application_submitted">申请已提交！</string>
+    <string name="application_submitted_message">您的申请已成功提交。</string>
+
+    <!-- Application Status -->
+    <string name="application_status">申请状态</string>
+    <string name="status_submitted">已提交</string>
+    <string name="status_under_review">审核中</string>
+    <string name="status_interview_scheduled">面试已安排</string>
+    <string name="status_offer_received">已收到录用</string>
+    <string name="status_rejected">已拒绝</string>
+    <string name="status_withdrawn">已撤回</string>
+    <string name="applied_on">申请于 %s</string>
+    <string name="last_updated">最后更新 %s</string>
+
+    <!-- Settings Screen -->
+    <string name="account">账户</string>
+    <string name="account_settings">账户设置</string>
+    <string name="notifications">通知</string>
+    <string name="notification_settings">通知设置</string>
+    <string name="push_notifications">推送通知</string>
+    <string name="email_notifications">邮件通知</string>
+    <string name="job_alerts">职位提醒</string>
+    <string name="quiz_reminders">测验提醒</string>
+    <string name="certificate_updates">证书更新</string>
+    <string name="appearance">外观</string>
+    <string name="dark_mode">深色模式</string>
+    <string name="language">语言</string>
+    <string name="select_language">选择语言</string>
+    <string name="english">English</string>
+    <string name="korean">한국어</string>
+    <string name="japanese">日本語</string>
+    <string name="chinese">中文</string>
+    <string name="german">Deutsch</string>
+    <string name="subscription">订阅</string>
+    <string name="subscription_plan">订阅计划</string>
+    <string name="free_plan">免费</string>
+    <string name="pro_plan">Pro</string>
+    <string name="enterprise_plan">Enterprise</string>
+    <string name="upgrade_to_pro">升级到Pro</string>
+    <string name="manage_subscription">管理订阅</string>
+    <string name="integrations">集成</string>
+    <string name="connect_linkedin">连接LinkedIn</string>
+    <string name="linkedin_connected">LinkedIn已连接</string>
+    <string name="disconnect">断开连接</string>
+    <string name="support">支持</string>
+    <string name="help_center">帮助中心</string>
+    <string name="contact_support">联系支持</string>
+    <string name="report_bug">报告bug</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="terms_of_service">服务条款</string>
+    <string name="app_version">应用版本</string>
+    <string name="logout_confirmation">退出登录？</string>
+    <string name="logout_confirmation_message">确定要退出登录吗？</string>
+    <string name="delete_account">删除账户</string>
+    <string name="delete_account_confirmation">删除账户？</string>
+    <string name="delete_account_message">此操作无法撤消。所有数据将被永久删除。</string>
+
+    <!-- Enhanced Profile Screen -->
+    <string name="overview">概览</string>
+    <string name="portfolio">作品集</string>
+    <string name="contribution_timeline">贡献时间线</string>
+    <string name="contribution_activity">贡献活动</string>
+    <string name="day_streak">%d天连续</string>
+    <string name="contributions_this_year">今年%d次贡献</string>
+    <string name="current_streak">当前连续</string>
+    <string name="longest_streak">最长连续</string>
+    <string name="total_contributions">总贡献</string>
+    <string name="days">天</string>
+    <string name="export_pdf">导出PDF</string>
+    <string name="export_pdf_portfolio">导出PDF作品集</string>
+    <string name="pdf_exported">PDF导出成功</string>
+    <string name="share_on_linkedin">分享到LinkedIn</string>
+    <string name="earned_badges">已获得徽章</string>
+    <string name="in_progress_badges">进行中</string>
+    <string name="badge_earned">获得徽章</string>
+    <string name="progress_x_of_y">%1$d / %2$d</string>
+    <string name="skill_breakdown">技能分析</string>
+    <string name="logic">逻辑</string>
+    <string name="contribution">贡献</string>
+    <string name="stability">稳定性</string>
+    <string name="speed">速度</string>
+    <string name="circuit_stats">电路统计</string>
+    <string name="views">浏览量</string>
+    <string name="forks">分支</string>
+
+    <!-- Certificate Levels -->
+    <string name="foundation">Foundation</string>
+    <string name="associate">Associate</string>
+    <string name="professional">Professional</string>
+    <string name="expert">Expert</string>
+    <string name="certificate_level">证书级别</string>
+    <string name="valid_until">有效期至 %s</string>
+    <string name="expired_on">已于 %s 过期</string>
+    <string name="certificate_id">证书ID</string>
+    <string name="credential_id">凭证ID: %s</string>
+    <string name="issue_date">颁发日期</string>
+    <string name="expiry_date">到期日期</string>
+
+    <!-- Ranking Periods -->
+    <string name="all_time">全部时间</string>
+    <string name="this_week">本周</string>
+    <string name="monthly">月度</string>
+    <string name="quarterly">季度</string>
+    <string name="yearly">年度</string>
+    <string name="rank_change">%+d名</string>
+    <string name="percentile">前%d%%</string>
+
+    <!-- Auth Screen Extended -->
+    <string name="welcome_back">欢迎回来</string>
+    <string name="create_account">创建账户</string>
+    <string name="forgot_password">忘记密码？</string>
+    <string name="reset_password">重置密码</string>
+    <string name="or_continue_with">或使用以下方式继续</string>
+    <string name="sign_in_with_google">使用Google登录</string>
+    <string name="sign_in_with_apple">使用Apple登录</string>
+    <string name="sign_in_with_linkedin">使用LinkedIn登录</string>
+    <string name="dont_have_account">还没有账户？</string>
+    <string name="already_have_account">已有账户？</string>
+    <string name="continue_as_guest">以访客身份继续</string>
+    <string name="by_signing_up">注册即表示您同意我们的</string>
+    <string name="and">和</string>
+
+    <!-- Error Messages -->
+    <string name="error_loading_jobs">加载职位时出错</string>
+    <string name="error_loading_job_details">加载职位详情时出错</string>
+    <string name="error_submitting_application">提交申请时出错</string>
+    <string name="error_saving_job">保存职位时出错</string>
+    <string name="error_network">网络错误。请检查您的连接。</string>
+    <string name="error_server">服务器错误。请稍后再试。</string>
+    <string name="error_unknown">发生未知错误</string>
+
+    <!-- Empty States -->
+    <string name="no_data">无数据</string>
+    <string name="no_internet">无网络连接</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="tap_to_retry">点击重试</string>
+    <string name="browse_available_jobs">浏览可用职位</string>
+    <string name="save_jobs_for_later">保存职位以便稍后查看</string>
+    <string name="start_applying">开始申请职位</string>
 </resources>

@@ -72,4 +72,438 @@
     <string name="cancel">취소</string>
     <string name="search">검색</string>
     <string name="doi_prefix">DOI: 10.5281/sqc.2026.</string>
+
+    <!-- Quiz/Test -->
+    <string name="start_test">시험 시작</string>
+    <string name="question_x_of_50">질문 %1$d / 50</string>
+    <string name="time_remaining">남은 시간</string>
+    <string name="test_result">시험 결과</string>
+    <string name="your_score">내 점수</string>
+    <string name="passing_score">합격 점수</string>
+
+    <!-- Certificates -->
+    <string name="certificate_bronze">브론즈 자격증</string>
+    <string name="certificate_silver">실버 자격증</string>
+    <string name="certificate_gold">골드 자격증</string>
+    <string name="certificate_platinum">플래티넘 자격증</string>
+
+    <!-- Rankings -->
+    <string name="global_rankings">글로벌 랭킹</string>
+    <string name="leaderboard">리더보드</string>
+    <string name="my_rank">내 순위</string>
+    <string name="top_100">상위 100</string>
+
+    <!-- Certificate Actions -->
+    <string name="verify_certificate">자격증 인증</string>
+    <string name="share_certificate">자격증 공유</string>
+    <string name="download_pdf">PDF 다운로드</string>
+
+    <!-- Additional Common Actions -->
+    <string name="ok">확인</string>
+    <string name="close">닫기</string>
+    <string name="confirm">확인</string>
+    <string name="back">뒤로</string>
+    <string name="next">다음</string>
+    <string name="done">완료</string>
+    <string name="success">성공</string>
+    <string name="submit">제출</string>
+    <string name="send">전송</string>
+    <string name="share">공유</string>
+    <string name="copy">복사</string>
+    <string name="download">다운로드</string>
+    <string name="upload">업로드</string>
+    <string name="continue_action">계속</string>
+    <string name="continue_test">시험 계속</string>
+    <string name="dismiss">닫기</string>
+    <string name="delete">삭제</string>
+    <string name="edit">편집</string>
+    <string name="open">열기</string>
+    <string name="accept">수락</string>
+    <string name="decline">거절</string>
+    <string name="see_all">전체 보기</string>
+    <string name="clear_filters">필터 지우기</string>
+    <string name="apply_filters">필터 적용</string>
+    <string name="resume">재개</string>
+    <string name="abandon">포기</string>
+
+    <!-- Auth Extended -->
+    <string name="sign_in">로그인</string>
+    <string name="sign_up">회원가입</string>
+    <string name="login">로그인</string>
+    <string name="logout">로그아웃</string>
+    <string name="guest_mode">게스트 모드</string>
+    <string name="name">이름</string>
+    <string name="email">이메일</string>
+    <string name="password">비밀번호</string>
+
+    <!-- Navigation Extended -->
+    <string name="home">홈</string>
+    <string name="quiz">퀴즈</string>
+    <string name="rankings">랭킹</string>
+    <string name="certs">자격증</string>
+    <string name="settings">설정</string>
+
+    <!-- Status -->
+    <string name="online">온라인</string>
+    <string name="offline">오프라인</string>
+    <string name="connected">연결됨</string>
+    <string name="disconnected">연결 안됨</string>
+    <string name="processing">처리 중...</string>
+
+    <!-- Time -->
+    <string name="today">오늘</string>
+    <string name="yesterday">어제</string>
+    <string name="just_now">방금 전</string>
+    <string name="minutes_ago">%1$d분 전</string>
+    <string name="hours_ago">%1$d시간 전</string>
+
+    <!-- Drawer/Navigation -->
+    <string name="features">기능</string>
+    <string name="swiftquantum_ecosystem">SwiftQuantum 생태계</string>
+    <string name="version">버전</string>
+    <string name="about">정보</string>
+    <string name="refresh">새로고침</string>
+
+    <!-- Profile Screen -->
+    <string name="display_name">표시 이름</string>
+    <string name="bio">소개</string>
+    <string name="bio_placeholder">자신에 대해 소개해주세요...</string>
+    <string name="institution">소속</string>
+    <string name="institution_placeholder">대학, 회사 또는 연구소</string>
+    <string name="location">위치</string>
+    <string name="location_placeholder">도시, 국가</string>
+    <string name="website">웹사이트</string>
+    <string name="website_placeholder">https://...</string>
+    <string name="specializations">전문 분야</string>
+    <string name="specializations_placeholder">양자 알고리즘, 오류 정정...</string>
+    <string name="separate_commas">쉼표로 구분</string>
+
+    <!-- Publish Screen -->
+    <string name="publish_circuit_title">회로 발행</string>
+    <string name="enter_descriptive_title">설명적인 제목을 입력하세요</string>
+    <string name="describe_circuit">회로의 기능을 설명하세요...</string>
+    <string name="tags">태그</string>
+    <string name="tags_placeholder">양자, 알고리즘, 최적화</string>
+    <string name="separate_tags_commas">쉼표로 태그 구분</string>
+
+    <!-- Talent Screen -->
+    <string name="scout_researcher_title">연구원 스카웃</string>
+    <string name="talent_title">인재</string>
+    <string name="organization">조직</string>
+    <string name="organization_placeholder">회사 또는 소속 기관</string>
+    <string name="position_optional">직책 (선택)</string>
+    <string name="position_placeholder">예: 선임 양자 연구원</string>
+    <string name="message">메시지</string>
+    <string name="message_placeholder">자신을 소개하고 연락하는 이유를 설명하세요...</string>
+    <string name="additional_details_optional">추가 세부 사항 (선택)</string>
+    <string name="additional_details_placeholder">보상, 혜택, 프로젝트 세부 정보...</string>
+    <string name="search_by_name">이름, 소속으로 검색...</string>
+    <string name="min_h_index">최소 h-지수</string>
+    <string name="min_publications">최소 발행 수</string>
+    <string name="all">전체</string>
+    <string name="no_results">결과 없음</string>
+    <string name="received">받음</string>
+    <string name="sent">보냄</string>
+
+    <!-- Peer Review Screen -->
+    <string name="submit_review_title">리뷰 제출</string>
+    <string name="peer_review_title">피어 리뷰</string>
+    <string name="pending_reviews_count">대기 중 (%1$d)</string>
+    <string name="my_reviews">내 리뷰</string>
+    <string name="claim_review">리뷰 신청</string>
+    <string name="provide_feedback">상세한 피드백을 제공하세요...</string>
+    <string name="technical_quality">기술적 품질</string>
+    <string name="innovation">혁신성</string>
+    <string name="documentation">문서화</string>
+    <string name="no_pending_reviews">대기 중인 리뷰 없음</string>
+    <string name="no_reviews_yet">아직 리뷰 없음</string>
+
+    <!-- Rankings Screen -->
+    <string name="my_rank_title">내 순위</string>
+    <string name="tests_completed">완료한 시험</string>
+    <string name="avg_score">평균 점수</string>
+    <string name="local_rankings">지역 순위</string>
+    <string name="ranking_achievements">순위 업적</string>
+    <string name="friends_ranking">친구 순위</string>
+    <string name="all_countries">모든 국가</string>
+
+    <!-- Certificates Screen -->
+    <string name="no_certificates_yet">아직 자격증 없음</string>
+    <string name="take_certification_test">자격증 시험 응시</string>
+    <string name="active_certificates">활성 자격증</string>
+    <string name="expired_certificates">만료된 자격증</string>
+    <string name="verification">인증</string>
+
+    <!-- Test/Quiz Screen -->
+    <string name="certification_test">자격증 시험</string>
+    <string name="question_number">질문 %1$d</string>
+    <string name="submit_answer">답변 제출</string>
+    <string name="abandon_test">시험 포기?</string>
+    <string name="abandon_test_message">정말 이 시험을 포기하시겠습니까? 진행 상황이 손실되며 미완료 시도로 기록됩니다.</string>
+    <string name="test_rules">시험 규칙</string>
+    <string name="start_test_button">시험 시작</string>
+    <string name="certification_tiers">자격증 등급</string>
+    <string name="your_history">기록</string>
+    <string name="attempts">시도</string>
+    <string name="best_score">최고 점수</string>
+    <string name="pass_rate">합격률</string>
+    <string name="question_categories">질문 카테고리</string>
+
+    <!-- Test Results Screen -->
+    <string name="test_results">시험 결과</string>
+    <string name="view_certificate">자격증 보기</string>
+    <string name="take_another_test">다른 시험 응시</string>
+    <string name="back_to_dashboard">대시보드로 돌아가기</string>
+    <string name="score_breakdown">점수 분석</string>
+    <string name="performance_by_category">카테고리별 성과</string>
+    <string name="test_statistics">시험 통계</string>
+    <string name="time_spent">소요 시간</string>
+    <string name="accuracy">정확도</string>
+
+    <!-- Circuits Screen -->
+    <string name="no_circuits_yet">아직 회로 없음</string>
+    <string name="all_circuits">모든 회로</string>
+    <string name="delete_circuit">회로 삭제</string>
+
+    <!-- Badges Screen -->
+    <string name="next_achievement">다음 업적</string>
+    <string name="badge_requirements">배지 요구사항</string>
+    <string name="all_badges">모든 배지</string>
+
+    <!-- Citations Screen -->
+    <string name="top_cited_circuits">가장 많이 인용된 회로</string>
+    <string name="summary">요약</string>
+    <string name="publications">발행물</string>
+    <string name="this_month">이번 달 +%1$d</string>
+    <string name="recent_activity">최근 활동</string>
+
+    <!-- Dashboard Screen -->
+    <string name="quick_actions">빠른 작업</string>
+    <string name="featured_jobs">추천 채용</string>
+    <string name="industry_readiness">산업 준비도</string>
+    <string name="industry_readiness_score">산업 준비도 점수</string>
+    <string name="quick_stats">빠른 통계</string>
+    <string name="global_rank">글로벌 순위</string>
+    <string name="certificates_count">자격증</string>
+    <string name="view_jobs">채용 보기</string>
+    <string name="see_breakdown">세부 보기</string>
+    <string name="evidence_breakdown">증거 분석</string>
+
+    <!-- Jobs Screen -->
+    <string name="jobs">채용</string>
+    <string name="browse_jobs">채용 검색</string>
+    <string name="recommended">추천</string>
+    <string name="saved_jobs">저장된 채용</string>
+    <string name="applications">지원서</string>
+    <string name="search_jobs">채용 검색...</string>
+    <string name="filter_jobs">채용 필터</string>
+    <string name="no_jobs_found">채용 정보를 찾을 수 없습니다</string>
+    <string name="no_recommended_jobs">추천 채용이 없습니다</string>
+    <string name="no_saved_jobs">저장된 채용이 없습니다</string>
+    <string name="no_applications">지원서가 없습니다</string>
+    <string name="job_match">%d%% 매칭</string>
+    <string name="jobs_count">%d개 채용</string>
+    <string name="active_applications">활성 지원서</string>
+    <string name="total_applications">전체 지원서</string>
+    <string name="interview_rate">면접률</string>
+
+    <!-- Job Detail Screen -->
+    <string name="job_details">채용 상세</string>
+    <string name="about_role">직무 소개</string>
+    <string name="requirements">요구사항</string>
+    <string name="responsibilities">담당 업무</string>
+    <string name="required_skills">필수 기술</string>
+    <string name="preferred_skills">우대 기술</string>
+    <string name="benefits">복리후생</string>
+    <string name="about_company">회사 소개</string>
+    <string name="company_size">회사 규모</string>
+    <string name="industry">산업</string>
+    <string name="founded">설립</string>
+    <string name="headquarters">본사</string>
+    <string name="salary_range">급여 범위</string>
+    <string name="apply_now">지금 지원</string>
+    <string name="save_job">채용 저장</string>
+    <string name="unsave_job">저장 취소</string>
+    <string name="job_saved">채용이 저장되었습니다</string>
+    <string name="job_unsaved">저장된 채용에서 삭제되었습니다</string>
+    <string name="application_deadline">지원 마감</string>
+    <string name="posted_date">%s 게시됨</string>
+    <string name="applicants_count">%d명 지원</string>
+    <string name="match_score">매칭 점수</string>
+    <string name="why_good_match">당신과 잘 맞는 이유</string>
+    <string name="skill_match">기술 매칭</string>
+    <string name="experience_match">경력 매칭</string>
+    <string name="certification_match">자격증 매칭</string>
+
+    <!-- Job Filter -->
+    <string name="filter">필터</string>
+    <string name="location_type">근무 형태</string>
+    <string name="remote">원격</string>
+    <string name="hybrid">하이브리드</string>
+    <string name="on_site">현장</string>
+    <string name="employment_type">고용 형태</string>
+    <string name="full_time">정규직</string>
+    <string name="part_time">파트타임</string>
+    <string name="contract">계약직</string>
+    <string name="internship">인턴십</string>
+    <string name="freelance">프리랜서</string>
+    <string name="experience_level">경력 수준</string>
+    <string name="entry_level">신입</string>
+    <string name="mid_level">중급</string>
+    <string name="senior_level">시니어</string>
+    <string name="lead">리드</string>
+    <string name="executive">임원</string>
+    <string name="skills_filter">기술</string>
+    <string name="add_skill">기술 추가</string>
+    <string name="minimum_salary">최소 급여</string>
+    <string name="clear_all">전체 지우기</string>
+
+    <!-- Job Application -->
+    <string name="apply_to_job">채용 지원</string>
+    <string name="cover_letter">자기소개서</string>
+    <string name="cover_letter_placeholder">자기소개서를 작성하세요...</string>
+    <string name="include_cover_letter">자기소개서 포함</string>
+    <string name="resume_url">이력서 URL</string>
+    <string name="resume_url_placeholder">이력서 링크 (선택)</string>
+    <string name="upload_resume">이력서 업로드</string>
+    <string name="submit_application">지원서 제출</string>
+    <string name="application_submitted">지원 완료!</string>
+    <string name="application_submitted_message">지원서가 성공적으로 제출되었습니다.</string>
+
+    <!-- Application Status -->
+    <string name="application_status">지원 상태</string>
+    <string name="status_submitted">제출됨</string>
+    <string name="status_under_review">검토 중</string>
+    <string name="status_interview_scheduled">면접 예정</string>
+    <string name="status_offer_received">오퍼 수신</string>
+    <string name="status_rejected">불합격</string>
+    <string name="status_withdrawn">철회됨</string>
+    <string name="applied_on">%s에 지원</string>
+    <string name="last_updated">최종 업데이트 %s</string>
+
+    <!-- Settings Screen -->
+    <string name="account">계정</string>
+    <string name="account_settings">계정 설정</string>
+    <string name="notifications">알림</string>
+    <string name="notification_settings">알림 설정</string>
+    <string name="push_notifications">푸시 알림</string>
+    <string name="email_notifications">이메일 알림</string>
+    <string name="job_alerts">채용 알림</string>
+    <string name="quiz_reminders">퀴즈 알림</string>
+    <string name="certificate_updates">자격증 업데이트</string>
+    <string name="appearance">외관</string>
+    <string name="dark_mode">다크 모드</string>
+    <string name="language">언어</string>
+    <string name="select_language">언어 선택</string>
+    <string name="english">English</string>
+    <string name="korean">한국어</string>
+    <string name="japanese">日本語</string>
+    <string name="chinese">中文</string>
+    <string name="german">Deutsch</string>
+    <string name="subscription">구독</string>
+    <string name="subscription_plan">구독 플랜</string>
+    <string name="free_plan">무료</string>
+    <string name="pro_plan">Pro</string>
+    <string name="enterprise_plan">Enterprise</string>
+    <string name="upgrade_to_pro">Pro로 업그레이드</string>
+    <string name="manage_subscription">구독 관리</string>
+    <string name="integrations">연동</string>
+    <string name="connect_linkedin">LinkedIn 연결</string>
+    <string name="linkedin_connected">LinkedIn 연결됨</string>
+    <string name="disconnect">연결 해제</string>
+    <string name="support">지원</string>
+    <string name="help_center">도움말 센터</string>
+    <string name="contact_support">고객 지원</string>
+    <string name="report_bug">버그 신고</string>
+    <string name="privacy_policy">개인정보 처리방침</string>
+    <string name="terms_of_service">서비스 이용약관</string>
+    <string name="app_version">앱 버전</string>
+    <string name="logout_confirmation">로그아웃?</string>
+    <string name="logout_confirmation_message">정말 로그아웃하시겠습니까?</string>
+    <string name="delete_account">계정 삭제</string>
+    <string name="delete_account_confirmation">계정 삭제?</string>
+    <string name="delete_account_message">이 작업은 취소할 수 없습니다. 모든 데이터가 영구적으로 삭제됩니다.</string>
+
+    <!-- Enhanced Profile Screen -->
+    <string name="overview">개요</string>
+    <string name="portfolio">포트폴리오</string>
+    <string name="contribution_timeline">기여 타임라인</string>
+    <string name="contribution_activity">기여 활동</string>
+    <string name="day_streak">%d일 연속</string>
+    <string name="contributions_this_year">올해 %d회 기여</string>
+    <string name="current_streak">현재 연속</string>
+    <string name="longest_streak">최장 연속</string>
+    <string name="total_contributions">총 기여</string>
+    <string name="days">일</string>
+    <string name="export_pdf">PDF 내보내기</string>
+    <string name="export_pdf_portfolio">PDF 포트폴리오 내보내기</string>
+    <string name="pdf_exported">PDF가 성공적으로 내보내졌습니다</string>
+    <string name="share_on_linkedin">LinkedIn에 공유</string>
+    <string name="earned_badges">획득한 배지</string>
+    <string name="in_progress_badges">진행 중</string>
+    <string name="badge_earned">배지 획득</string>
+    <string name="progress_x_of_y">%1$d / %2$d</string>
+    <string name="skill_breakdown">기술 분석</string>
+    <string name="logic">논리</string>
+    <string name="contribution">기여</string>
+    <string name="stability">안정성</string>
+    <string name="speed">속도</string>
+    <string name="circuit_stats">회로 통계</string>
+    <string name="views">조회수</string>
+    <string name="forks">포크</string>
+
+    <!-- Certificate Levels -->
+    <string name="foundation">Foundation</string>
+    <string name="associate">Associate</string>
+    <string name="professional">Professional</string>
+    <string name="expert">Expert</string>
+    <string name="certificate_level">자격증 등급</string>
+    <string name="valid_until">%s까지 유효</string>
+    <string name="expired_on">%s에 만료됨</string>
+    <string name="certificate_id">자격증 ID</string>
+    <string name="credential_id">자격증 ID: %s</string>
+    <string name="issue_date">발급일</string>
+    <string name="expiry_date">만료일</string>
+
+    <!-- Ranking Periods -->
+    <string name="all_time">전체</string>
+    <string name="this_week">이번 주</string>
+    <string name="monthly">월간</string>
+    <string name="quarterly">분기</string>
+    <string name="yearly">연간</string>
+    <string name="rank_change">%+d 순위</string>
+    <string name="percentile">상위 %d%%</string>
+
+    <!-- Auth Screen Extended -->
+    <string name="welcome_back">다시 오셨군요</string>
+    <string name="create_account">계정 만들기</string>
+    <string name="forgot_password">비밀번호 찾기</string>
+    <string name="reset_password">비밀번호 재설정</string>
+    <string name="or_continue_with">또는 다음으로 계속</string>
+    <string name="sign_in_with_google">Google로 로그인</string>
+    <string name="sign_in_with_apple">Apple로 로그인</string>
+    <string name="sign_in_with_linkedin">LinkedIn으로 로그인</string>
+    <string name="dont_have_account">계정이 없으신가요?</string>
+    <string name="already_have_account">이미 계정이 있으신가요?</string>
+    <string name="continue_as_guest">게스트로 계속</string>
+    <string name="by_signing_up">가입하시면 다음에 동의하시는 것입니다</string>
+    <string name="and">및</string>
+
+    <!-- Error Messages -->
+    <string name="error_loading_jobs">채용 정보 로딩 오류</string>
+    <string name="error_loading_job_details">채용 상세 로딩 오류</string>
+    <string name="error_submitting_application">지원서 제출 오류</string>
+    <string name="error_saving_job">채용 저장 오류</string>
+    <string name="error_network">네트워크 오류. 연결을 확인해주세요.</string>
+    <string name="error_server">서버 오류. 나중에 다시 시도해주세요.</string>
+    <string name="error_unknown">알 수 없는 오류가 발생했습니다</string>
+
+    <!-- Empty States -->
+    <string name="no_data">데이터가 없습니다</string>
+    <string name="no_internet">인터넷 연결 없음</string>
+    <string name="pull_to_refresh">당겨서 새로고침</string>
+    <string name="tap_to_retry">탭하여 재시도</string>
+    <string name="browse_available_jobs">채용 정보 둘러보기</string>
+    <string name="save_jobs_for_later">나중을 위해 채용 저장</string>
+    <string name="start_applying">채용 지원 시작</string>
 </resources>

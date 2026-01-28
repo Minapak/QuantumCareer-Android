@@ -72,4 +72,438 @@
     <string name="cancel">Abbrechen</string>
     <string name="search">Suchen</string>
     <string name="doi_prefix">DOI: 10.5281/sqc.2026.</string>
+
+    <!-- Quiz/Test -->
+    <string name="start_test">Test starten</string>
+    <string name="question_x_of_50">Frage %1$d von 50</string>
+    <string name="time_remaining">Verbleibende Zeit</string>
+    <string name="test_result">Testergebnis</string>
+    <string name="your_score">Ihre Punktzahl</string>
+    <string name="passing_score">Bestehensgrenze</string>
+
+    <!-- Certificates -->
+    <string name="certificate_bronze">Bronze-Zertifikat</string>
+    <string name="certificate_silver">Silber-Zertifikat</string>
+    <string name="certificate_gold">Gold-Zertifikat</string>
+    <string name="certificate_platinum">Platin-Zertifikat</string>
+
+    <!-- Rankings -->
+    <string name="global_rankings">Globale Rangliste</string>
+    <string name="leaderboard">Bestenliste</string>
+    <string name="my_rank">Mein Rang</string>
+    <string name="top_100">Top 100</string>
+
+    <!-- Certificate Actions -->
+    <string name="verify_certificate">Zertifikat verifizieren</string>
+    <string name="share_certificate">Zertifikat teilen</string>
+    <string name="download_pdf">PDF herunterladen</string>
+
+    <!-- Additional Common Actions -->
+    <string name="ok">OK</string>
+    <string name="close">Schließen</string>
+    <string name="confirm">Bestätigen</string>
+    <string name="back">Zurück</string>
+    <string name="next">Weiter</string>
+    <string name="done">Fertig</string>
+    <string name="success">Erfolg</string>
+    <string name="submit">Absenden</string>
+    <string name="send">Senden</string>
+    <string name="share">Teilen</string>
+    <string name="copy">Kopieren</string>
+    <string name="download">Herunterladen</string>
+    <string name="upload">Hochladen</string>
+    <string name="continue_action">Fortfahren</string>
+    <string name="continue_test">Test fortsetzen</string>
+    <string name="dismiss">Schließen</string>
+    <string name="delete">Löschen</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="open">Öffnen</string>
+    <string name="accept">Annehmen</string>
+    <string name="decline">Ablehnen</string>
+    <string name="see_all">Alle anzeigen</string>
+    <string name="clear_filters">Filter löschen</string>
+    <string name="apply_filters">Filter anwenden</string>
+    <string name="resume">Fortsetzen</string>
+    <string name="abandon">Abbrechen</string>
+
+    <!-- Auth Extended -->
+    <string name="sign_in">Anmelden</string>
+    <string name="sign_up">Registrieren</string>
+    <string name="login">Anmelden</string>
+    <string name="logout">Abmelden</string>
+    <string name="guest_mode">Gastmodus</string>
+    <string name="name">Name</string>
+    <string name="email">E-Mail</string>
+    <string name="password">Passwort</string>
+
+    <!-- Navigation Extended -->
+    <string name="home">Startseite</string>
+    <string name="quiz">Quiz</string>
+    <string name="rankings">Ranglisten</string>
+    <string name="certs">Zertifikate</string>
+    <string name="settings">Einstellungen</string>
+
+    <!-- Status -->
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="connected">Verbunden</string>
+    <string name="disconnected">Nicht verbunden</string>
+    <string name="processing">Wird verarbeitet...</string>
+
+    <!-- Time -->
+    <string name="today">Heute</string>
+    <string name="yesterday">Gestern</string>
+    <string name="just_now">Gerade eben</string>
+    <string name="minutes_ago">vor %1$d Minuten</string>
+    <string name="hours_ago">vor %1$d Stunden</string>
+
+    <!-- Drawer/Navigation -->
+    <string name="features">Funktionen</string>
+    <string name="swiftquantum_ecosystem">SwiftQuantum-Ökosystem</string>
+    <string name="version">Version</string>
+    <string name="about">Über</string>
+    <string name="refresh">Aktualisieren</string>
+
+    <!-- Profile Screen -->
+    <string name="display_name">Anzeigename</string>
+    <string name="bio">Biografie</string>
+    <string name="bio_placeholder">Erzählen Sie uns von sich...</string>
+    <string name="institution">Institution</string>
+    <string name="institution_placeholder">Universität, Unternehmen oder Forschungslabor</string>
+    <string name="location">Standort</string>
+    <string name="location_placeholder">Stadt, Land</string>
+    <string name="website">Website</string>
+    <string name="website_placeholder">https://...</string>
+    <string name="specializations">Spezialisierungen</string>
+    <string name="specializations_placeholder">Quantenalgorithmen, Fehlerkorrektur...</string>
+    <string name="separate_commas">Mit Kommas trennen</string>
+
+    <!-- Publish Screen -->
+    <string name="publish_circuit_title">Schaltkreis veröffentlichen</string>
+    <string name="enter_descriptive_title">Beschreibenden Titel eingeben</string>
+    <string name="describe_circuit">Beschreiben Sie, was Ihr Schaltkreis macht...</string>
+    <string name="tags">Tags</string>
+    <string name="tags_placeholder">Quanten, Algorithmus, Optimierung</string>
+    <string name="separate_tags_commas">Tags mit Kommas trennen</string>
+
+    <!-- Talent Screen -->
+    <string name="scout_researcher_title">Forscher scouten</string>
+    <string name="talent_title">Talent</string>
+    <string name="organization">Organisation</string>
+    <string name="organization_placeholder">Ihr Unternehmen oder Ihre Institution</string>
+    <string name="position_optional">Position (Optional)</string>
+    <string name="position_placeholder">z.B. Senior Quantenforscher</string>
+    <string name="message">Nachricht</string>
+    <string name="message_placeholder">Stellen Sie sich vor und erklären Sie, warum Sie sich melden...</string>
+    <string name="additional_details_optional">Zusätzliche Details (Optional)</string>
+    <string name="additional_details_placeholder">Vergütung, Leistungen, Projektdetails...</string>
+    <string name="search_by_name">Nach Name, Institution suchen...</string>
+    <string name="min_h_index">Min. h-Index</string>
+    <string name="min_publications">Min. Veröffentlichungen</string>
+    <string name="all">Alle</string>
+    <string name="no_results">Keine Ergebnisse</string>
+    <string name="received">Erhalten</string>
+    <string name="sent">Gesendet</string>
+
+    <!-- Peer Review Screen -->
+    <string name="submit_review_title">Review einreichen</string>
+    <string name="peer_review_title">Peer-Review</string>
+    <string name="pending_reviews_count">Ausstehend (%1$d)</string>
+    <string name="my_reviews">Meine Reviews</string>
+    <string name="claim_review">Review beanspruchen</string>
+    <string name="provide_feedback">Detailliertes Feedback geben...</string>
+    <string name="technical_quality">Technische Qualität</string>
+    <string name="innovation">Innovation</string>
+    <string name="documentation">Dokumentation</string>
+    <string name="no_pending_reviews">Keine ausstehenden Reviews</string>
+    <string name="no_reviews_yet">Noch keine Reviews</string>
+
+    <!-- Rankings Screen -->
+    <string name="my_rank_title">Meine Rangliste</string>
+    <string name="tests_completed">Abgeschlossene Tests</string>
+    <string name="avg_score">Durchschn. Punktzahl</string>
+    <string name="local_rankings">Lokale Ranglisten</string>
+    <string name="ranking_achievements">Rang-Erfolge</string>
+    <string name="friends_ranking">Freunde-Rangliste</string>
+    <string name="all_countries">Alle Länder</string>
+
+    <!-- Certificates Screen -->
+    <string name="no_certificates_yet">Noch keine Zertifikate</string>
+    <string name="take_certification_test">Zertifizierungstest ablegen</string>
+    <string name="active_certificates">Aktive Zertifikate</string>
+    <string name="expired_certificates">Abgelaufene Zertifikate</string>
+    <string name="verification">Verifizierung</string>
+
+    <!-- Test/Quiz Screen -->
+    <string name="certification_test">Zertifizierungstest</string>
+    <string name="question_number">Frage %1$d</string>
+    <string name="submit_answer">Antwort absenden</string>
+    <string name="abandon_test">Test abbrechen?</string>
+    <string name="abandon_test_message">Möchten Sie diesen Test wirklich abbrechen? Ihr Fortschritt geht verloren und wird als unvollständiger Versuch gezählt.</string>
+    <string name="test_rules">Testregeln</string>
+    <string name="start_test_button">Test starten</string>
+    <string name="certification_tiers">Zertifizierungsstufen</string>
+    <string name="your_history">Ihr Verlauf</string>
+    <string name="attempts">Versuche</string>
+    <string name="best_score">Beste Punktzahl</string>
+    <string name="pass_rate">Bestehensquote</string>
+    <string name="question_categories">Fragenkategorien</string>
+
+    <!-- Test Results Screen -->
+    <string name="test_results">Testergebnisse</string>
+    <string name="view_certificate">Zertifikat anzeigen</string>
+    <string name="take_another_test">Anderen Test ablegen</string>
+    <string name="back_to_dashboard">Zurück zum Dashboard</string>
+    <string name="score_breakdown">Punkteaufschlüsselung</string>
+    <string name="performance_by_category">Leistung nach Kategorie</string>
+    <string name="test_statistics">Teststatistiken</string>
+    <string name="time_spent">Aufgewendete Zeit</string>
+    <string name="accuracy">Genauigkeit</string>
+
+    <!-- Circuits Screen -->
+    <string name="no_circuits_yet">Noch keine Schaltkreise</string>
+    <string name="all_circuits">Alle Schaltkreise</string>
+    <string name="delete_circuit">Schaltkreis löschen</string>
+
+    <!-- Badges Screen -->
+    <string name="next_achievement">Nächster Erfolg</string>
+    <string name="badge_requirements">Abzeichen-Anforderungen</string>
+    <string name="all_badges">Alle Abzeichen</string>
+
+    <!-- Citations Screen -->
+    <string name="top_cited_circuits">Meistzitierte Schaltkreise</string>
+    <string name="summary">Zusammenfassung</string>
+    <string name="publications">Veröffentlichungen</string>
+    <string name="this_month">+%1$d diesen Monat</string>
+    <string name="recent_activity">Neueste Aktivität</string>
+
+    <!-- Dashboard Screen -->
+    <string name="quick_actions">Schnellaktionen</string>
+    <string name="featured_jobs">Empfohlene Jobs</string>
+    <string name="industry_readiness">Branchenbereitschaft</string>
+    <string name="industry_readiness_score">Branchenbereitschaftswert</string>
+    <string name="quick_stats">Kurzstatistiken</string>
+    <string name="global_rank">Globaler Rang</string>
+    <string name="certificates_count">Zertifikate</string>
+    <string name="view_jobs">Jobs anzeigen</string>
+    <string name="see_breakdown">Details anzeigen</string>
+    <string name="evidence_breakdown">Evidenzaufschlüsselung</string>
+
+    <!-- Jobs Screen -->
+    <string name="jobs">Jobs</string>
+    <string name="browse_jobs">Jobs durchsuchen</string>
+    <string name="recommended">Empfohlen</string>
+    <string name="saved_jobs">Gespeicherte Jobs</string>
+    <string name="applications">Bewerbungen</string>
+    <string name="search_jobs">Jobs suchen...</string>
+    <string name="filter_jobs">Jobs filtern</string>
+    <string name="no_jobs_found">Keine Jobs gefunden</string>
+    <string name="no_recommended_jobs">Noch keine empfohlenen Jobs</string>
+    <string name="no_saved_jobs">Noch keine gespeicherten Jobs</string>
+    <string name="no_applications">Noch keine Bewerbungen</string>
+    <string name="job_match">%d%% Übereinstimmung</string>
+    <string name="jobs_count">%d Jobs</string>
+    <string name="active_applications">Aktive Bewerbungen</string>
+    <string name="total_applications">Alle Bewerbungen</string>
+    <string name="interview_rate">Interviewrate</string>
+
+    <!-- Job Detail Screen -->
+    <string name="job_details">Job-Details</string>
+    <string name="about_role">Über die Rolle</string>
+    <string name="requirements">Anforderungen</string>
+    <string name="responsibilities">Verantwortlichkeiten</string>
+    <string name="required_skills">Erforderliche Fähigkeiten</string>
+    <string name="preferred_skills">Bevorzugte Fähigkeiten</string>
+    <string name="benefits">Leistungen</string>
+    <string name="about_company">Über das Unternehmen</string>
+    <string name="company_size">Unternehmensgröße</string>
+    <string name="industry">Branche</string>
+    <string name="founded">Gegründet</string>
+    <string name="headquarters">Hauptsitz</string>
+    <string name="salary_range">Gehaltsbereich</string>
+    <string name="apply_now">Jetzt bewerben</string>
+    <string name="save_job">Job speichern</string>
+    <string name="unsave_job">Speicherung aufheben</string>
+    <string name="job_saved">Job gespeichert</string>
+    <string name="job_unsaved">Job aus Gespeicherten entfernt</string>
+    <string name="application_deadline">Bewerbungsfrist</string>
+    <string name="posted_date">Veröffentlicht am %s</string>
+    <string name="applicants_count">%d Bewerber</string>
+    <string name="match_score">Übereinstimmungswert</string>
+    <string name="why_good_match">Warum Sie gut passen</string>
+    <string name="skill_match">Fähigkeiten-Match</string>
+    <string name="experience_match">Erfahrungs-Match</string>
+    <string name="certification_match">Zertifikats-Match</string>
+
+    <!-- Job Filter -->
+    <string name="filter">Filtern</string>
+    <string name="location_type">Arbeitsort</string>
+    <string name="remote">Remote</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="on_site">Vor Ort</string>
+    <string name="employment_type">Beschäftigungsart</string>
+    <string name="full_time">Vollzeit</string>
+    <string name="part_time">Teilzeit</string>
+    <string name="contract">Vertrag</string>
+    <string name="internship">Praktikum</string>
+    <string name="freelance">Freiberuflich</string>
+    <string name="experience_level">Erfahrungsstufe</string>
+    <string name="entry_level">Einsteiger</string>
+    <string name="mid_level">Mittelstufe</string>
+    <string name="senior_level">Senior</string>
+    <string name="lead">Lead</string>
+    <string name="executive">Führungskraft</string>
+    <string name="skills_filter">Fähigkeiten</string>
+    <string name="add_skill">Fähigkeit hinzufügen</string>
+    <string name="minimum_salary">Mindestgehalt</string>
+    <string name="clear_all">Alle löschen</string>
+
+    <!-- Job Application -->
+    <string name="apply_to_job">Für Job bewerben</string>
+    <string name="cover_letter">Anschreiben</string>
+    <string name="cover_letter_placeholder">Schreiben Sie hier Ihr Anschreiben...</string>
+    <string name="include_cover_letter">Anschreiben beifügen</string>
+    <string name="resume_url">Lebenslauf-URL</string>
+    <string name="resume_url_placeholder">Link zu Ihrem Lebenslauf (optional)</string>
+    <string name="upload_resume">Lebenslauf hochladen</string>
+    <string name="submit_application">Bewerbung absenden</string>
+    <string name="application_submitted">Bewerbung eingereicht!</string>
+    <string name="application_submitted_message">Ihre Bewerbung wurde erfolgreich eingereicht.</string>
+
+    <!-- Application Status -->
+    <string name="application_status">Bewerbungsstatus</string>
+    <string name="status_submitted">Eingereicht</string>
+    <string name="status_under_review">In Prüfung</string>
+    <string name="status_interview_scheduled">Interview geplant</string>
+    <string name="status_offer_received">Angebot erhalten</string>
+    <string name="status_rejected">Abgelehnt</string>
+    <string name="status_withdrawn">Zurückgezogen</string>
+    <string name="applied_on">Beworben am %s</string>
+    <string name="last_updated">Zuletzt aktualisiert %s</string>
+
+    <!-- Settings Screen -->
+    <string name="account">Konto</string>
+    <string name="account_settings">Kontoeinstellungen</string>
+    <string name="notifications">Benachrichtigungen</string>
+    <string name="notification_settings">Benachrichtigungseinstellungen</string>
+    <string name="push_notifications">Push-Benachrichtigungen</string>
+    <string name="email_notifications">E-Mail-Benachrichtigungen</string>
+    <string name="job_alerts">Job-Benachrichtigungen</string>
+    <string name="quiz_reminders">Quiz-Erinnerungen</string>
+    <string name="certificate_updates">Zertifikatsaktualisierungen</string>
+    <string name="appearance">Erscheinungsbild</string>
+    <string name="dark_mode">Dunkelmodus</string>
+    <string name="language">Sprache</string>
+    <string name="select_language">Sprache auswählen</string>
+    <string name="english">English</string>
+    <string name="korean">한국어</string>
+    <string name="japanese">日本語</string>
+    <string name="chinese">中文</string>
+    <string name="german">Deutsch</string>
+    <string name="subscription">Abonnement</string>
+    <string name="subscription_plan">Abonnementplan</string>
+    <string name="free_plan">Kostenlos</string>
+    <string name="pro_plan">Pro</string>
+    <string name="enterprise_plan">Enterprise</string>
+    <string name="upgrade_to_pro">Auf Pro upgraden</string>
+    <string name="manage_subscription">Abonnement verwalten</string>
+    <string name="integrations">Integrationen</string>
+    <string name="connect_linkedin">LinkedIn verbinden</string>
+    <string name="linkedin_connected">LinkedIn verbunden</string>
+    <string name="disconnect">Trennen</string>
+    <string name="support">Support</string>
+    <string name="help_center">Hilfecenter</string>
+    <string name="contact_support">Support kontaktieren</string>
+    <string name="report_bug">Fehler melden</string>
+    <string name="privacy_policy">Datenschutzrichtlinie</string>
+    <string name="terms_of_service">Nutzungsbedingungen</string>
+    <string name="app_version">App-Version</string>
+    <string name="logout_confirmation">Abmelden?</string>
+    <string name="logout_confirmation_message">Möchten Sie sich wirklich abmelden?</string>
+    <string name="delete_account">Konto löschen</string>
+    <string name="delete_account_confirmation">Konto löschen?</string>
+    <string name="delete_account_message">Diese Aktion kann nicht rückgängig gemacht werden. Alle Ihre Daten werden dauerhaft gelöscht.</string>
+
+    <!-- Enhanced Profile Screen -->
+    <string name="overview">Übersicht</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="contribution_timeline">Beitragszeitleiste</string>
+    <string name="contribution_activity">Beitragsaktivität</string>
+    <string name="day_streak">%d Tage Streak</string>
+    <string name="contributions_this_year">%d Beiträge dieses Jahr</string>
+    <string name="current_streak">Aktueller Streak</string>
+    <string name="longest_streak">Längster Streak</string>
+    <string name="total_contributions">Gesamtbeiträge</string>
+    <string name="days">Tage</string>
+    <string name="export_pdf">PDF exportieren</string>
+    <string name="export_pdf_portfolio">PDF-Portfolio exportieren</string>
+    <string name="pdf_exported">PDF erfolgreich exportiert</string>
+    <string name="share_on_linkedin">Auf LinkedIn teilen</string>
+    <string name="earned_badges">Verdiente Abzeichen</string>
+    <string name="in_progress_badges">In Bearbeitung</string>
+    <string name="badge_earned">Abzeichen verdient</string>
+    <string name="progress_x_of_y">%1$d / %2$d</string>
+    <string name="skill_breakdown">Fähigkeitsaufschlüsselung</string>
+    <string name="logic">Logik</string>
+    <string name="contribution">Beitrag</string>
+    <string name="stability">Stabilität</string>
+    <string name="speed">Geschwindigkeit</string>
+    <string name="circuit_stats">Schaltkreisstatistiken</string>
+    <string name="views">Aufrufe</string>
+    <string name="forks">Forks</string>
+
+    <!-- Certificate Levels -->
+    <string name="foundation">Foundation</string>
+    <string name="associate">Associate</string>
+    <string name="professional">Professional</string>
+    <string name="expert">Expert</string>
+    <string name="certificate_level">Zertifikatsstufe</string>
+    <string name="valid_until">Gültig bis %s</string>
+    <string name="expired_on">Abgelaufen am %s</string>
+    <string name="certificate_id">Zertifikats-ID</string>
+    <string name="credential_id">Nachweis-ID: %s</string>
+    <string name="issue_date">Ausstellungsdatum</string>
+    <string name="expiry_date">Ablaufdatum</string>
+
+    <!-- Ranking Periods -->
+    <string name="all_time">Gesamtzeit</string>
+    <string name="this_week">Diese Woche</string>
+    <string name="monthly">Monatlich</string>
+    <string name="quarterly">Vierteljährlich</string>
+    <string name="yearly">Jährlich</string>
+    <string name="rank_change">%+d Plätze</string>
+    <string name="percentile">Top %d%%</string>
+
+    <!-- Auth Screen Extended -->
+    <string name="welcome_back">Willkommen zurück</string>
+    <string name="create_account">Konto erstellen</string>
+    <string name="forgot_password">Passwort vergessen?</string>
+    <string name="reset_password">Passwort zurücksetzen</string>
+    <string name="or_continue_with">Oder fortfahren mit</string>
+    <string name="sign_in_with_google">Mit Google anmelden</string>
+    <string name="sign_in_with_apple">Mit Apple anmelden</string>
+    <string name="sign_in_with_linkedin">Mit LinkedIn anmelden</string>
+    <string name="dont_have_account">Noch kein Konto?</string>
+    <string name="already_have_account">Bereits ein Konto?</string>
+    <string name="continue_as_guest">Als Gast fortfahren</string>
+    <string name="by_signing_up">Mit der Registrierung stimmen Sie unseren</string>
+    <string name="and">und</string>
+
+    <!-- Error Messages -->
+    <string name="error_loading_jobs">Fehler beim Laden der Jobs</string>
+    <string name="error_loading_job_details">Fehler beim Laden der Job-Details</string>
+    <string name="error_submitting_application">Fehler beim Einreichen der Bewerbung</string>
+    <string name="error_saving_job">Fehler beim Speichern des Jobs</string>
+    <string name="error_network">Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.</string>
+    <string name="error_server">Serverfehler. Bitte versuchen Sie es später erneut.</string>
+    <string name="error_unknown">Ein unbekannter Fehler ist aufgetreten</string>
+
+    <!-- Empty States -->
+    <string name="no_data">Keine Daten verfügbar</string>
+    <string name="no_internet">Keine Internetverbindung</string>
+    <string name="pull_to_refresh">Zum Aktualisieren ziehen</string>
+    <string name="tap_to_retry">Zum Wiederholen tippen</string>
+    <string name="browse_available_jobs">Verfügbare Jobs durchsuchen</string>
+    <string name="save_jobs_for_later">Jobs für später speichern</string>
+    <string name="start_applying">Mit Bewerbungen beginnen</string>
 </resources>

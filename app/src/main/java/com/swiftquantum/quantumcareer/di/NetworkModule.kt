@@ -3,7 +3,11 @@ package com.swiftquantum.quantumcareer.di
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import com.swiftquantum.quantumcareer.BuildConfig
 import com.swiftquantum.quantumcareer.data.api.CareerPassportApi
+import com.swiftquantum.quantumcareer.data.api.CertificateApi
+import com.swiftquantum.quantumcareer.data.api.JobsApi
 import com.swiftquantum.quantumcareer.data.api.PeerReviewApi
+import com.swiftquantum.quantumcareer.data.api.QuizApi
+import com.swiftquantum.quantumcareer.data.api.RankingsApi
 import com.swiftquantum.quantumcareer.data.api.TalentApi
 import dagger.Module
 import dagger.Provides
@@ -86,5 +90,29 @@ object NetworkModule {
     @Singleton
     fun provideTalentApi(retrofit: Retrofit): TalentApi {
         return retrofit.create(TalentApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideQuizApi(retrofit: Retrofit): QuizApi {
+        return retrofit.create(QuizApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideCertificateApi(retrofit: Retrofit): CertificateApi {
+        return retrofit.create(CertificateApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideRankingsApi(retrofit: Retrofit): RankingsApi {
+        return retrofit.create(RankingsApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideJobsApi(retrofit: Retrofit): JobsApi {
+        return retrofit.create(JobsApi::class.java)
     }
 }

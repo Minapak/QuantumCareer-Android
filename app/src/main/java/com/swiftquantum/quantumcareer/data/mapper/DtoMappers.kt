@@ -238,3 +238,189 @@ fun ActivityItemDto.toDomain(): ActivityItem = ActivityItem(
     description = description,
     createdAt = createdAt.toLocalDateTime()
 )
+
+// Quiz mappers
+fun QuestionDto.toDomain(): Question = Question(
+    id = id,
+    text = text,
+    options = options,
+    correctAnswer = correctAnswer,
+    difficulty = QuestionDifficulty.fromString(difficulty),
+    category = QuestionCategory.fromString(category),
+    explanation = explanation
+)
+
+fun QuizAnswerDto.toDomain(): QuizAnswer = QuizAnswer(
+    questionId = questionId,
+    selectedOption = selectedOption,
+    isCorrect = isCorrect,
+    timeSpentSeconds = timeSpentSeconds
+)
+
+fun TestSessionDto.toDomain(): TestSession = TestSession(
+    id = id,
+    userId = userId,
+    questions = questions.map { it.toDomain() },
+    currentIndex = currentIndex,
+    answers = answers.map { it.toDomain() },
+    startTime = startTime.toLocalDateTime(),
+    status = TestStatus.fromString(status),
+    timeRemainingSeconds = timeRemainingSeconds
+)
+
+fun CategoryBreakdownDto.toDomain(): CategoryBreakdown = CategoryBreakdown(
+    category = QuestionCategory.fromString(category),
+    totalQuestions = totalQuestions,
+    correctAnswers = correctAnswers,
+    totalPoints = totalPoints,
+    earnedPoints = earnedPoints,
+    averageTimeSeconds = averageTimeSeconds
+)
+
+fun TestResultDto.toDomain(): TestResult = TestResult(
+    sessionId = sessionId,
+    userId = userId,
+    score = score,
+    maxScore = maxScore,
+    passingScore = passingScore,
+    passed = passed,
+    badgeEarned = badgeEarned?.let { BadgeTier.fromString(it) },
+    categoryBreakdown = categoryBreakdown.map { it.toDomain() },
+    totalTimeSpentSeconds = totalTimeSpentSeconds,
+    completedAt = completedAt.toLocalDateTime(),
+    certificateId = certificateId
+)
+
+fun TestHistoryResponseDto.toDomain(): TestHistory = TestHistory(
+    results = results.map { it.toDomain() },
+    totalAttempts = totalAttempts,
+    bestScore = bestScore,
+    bestBadge = bestBadge?.let { BadgeTier.fromString(it) },
+    averageScore = averageScore,
+    totalTimeSpentSeconds = totalTimeSpentSeconds
+)
+
+fun PracticeQuestionsResponseDto.toDomain(): PracticeQuestions = PracticeQuestions(
+    category = category?.let { QuestionCategory.fromString(it) },
+    difficulty = difficulty?.let { QuestionDifficulty.fromString(it) },
+    questions = questions.map { it.toDomain() },
+    total = total
+)
+
+fun CategoryStatsDto.toDomain(): com.swiftquantum.quantumcareer.domain.repository.CategoryStats =
+    com.swiftquantum.quantumcareer.domain.repository.CategoryStats(
+        category = QuestionCategory.fromString(category),
+        displayName = displayName,
+        description = description,
+        totalQuestions = totalQuestions,
+        userAccuracy = userAccuracy
+    )
+
+// Certificate mappers
+fun CertificateDto.toDomain(): Certificate = Certificate(
+    id = id,
+    userId = userId,
+    userName = userName,
+    tier = BadgeTier.fromString(tier),
+    score = score,
+    maxScore = maxScore,
+    issueDate = issueDate.toLocalDate(),
+    expiryDate = expiryDate.toLocalDate(),
+    verificationCode = verificationCode,
+    doiUrl = doiUrl,
+    testSessionId = testSessionId
+)
+
+fun CertificateListResponseDto.toDomain(): CertificateSummary = CertificateSummary(
+    certificates = certificates.map { it.toDomain() },
+    totalCertificates = totalCertificates,
+    activeCertificates = activeCertificates,
+    expiredCertificates = expiredCertificates,
+    highestTier = highestTier?.let { BadgeTier.fromString(it) }
+)
+
+fun CertificateVerificationResponseDto.toDomain(): CertificateVerification = CertificateVerification(
+    code = code,
+    isValid = isValid,
+    certificate = certificate?.toDomain(),
+    errorMessage = errorMessage
+)
+
+fun CertificateRenewalInfoDto.toDomain(): CertificateRenewalInfo = CertificateRenewalInfo(
+    certificate = certificate.toDomain(),
+    canRenew = canRenew,
+    daysUntilExpiry = daysUntilExpiry,
+    renewalTestSessionId = renewalTestSessionId
+)
+
+// Rankings mappers
+fun RankedUserDto.toDomain(): RankedUser = RankedUser(
+    rank = rank,
+    userId = userId,
+    name = name,
+    avatarUrl = avatarUrl,
+    score = score,
+    badges = badges.map { BadgeTier.fromString(it) },
+    institution = institution,
+    country = country,
+    countryCode = countryCode,
+    totalTests = totalTests,
+    bestPercentage = bestPercentage,
+    hIndex = hIndex,
+    publications = publications
+)
+
+fun LeaderboardResponseDto.toDomain(): Leaderboard = Leaderboard(
+    type = RankingType.fromString(type),
+    entries = entries.map { it.toDomain() },
+    userRank = userRank?.toDomain(),
+    totalParticipants = totalParticipants,
+    lastUpdated = lastUpdated.toLocalDateTime(),
+    filterCountry = filterCountry,
+    filterInstitution = filterInstitution
+)
+
+fun UserRankingStatsDto.toDomain(): UserRankingStats = UserRankingStats(
+    currentRank = currentRank,
+    previousRank = previousRank,
+    bestRank = bestRank,
+    totalScore = totalScore,
+    testsCompleted = testsCompleted,
+    averagePercentage = averagePercentage,
+    rankInCountry = rankInCountry,
+    countryTotal = countryTotal,
+    rankInInstitution = rankInInstitution,
+    institutionTotal = institutionTotal,
+    percentile = percentile,
+    lastUpdated = lastUpdated.toLocalDateTime()
+)
+
+fun FriendsRankingResponseDto.toDomain(): FriendsRanking = FriendsRanking(
+    friends = friends.map { it.toDomain() },
+    userRankAmongFriends = userRankAmongFriends,
+    totalFriends = totalFriends
+)
+
+fun RankingCountryDto.toDomain(): RankingCountry = RankingCountry(
+    code = code,
+    name = name,
+    participantCount = participantCount,
+    flagEmoji = flagEmoji
+)
+
+fun RankingInstitutionDto.toDomain(): RankingInstitution = RankingInstitution(
+    id = id,
+    name = name,
+    country = country,
+    participantCount = participantCount,
+    averageScore = averageScore
+)
+
+fun RankingAchievementDto.toDomain(): RankingAchievement = RankingAchievement(
+    id = id,
+    title = title,
+    description = description,
+    achievedAt = achievedAt?.toLocalDateTime(),
+    isAchieved = isAchieved,
+    progress = progress
+)

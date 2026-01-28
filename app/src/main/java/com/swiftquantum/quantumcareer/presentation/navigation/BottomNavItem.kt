@@ -13,30 +13,37 @@ sealed class BottomNavItem(
 ) {
     data object Dashboard : BottomNavItem(
         route = Screen.Dashboard.route,
-        title = "Dashboard",
+        title = "Home",
         selectedIcon = Icons.Filled.Dashboard,
         unselectedIcon = Icons.Outlined.Dashboard
     )
 
-    data object Circuits : BottomNavItem(
-        route = Screen.Circuits.route,
-        title = "Circuits",
-        selectedIcon = Icons.Filled.Article,
-        unselectedIcon = Icons.Outlined.Article
+    data object Quiz : BottomNavItem(
+        route = Screen.Quiz.route,
+        title = "Quiz",
+        selectedIcon = Icons.Filled.Quiz,
+        unselectedIcon = Icons.Outlined.Quiz
     )
 
-    data object Reviews : BottomNavItem(
-        route = Screen.PeerReview.route,
-        title = "Reviews",
-        selectedIcon = Icons.Filled.RateReview,
-        unselectedIcon = Icons.Outlined.RateReview
+    data object Rankings : BottomNavItem(
+        route = Screen.Rankings.route,
+        title = "Rankings",
+        selectedIcon = Icons.Filled.Leaderboard,
+        unselectedIcon = Icons.Outlined.Leaderboard
     )
 
-    data object Talent : BottomNavItem(
-        route = Screen.Talent.route,
-        title = "Talent",
-        selectedIcon = Icons.Filled.People,
-        unselectedIcon = Icons.Outlined.People
+    data object Jobs : BottomNavItem(
+        route = Screen.Jobs.route,
+        title = "Jobs",
+        selectedIcon = Icons.Filled.Work,
+        unselectedIcon = Icons.Outlined.Work
+    )
+
+    data object Certificates : BottomNavItem(
+        route = Screen.Certificates.route,
+        title = "Certs",
+        selectedIcon = Icons.Filled.Verified,
+        unselectedIcon = Icons.Outlined.Verified
     )
 
     data object Profile : BottomNavItem(
@@ -47,6 +54,6 @@ sealed class BottomNavItem(
     )
 
     companion object {
-        val items = listOf(Dashboard, Circuits, Reviews, Talent, Profile)
+        val items = listOf(Dashboard, Jobs, Quiz, Certificates, Profile)
     }
 }

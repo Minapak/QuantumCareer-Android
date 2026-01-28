@@ -72,4 +72,438 @@
     <string name="cancel">キャンセル</string>
     <string name="search">検索</string>
     <string name="doi_prefix">DOI: 10.5281/sqc.2026.</string>
+
+    <!-- Quiz/Test -->
+    <string name="start_test">テスト開始</string>
+    <string name="question_x_of_50">問題 %1$d / 50</string>
+    <string name="time_remaining">残り時間</string>
+    <string name="test_result">テスト結果</string>
+    <string name="your_score">あなたのスコア</string>
+    <string name="passing_score">合格スコア</string>
+
+    <!-- Certificates -->
+    <string name="certificate_bronze">ブロンズ認定証</string>
+    <string name="certificate_silver">シルバー認定証</string>
+    <string name="certificate_gold">ゴールド認定証</string>
+    <string name="certificate_platinum">プラチナ認定証</string>
+
+    <!-- Rankings -->
+    <string name="global_rankings">グローバルランキング</string>
+    <string name="leaderboard">リーダーボード</string>
+    <string name="my_rank">マイランク</string>
+    <string name="top_100">トップ100</string>
+
+    <!-- Certificate Actions -->
+    <string name="verify_certificate">認定証を確認</string>
+    <string name="share_certificate">認定証を共有</string>
+    <string name="download_pdf">PDFダウンロード</string>
+
+    <!-- Additional Common Actions -->
+    <string name="ok">OK</string>
+    <string name="close">閉じる</string>
+    <string name="confirm">確認</string>
+    <string name="back">戻る</string>
+    <string name="next">次へ</string>
+    <string name="done">完了</string>
+    <string name="success">成功</string>
+    <string name="submit">送信</string>
+    <string name="send">送る</string>
+    <string name="share">共有</string>
+    <string name="copy">コピー</string>
+    <string name="download">ダウンロード</string>
+    <string name="upload">アップロード</string>
+    <string name="continue_action">続ける</string>
+    <string name="continue_test">テストを続ける</string>
+    <string name="dismiss">閉じる</string>
+    <string name="delete">削除</string>
+    <string name="edit">編集</string>
+    <string name="open">開く</string>
+    <string name="accept">承諾</string>
+    <string name="decline">辞退</string>
+    <string name="see_all">すべて見る</string>
+    <string name="clear_filters">フィルターをクリア</string>
+    <string name="apply_filters">フィルターを適用</string>
+    <string name="resume">再開</string>
+    <string name="abandon">中止</string>
+
+    <!-- Auth Extended -->
+    <string name="sign_in">サインイン</string>
+    <string name="sign_up">サインアップ</string>
+    <string name="login">ログイン</string>
+    <string name="logout">ログアウト</string>
+    <string name="guest_mode">ゲストモード</string>
+    <string name="name">名前</string>
+    <string name="email">メール</string>
+    <string name="password">パスワード</string>
+
+    <!-- Navigation Extended -->
+    <string name="home">ホーム</string>
+    <string name="quiz">クイズ</string>
+    <string name="rankings">ランキング</string>
+    <string name="certs">認定証</string>
+    <string name="settings">設定</string>
+
+    <!-- Status -->
+    <string name="online">オンライン</string>
+    <string name="offline">オフライン</string>
+    <string name="connected">接続済み</string>
+    <string name="disconnected">未接続</string>
+    <string name="processing">処理中...</string>
+
+    <!-- Time -->
+    <string name="today">今日</string>
+    <string name="yesterday">昨日</string>
+    <string name="just_now">たった今</string>
+    <string name="minutes_ago">%1$d分前</string>
+    <string name="hours_ago">%1$d時間前</string>
+
+    <!-- Drawer/Navigation -->
+    <string name="features">機能</string>
+    <string name="swiftquantum_ecosystem">SwiftQuantumエコシステム</string>
+    <string name="version">バージョン</string>
+    <string name="about">アプリについて</string>
+    <string name="refresh">更新</string>
+
+    <!-- Profile Screen -->
+    <string name="display_name">表示名</string>
+    <string name="bio">自己紹介</string>
+    <string name="bio_placeholder">自己紹介をしてください...</string>
+    <string name="institution">所属</string>
+    <string name="institution_placeholder">大学、企業、または研究機関</string>
+    <string name="location">場所</string>
+    <string name="location_placeholder">都市、国</string>
+    <string name="website">ウェブサイト</string>
+    <string name="website_placeholder">https://...</string>
+    <string name="specializations">専門分野</string>
+    <string name="specializations_placeholder">量子アルゴリズム、エラー訂正...</string>
+    <string name="separate_commas">カンマで区切る</string>
+
+    <!-- Publish Screen -->
+    <string name="publish_circuit_title">回路を発行</string>
+    <string name="enter_descriptive_title">説明的なタイトルを入力</string>
+    <string name="describe_circuit">回路の機能を説明...</string>
+    <string name="tags">タグ</string>
+    <string name="tags_placeholder">量子、アルゴリズム、最適化</string>
+    <string name="separate_tags_commas">タグをカンマで区切る</string>
+
+    <!-- Talent Screen -->
+    <string name="scout_researcher_title">研究者をスカウト</string>
+    <string name="talent_title">人材</string>
+    <string name="organization">組織</string>
+    <string name="organization_placeholder">会社または所属機関</string>
+    <string name="position_optional">役職（オプション）</string>
+    <string name="position_placeholder">例：シニア量子研究員</string>
+    <string name="message">メッセージ</string>
+    <string name="message_placeholder">自己紹介と連絡理由を説明...</string>
+    <string name="additional_details_optional">追加情報（オプション）</string>
+    <string name="additional_details_placeholder">報酬、福利厚生、プロジェクト詳細...</string>
+    <string name="search_by_name">名前、所属で検索...</string>
+    <string name="min_h_index">最小h指数</string>
+    <string name="min_publications">最小発行数</string>
+    <string name="all">すべて</string>
+    <string name="no_results">結果なし</string>
+    <string name="received">受信</string>
+    <string name="sent">送信</string>
+
+    <!-- Peer Review Screen -->
+    <string name="submit_review_title">レビュー提出</string>
+    <string name="peer_review_title">ピアレビュー</string>
+    <string name="pending_reviews_count">保留中（%1$d）</string>
+    <string name="my_reviews">マイレビュー</string>
+    <string name="claim_review">レビューを申請</string>
+    <string name="provide_feedback">詳細なフィードバックを提供...</string>
+    <string name="technical_quality">技術品質</string>
+    <string name="innovation">革新性</string>
+    <string name="documentation">ドキュメント</string>
+    <string name="no_pending_reviews">保留中のレビューなし</string>
+    <string name="no_reviews_yet">まだレビューなし</string>
+
+    <!-- Rankings Screen -->
+    <string name="my_rank_title">マイランキング</string>
+    <string name="tests_completed">完了テスト</string>
+    <string name="avg_score">平均スコア</string>
+    <string name="local_rankings">地域ランキング</string>
+    <string name="ranking_achievements">ランキング実績</string>
+    <string name="friends_ranking">友達ランキング</string>
+    <string name="all_countries">すべての国</string>
+
+    <!-- Certificates Screen -->
+    <string name="no_certificates_yet">認定証なし</string>
+    <string name="take_certification_test">認定テストを受ける</string>
+    <string name="active_certificates">有効な認定証</string>
+    <string name="expired_certificates">期限切れの認定証</string>
+    <string name="verification">認証</string>
+
+    <!-- Test/Quiz Screen -->
+    <string name="certification_test">認定テスト</string>
+    <string name="question_number">質問 %1$d</string>
+    <string name="submit_answer">回答を送信</string>
+    <string name="abandon_test">テストを中止？</string>
+    <string name="abandon_test_message">本当にこのテストを中止しますか？進捗が失われ、未完了の試行としてカウントされます。</string>
+    <string name="test_rules">テストルール</string>
+    <string name="start_test_button">テスト開始</string>
+    <string name="certification_tiers">認定レベル</string>
+    <string name="your_history">履歴</string>
+    <string name="attempts">試行回数</string>
+    <string name="best_score">最高スコア</string>
+    <string name="pass_rate">合格率</string>
+    <string name="question_categories">質問カテゴリ</string>
+
+    <!-- Test Results Screen -->
+    <string name="test_results">テスト結果</string>
+    <string name="view_certificate">認定証を見る</string>
+    <string name="take_another_test">別のテストを受ける</string>
+    <string name="back_to_dashboard">ダッシュボードに戻る</string>
+    <string name="score_breakdown">スコア内訳</string>
+    <string name="performance_by_category">カテゴリ別パフォーマンス</string>
+    <string name="test_statistics">テスト統計</string>
+    <string name="time_spent">所要時間</string>
+    <string name="accuracy">精度</string>
+
+    <!-- Circuits Screen -->
+    <string name="no_circuits_yet">回路なし</string>
+    <string name="all_circuits">すべての回路</string>
+    <string name="delete_circuit">回路を削除</string>
+
+    <!-- Badges Screen -->
+    <string name="next_achievement">次の実績</string>
+    <string name="badge_requirements">バッジ要件</string>
+    <string name="all_badges">すべてのバッジ</string>
+
+    <!-- Citations Screen -->
+    <string name="top_cited_circuits">最多引用回路</string>
+    <string name="summary">概要</string>
+    <string name="publications">発行物</string>
+    <string name="this_month">今月 +%1$d</string>
+    <string name="recent_activity">最近のアクティビティ</string>
+
+    <!-- Dashboard Screen -->
+    <string name="quick_actions">クイックアクション</string>
+    <string name="featured_jobs">注目の求人</string>
+    <string name="industry_readiness">業界準備度</string>
+    <string name="industry_readiness_score">業界準備度スコア</string>
+    <string name="quick_stats">クイック統計</string>
+    <string name="global_rank">グローバルランク</string>
+    <string name="certificates_count">認定証</string>
+    <string name="view_jobs">求人を見る</string>
+    <string name="see_breakdown">詳細を見る</string>
+    <string name="evidence_breakdown">エビデンス詳細</string>
+
+    <!-- Jobs Screen -->
+    <string name="jobs">求人</string>
+    <string name="browse_jobs">求人を検索</string>
+    <string name="recommended">おすすめ</string>
+    <string name="saved_jobs">保存した求人</string>
+    <string name="applications">応募</string>
+    <string name="search_jobs">求人を検索...</string>
+    <string name="filter_jobs">求人を絞り込む</string>
+    <string name="no_jobs_found">求人が見つかりません</string>
+    <string name="no_recommended_jobs">おすすめ求人はまだありません</string>
+    <string name="no_saved_jobs">保存した求人はまだありません</string>
+    <string name="no_applications">応募はまだありません</string>
+    <string name="job_match">%d%%マッチ</string>
+    <string name="jobs_count">%d件の求人</string>
+    <string name="active_applications">アクティブな応募</string>
+    <string name="total_applications">全応募</string>
+    <string name="interview_rate">面接率</string>
+
+    <!-- Job Detail Screen -->
+    <string name="job_details">求人詳細</string>
+    <string name="about_role">役割について</string>
+    <string name="requirements">要件</string>
+    <string name="responsibilities">職務内容</string>
+    <string name="required_skills">必須スキル</string>
+    <string name="preferred_skills">優遇スキル</string>
+    <string name="benefits">福利厚生</string>
+    <string name="about_company">会社について</string>
+    <string name="company_size">会社規模</string>
+    <string name="industry">業界</string>
+    <string name="founded">設立</string>
+    <string name="headquarters">本社</string>
+    <string name="salary_range">給与範囲</string>
+    <string name="apply_now">今すぐ応募</string>
+    <string name="save_job">求人を保存</string>
+    <string name="unsave_job">保存解除</string>
+    <string name="job_saved">求人を保存しました</string>
+    <string name="job_unsaved">保存から削除しました</string>
+    <string name="application_deadline">応募締切</string>
+    <string name="posted_date">%s に投稿</string>
+    <string name="applicants_count">%d人が応募</string>
+    <string name="match_score">マッチスコア</string>
+    <string name="why_good_match">あなたに合う理由</string>
+    <string name="skill_match">スキルマッチ</string>
+    <string name="experience_match">経験マッチ</string>
+    <string name="certification_match">認定証マッチ</string>
+
+    <!-- Job Filter -->
+    <string name="filter">絞り込み</string>
+    <string name="location_type">勤務形態</string>
+    <string name="remote">リモート</string>
+    <string name="hybrid">ハイブリッド</string>
+    <string name="on_site">オンサイト</string>
+    <string name="employment_type">雇用形態</string>
+    <string name="full_time">正社員</string>
+    <string name="part_time">パートタイム</string>
+    <string name="contract">契約</string>
+    <string name="internship">インターンシップ</string>
+    <string name="freelance">フリーランス</string>
+    <string name="experience_level">経験レベル</string>
+    <string name="entry_level">エントリーレベル</string>
+    <string name="mid_level">ミドルレベル</string>
+    <string name="senior_level">シニアレベル</string>
+    <string name="lead">リード</string>
+    <string name="executive">エグゼクティブ</string>
+    <string name="skills_filter">スキル</string>
+    <string name="add_skill">スキルを追加</string>
+    <string name="minimum_salary">最低給与</string>
+    <string name="clear_all">すべてクリア</string>
+
+    <!-- Job Application -->
+    <string name="apply_to_job">求人に応募</string>
+    <string name="cover_letter">カバーレター</string>
+    <string name="cover_letter_placeholder">カバーレターを書いてください...</string>
+    <string name="include_cover_letter">カバーレターを含める</string>
+    <string name="resume_url">履歴書URL</string>
+    <string name="resume_url_placeholder">履歴書へのリンク（任意）</string>
+    <string name="upload_resume">履歴書をアップロード</string>
+    <string name="submit_application">応募を送信</string>
+    <string name="application_submitted">応募完了！</string>
+    <string name="application_submitted_message">応募が正常に送信されました。</string>
+
+    <!-- Application Status -->
+    <string name="application_status">応募状況</string>
+    <string name="status_submitted">送信済み</string>
+    <string name="status_under_review">審査中</string>
+    <string name="status_interview_scheduled">面接予定</string>
+    <string name="status_offer_received">オファー受領</string>
+    <string name="status_rejected">不採用</string>
+    <string name="status_withdrawn">取り下げ済み</string>
+    <string name="applied_on">%sに応募</string>
+    <string name="last_updated">最終更新 %s</string>
+
+    <!-- Settings Screen -->
+    <string name="account">アカウント</string>
+    <string name="account_settings">アカウント設定</string>
+    <string name="notifications">通知</string>
+    <string name="notification_settings">通知設定</string>
+    <string name="push_notifications">プッシュ通知</string>
+    <string name="email_notifications">メール通知</string>
+    <string name="job_alerts">求人アラート</string>
+    <string name="quiz_reminders">クイズリマインダー</string>
+    <string name="certificate_updates">認定証の更新</string>
+    <string name="appearance">外観</string>
+    <string name="dark_mode">ダークモード</string>
+    <string name="language">言語</string>
+    <string name="select_language">言語を選択</string>
+    <string name="english">English</string>
+    <string name="korean">한국어</string>
+    <string name="japanese">日本語</string>
+    <string name="chinese">中文</string>
+    <string name="german">Deutsch</string>
+    <string name="subscription">サブスクリプション</string>
+    <string name="subscription_plan">サブスクリプションプラン</string>
+    <string name="free_plan">無料</string>
+    <string name="pro_plan">Pro</string>
+    <string name="enterprise_plan">Enterprise</string>
+    <string name="upgrade_to_pro">Proにアップグレード</string>
+    <string name="manage_subscription">サブスクリプション管理</string>
+    <string name="integrations">連携</string>
+    <string name="connect_linkedin">LinkedInを接続</string>
+    <string name="linkedin_connected">LinkedIn接続済み</string>
+    <string name="disconnect">接続解除</string>
+    <string name="support">サポート</string>
+    <string name="help_center">ヘルプセンター</string>
+    <string name="contact_support">サポートに連絡</string>
+    <string name="report_bug">バグを報告</string>
+    <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="terms_of_service">利用規約</string>
+    <string name="app_version">アプリバージョン</string>
+    <string name="logout_confirmation">ログアウトしますか？</string>
+    <string name="logout_confirmation_message">本当にログアウトしますか？</string>
+    <string name="delete_account">アカウント削除</string>
+    <string name="delete_account_confirmation">アカウントを削除しますか？</string>
+    <string name="delete_account_message">この操作は元に戻せません。すべてのデータが完全に削除されます。</string>
+
+    <!-- Enhanced Profile Screen -->
+    <string name="overview">概要</string>
+    <string name="portfolio">ポートフォリオ</string>
+    <string name="contribution_timeline">コントリビューションタイムライン</string>
+    <string name="contribution_activity">コントリビューション活動</string>
+    <string name="day_streak">%d日連続</string>
+    <string name="contributions_this_year">今年%d件のコントリビューション</string>
+    <string name="current_streak">現在の連続</string>
+    <string name="longest_streak">最長連続</string>
+    <string name="total_contributions">総コントリビューション</string>
+    <string name="days">日</string>
+    <string name="export_pdf">PDFをエクスポート</string>
+    <string name="export_pdf_portfolio">PDFポートフォリオをエクスポート</string>
+    <string name="pdf_exported">PDFが正常にエクスポートされました</string>
+    <string name="share_on_linkedin">LinkedInで共有</string>
+    <string name="earned_badges">獲得したバッジ</string>
+    <string name="in_progress_badges">進行中</string>
+    <string name="badge_earned">バッジ獲得</string>
+    <string name="progress_x_of_y">%1$d / %2$d</string>
+    <string name="skill_breakdown">スキル内訳</string>
+    <string name="logic">ロジック</string>
+    <string name="contribution">コントリビューション</string>
+    <string name="stability">安定性</string>
+    <string name="speed">速度</string>
+    <string name="circuit_stats">回路統計</string>
+    <string name="views">閲覧数</string>
+    <string name="forks">フォーク</string>
+
+    <!-- Certificate Levels -->
+    <string name="foundation">Foundation</string>
+    <string name="associate">Associate</string>
+    <string name="professional">Professional</string>
+    <string name="expert">Expert</string>
+    <string name="certificate_level">認定証レベル</string>
+    <string name="valid_until">%sまで有効</string>
+    <string name="expired_on">%sに期限切れ</string>
+    <string name="certificate_id">認定証ID</string>
+    <string name="credential_id">認定ID: %s</string>
+    <string name="issue_date">発行日</string>
+    <string name="expiry_date">有効期限</string>
+
+    <!-- Ranking Periods -->
+    <string name="all_time">全期間</string>
+    <string name="this_week">今週</string>
+    <string name="monthly">月間</string>
+    <string name="quarterly">四半期</string>
+    <string name="yearly">年間</string>
+    <string name="rank_change">%+d順位</string>
+    <string name="percentile">上位%d%%</string>
+
+    <!-- Auth Screen Extended -->
+    <string name="welcome_back">おかえりなさい</string>
+    <string name="create_account">アカウント作成</string>
+    <string name="forgot_password">パスワードをお忘れですか？</string>
+    <string name="reset_password">パスワードリセット</string>
+    <string name="or_continue_with">または以下で続ける</string>
+    <string name="sign_in_with_google">Googleでサインイン</string>
+    <string name="sign_in_with_apple">Appleでサインイン</string>
+    <string name="sign_in_with_linkedin">LinkedInでサインイン</string>
+    <string name="dont_have_account">アカウントをお持ちでないですか？</string>
+    <string name="already_have_account">すでにアカウントをお持ちですか？</string>
+    <string name="continue_as_guest">ゲストとして続ける</string>
+    <string name="by_signing_up">登録することで、以下に同意したことになります</string>
+    <string name="and">および</string>
+
+    <!-- Error Messages -->
+    <string name="error_loading_jobs">求人の読み込みエラー</string>
+    <string name="error_loading_job_details">求人詳細の読み込みエラー</string>
+    <string name="error_submitting_application">応募の送信エラー</string>
+    <string name="error_saving_job">求人の保存エラー</string>
+    <string name="error_network">ネットワークエラー。接続を確認してください。</string>
+    <string name="error_server">サーバーエラー。後でもう一度お試しください。</string>
+    <string name="error_unknown">不明なエラーが発生しました</string>
+
+    <!-- Empty States -->
+    <string name="no_data">データがありません</string>
+    <string name="no_internet">インターネット接続がありません</string>
+    <string name="pull_to_refresh">引いて更新</string>
+    <string name="tap_to_retry">タップして再試行</string>
+    <string name="browse_available_jobs">利用可能な求人を閲覧</string>
+    <string name="save_jobs_for_later">後で見るために求人を保存</string>
+    <string name="start_applying">求人への応募を開始</string>
 </resources>

@@ -12,29 +12,11 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
-// Primary colors
-val QuantumPurple = Color(0xFF6200EE)
-val QuantumPurpleDark = Color(0xFF3700B3)
-val QuantumTeal = Color(0xFF03DAC6)
-val QuantumTealDark = Color(0xFF018786)
-
-// Badge colors
-val BadgeBronze = Color(0xFFCD7F32)
-val BadgeSilver = Color(0xFFC0C0C0)
-val BadgeGold = Color(0xFFFFD700)
-val BadgePlatinum = Color(0xFFE5E4E2)
-
-// Status colors
-val StatusPublished = Color(0xFF4CAF50)
-val StatusUnderReview = Color(0xFFFF9800)
-val StatusDraft = Color(0xFF9E9E9E)
-val StatusRejected = Color(0xFFF44336)
-
 private val LightColorScheme = lightColorScheme(
-    primary = QuantumPurple,
-    onPrimary = Color.White,
-    primaryContainer = Color(0xFFE8DEF8),
-    onPrimaryContainer = Color(0xFF21005E),
+    primary = CareerGold,
+    onPrimary = Color.Black,
+    primaryContainer = Color(0xFFFFECB3),
+    onPrimaryContainer = Color(0xFF3D2E00),
     secondary = QuantumTeal,
     onSecondary = Color.Black,
     secondaryContainer = Color(0xFFCEFAF8),
@@ -43,7 +25,7 @@ private val LightColorScheme = lightColorScheme(
     onTertiary = Color.White,
     tertiaryContainer = Color(0xFFFFD8E4),
     onTertiaryContainer = Color(0xFF31111D),
-    error = Color(0xFFB3261E),
+    error = ErrorRed,
     onError = Color.White,
     errorContainer = Color(0xFFF9DEDC),
     onErrorContainer = Color(0xFF410E0B),
@@ -58,10 +40,10 @@ private val LightColorScheme = lightColorScheme(
 )
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Color(0xFFD0BCFF),
-    onPrimary = Color(0xFF381E72),
-    primaryContainer = Color(0xFF4F378B),
-    onPrimaryContainer = Color(0xFFEADDFF),
+    primary = CareerGold,
+    onPrimary = Color.Black,
+    primaryContainer = CareerGoldContainer,
+    onPrimaryContainer = OnCareerGoldContainer,
     secondary = Color(0xFFA8F5F0),
     onSecondary = Color(0xFF003735),
     secondaryContainer = Color(0xFF004F4D),
@@ -70,23 +52,23 @@ private val DarkColorScheme = darkColorScheme(
     onTertiary = Color(0xFF492532),
     tertiaryContainer = Color(0xFF633B48),
     onTertiaryContainer = Color(0xFFFFD8E4),
-    error = Color(0xFFF2B8B5),
-    onError = Color(0xFF601410),
+    error = ErrorRed,
+    onError = Color.White,
     errorContainer = Color(0xFF8C1D18),
     onErrorContainer = Color(0xFFF9DEDC),
-    background = Color(0xFF1C1B1F),
-    onBackground = Color(0xFFE6E1E5),
-    surface = Color(0xFF1C1B1F),
-    onSurface = Color(0xFFE6E1E5),
-    surfaceVariant = Color(0xFF49454F),
-    onSurfaceVariant = Color(0xFFCAC4D0),
-    outline = Color(0xFF938F99),
-    outlineVariant = Color(0xFF49454F)
+    background = BackgroundDark,  // #0A0A0A
+    onBackground = TextPrimary,
+    surface = SurfaceDark,        // #121212
+    onSurface = TextPrimary,
+    surfaceVariant = SurfaceDarkVariant,
+    onSurfaceVariant = TextSecondary,
+    outline = TextDisabled,
+    outlineVariant = SurfaceDarkVariant
 )
 
 @Composable
 fun QuantumCareerTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
+    darkTheme: Boolean = true,  // Dark mode dominant
     content: @Composable () -> Unit
 ) {
     val colorScheme = if (darkTheme) DarkColorScheme else LightColorScheme
@@ -95,8 +77,10 @@ fun QuantumCareerTheme(
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = colorScheme.primary.toArgb()
+            window.statusBarColor = colorScheme.background.toArgb()
+            window.navigationBarColor = colorScheme.background.toArgb()
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = !darkTheme
+            WindowCompat.getInsetsController(window, view).isAppearanceLightNavigationBars = !darkTheme
         }
     }
 

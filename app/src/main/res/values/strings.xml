@@ -72,4 +72,517 @@
     <string name="cancel">Cancel</string>
     <string name="search">Search</string>
     <string name="doi_prefix">DOI: 10.5281/sqc.2026.</string>
+
+    <!-- Quiz/Test -->
+    <string name="start_test">Start Test</string>
+    <string name="question_x_of_50">Question %1$d of 50</string>
+    <string name="time_remaining">Time Remaining</string>
+    <string name="test_result">Test Result</string>
+    <string name="your_score">Your Score</string>
+    <string name="passing_score">Passing Score</string>
+
+    <!-- Certificates -->
+    <string name="certificate_bronze">Bronze Certificate</string>
+    <string name="certificate_silver">Silver Certificate</string>
+    <string name="certificate_gold">Gold Certificate</string>
+    <string name="certificate_platinum">Platinum Certificate</string>
+
+    <!-- Rankings -->
+    <string name="global_rankings">Global Rankings</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="my_rank">My Rank</string>
+    <string name="top_100">Top 100</string>
+
+    <!-- Certificate Actions -->
+    <string name="verify_certificate">Verify Certificate</string>
+    <string name="share_certificate">Share Certificate</string>
+    <string name="download_pdf">Download PDF</string>
+
+    <!-- Additional Common Actions -->
+    <string name="ok">OK</string>
+    <string name="close">Close</string>
+    <string name="confirm">Confirm</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="done">Done</string>
+    <string name="success">Success</string>
+    <string name="submit">Submit</string>
+    <string name="send">Send</string>
+    <string name="share">Share</string>
+    <string name="copy">Copy</string>
+    <string name="download">Download</string>
+    <string name="upload">Upload</string>
+    <string name="continue_action">Continue</string>
+    <string name="continue_test">Continue Test</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="open">Open</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="see_all">See All</string>
+    <string name="clear_filters">Clear filters</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="resume">Resume</string>
+    <string name="abandon">Abandon</string>
+
+    <!-- Auth Extended -->
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="guest_mode">Guest Mode</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <!-- Navigation Extended -->
+    <string name="home">Home</string>
+    <string name="quiz">Quiz</string>
+    <string name="rankings">Rankings</string>
+    <string name="certs">Certs</string>
+    <string name="settings">Settings</string>
+
+    <!-- Status -->
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="connected">Connected</string>
+    <string name="not_connected">Not connected</string>
+    <string name="connect">Connect</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="processing">Processing...</string>
+
+    <!-- Time -->
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="just_now">Just now</string>
+    <string name="minutes_ago">%1$d minutes ago</string>
+    <string name="hours_ago">%1$d hours ago</string>
+
+    <!-- Drawer/Navigation -->
+    <string name="features">Features</string>
+    <string name="swiftquantum_ecosystem">SwiftQuantum Ecosystem</string>
+    <string name="version">Version</string>
+    <string name="about">About</string>
+    <string name="refresh">Refresh</string>
+
+    <!-- Profile Screen -->
+    <string name="display_name">Display Name</string>
+    <string name="bio">Bio</string>
+    <string name="bio_placeholder">Tell us about yourself...</string>
+    <string name="institution">Institution</string>
+    <string name="institution_placeholder">University, company, or research lab</string>
+    <string name="location">Location</string>
+    <string name="location_placeholder">City, Country</string>
+    <string name="website">Website</string>
+    <string name="website_placeholder">https://...</string>
+    <string name="specializations">Specializations</string>
+    <string name="specializations_placeholder">Quantum algorithms, error correction...</string>
+    <string name="separate_commas">Separate with commas</string>
+
+    <!-- Publish Screen -->
+    <string name="publish_circuit_title">Publish Circuit</string>
+    <string name="enter_descriptive_title">Enter a descriptive title</string>
+    <string name="describe_circuit">Describe what your circuit does...</string>
+    <string name="tags">Tags</string>
+    <string name="tags_placeholder">quantum, algorithm, optimization</string>
+    <string name="separate_tags_commas">Separate tags with commas</string>
+
+    <!-- Talent Screen -->
+    <string name="scout_researcher_title">Scout Researcher</string>
+    <string name="talent_title">Talent</string>
+    <string name="organization">Organization</string>
+    <string name="organization_placeholder">Your company or institution</string>
+    <string name="position_optional">Position (Optional)</string>
+    <string name="position_placeholder">e.g., Senior Quantum Researcher</string>
+    <string name="message">Message</string>
+    <string name="message_placeholder">Introduce yourself and explain why you\'re reaching out...</string>
+    <string name="additional_details_optional">Additional Details (Optional)</string>
+    <string name="additional_details_placeholder">Compensation, benefits, project details...</string>
+    <string name="search_by_name">Search by name, institution...</string>
+    <string name="min_h_index">Min h-Index</string>
+    <string name="min_publications">Min Publications</string>
+    <string name="all">All</string>
+    <string name="no_results">No Results</string>
+    <string name="received">Received</string>
+    <string name="sent">Sent</string>
+
+    <!-- Peer Review Screen -->
+    <string name="submit_review_title">Submit Review</string>
+    <string name="peer_review_title">Peer Review</string>
+    <string name="pending_reviews_count">Pending (%1$d)</string>
+    <string name="my_reviews">My Reviews</string>
+    <string name="claim_review">Claim Review</string>
+    <string name="provide_feedback">Provide detailed feedback...</string>
+    <string name="technical_quality">Technical Quality</string>
+    <string name="innovation">Innovation</string>
+    <string name="documentation">Documentation</string>
+    <string name="no_pending_reviews">No Pending Reviews</string>
+    <string name="no_reviews_yet">No Reviews Yet</string>
+
+    <!-- Rankings Screen -->
+    <string name="my_rank_title">My Ranking</string>
+    <string name="tests_completed">Tests Completed</string>
+    <string name="avg_score">Avg. Score</string>
+    <string name="local_rankings">Local Rankings</string>
+    <string name="ranking_achievements">Ranking Achievements</string>
+    <string name="friends_ranking">Friends Ranking</string>
+    <string name="all_countries">All Countries</string>
+
+    <!-- Certificates Screen -->
+    <string name="no_certificates_yet">No Certificates Yet</string>
+    <string name="take_certification_test">Take Certification Test</string>
+    <string name="active_certificates">Active Certificates</string>
+    <string name="expired_certificates">Expired Certificates</string>
+    <string name="verification">Verification</string>
+
+    <!-- Test/Quiz Screen -->
+    <string name="certification_test">Certification Test</string>
+    <string name="question_number">Question %1$d</string>
+    <string name="submit_answer">Submit Answer</string>
+    <string name="abandon_test">Abandon Test?</string>
+    <string name="abandon_test_message">Are you sure you want to abandon this test? Your progress will be lost and this will count as an incomplete attempt.</string>
+    <string name="test_rules">Test Rules</string>
+    <string name="start_test_button">Start Test</string>
+    <string name="certification_tiers">Certification Tiers</string>
+    <string name="your_history">Your History</string>
+    <string name="attempts">Attempts</string>
+    <string name="best_score">Best Score</string>
+    <string name="pass_rate">Pass Rate</string>
+    <string name="question_categories">Question Categories</string>
+
+    <!-- Test Results Screen -->
+    <string name="test_results">Test Results</string>
+    <string name="view_certificate">View Certificate</string>
+    <string name="take_another_test">Take Another Test</string>
+    <string name="back_to_dashboard">Back to Dashboard</string>
+    <string name="score_breakdown">Score Breakdown</string>
+    <string name="performance_by_category">Performance by Category</string>
+    <string name="test_statistics">Test Statistics</string>
+    <string name="time_spent">Time Spent</string>
+    <string name="accuracy">Accuracy</string>
+
+    <!-- Circuits Screen -->
+    <string name="no_circuits_yet">No Circuits Yet</string>
+    <string name="all_circuits">All Circuits</string>
+    <string name="delete_circuit">Delete Circuit</string>
+
+    <!-- Badges Screen -->
+    <string name="next_achievement">Next Achievement</string>
+    <string name="badge_requirements">Badge Requirements</string>
+    <string name="all_badges">All Badges</string>
+
+    <!-- Citations Screen -->
+    <string name="top_cited_circuits">Top Cited Circuits</string>
+    <string name="summary">Summary</string>
+    <string name="publications">Publications</string>
+    <string name="this_month">+%1$d this month</string>
+    <string name="recent_activity">Recent Activity</string>
+
+    <!-- Dashboard Screen -->
+    <string name="quick_actions">Quick Actions</string>
+    <string name="featured_jobs">Featured Jobs</string>
+    <string name="industry_readiness">Industry Readiness</string>
+    <string name="industry_readiness_score">Industry Readiness Score</string>
+    <string name="quick_stats">Quick Stats</string>
+    <string name="global_rank">Global Rank</string>
+    <string name="certificates_count">Certificates</string>
+    <string name="view_jobs">View Jobs</string>
+    <string name="see_breakdown">See Breakdown</string>
+    <string name="evidence_breakdown">Evidence Breakdown</string>
+
+    <!-- Jobs Screen -->
+    <string name="jobs">Jobs</string>
+    <string name="browse_jobs">Browse Jobs</string>
+    <string name="recommended">Recommended</string>
+    <string name="saved_jobs">Saved Jobs</string>
+    <string name="applications">Applications</string>
+    <string name="search_jobs">Search jobs...</string>
+    <string name="filter_jobs">Filter Jobs</string>
+    <string name="no_jobs_found">No jobs found</string>
+    <string name="no_jobs_found_message">Try adjusting your search or filters</string>
+    <string name="search_jobs_placeholder">Search by title, company, or skills...</string>
+    <string name="clear">Clear</string>
+    <string name="no_recommendations">No Recommendations</string>
+    <string name="no_recommendations_message">Complete your profile to get personalized job recommendations</string>
+    <string name="no_recommended_jobs">No recommended jobs yet</string>
+    <string name="no_saved_jobs">No saved jobs yet</string>
+    <string name="no_saved_jobs_message">Save jobs to review them later</string>
+    <string name="no_applications">No applications yet</string>
+    <string name="no_applications_message">Start applying to jobs to track your applications here</string>
+    <string name="view_details">View Details</string>
+    <string name="applied">Applied</string>
+    <string name="match">Match</string>
+    <string name="days_ago">%d days ago</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="interview_scheduled">Interview Scheduled</string>
+    <string name="job_match">%d%% Match</string>
+    <string name="jobs_count">%d jobs</string>
+    <string name="active_applications">Active Applications</string>
+    <string name="total_applications">Total Applications</string>
+    <string name="interview_rate">Interview Rate</string>
+
+    <!-- Job Detail Screen -->
+    <string name="job_details">Job Details</string>
+    <string name="about_role">About the Role</string>
+    <string name="requirements">Requirements</string>
+    <string name="responsibilities">Responsibilities</string>
+    <string name="required_skills">Required Skills</string>
+    <string name="preferred_skills">Preferred Skills</string>
+    <string name="benefits">Benefits</string>
+    <string name="about_company">About Company</string>
+    <string name="company_size">Company Size</string>
+    <string name="industry">Industry</string>
+    <string name="founded">Founded</string>
+    <string name="headquarters">Headquarters</string>
+    <string name="salary_range">Salary Range</string>
+    <string name="apply_now">Apply Now</string>
+    <string name="save_job">Save Job</string>
+    <string name="unsave_job">Unsave</string>
+    <string name="unsave">Unsave</string>
+    <string name="saved">Saved</string>
+    <string name="already_applied">Already Applied</string>
+    <string name="expired">Expired</string>
+    <string name="job_description">Job Description</string>
+    <string name="posted">Posted</string>
+    <string name="days_left">%d days left</string>
+    <string name="ai_match_score">AI Match Score</string>
+    <string name="interviews">Interviews</string>
+    <string name="offers">Offers</string>
+    <string name="job_saved">Job saved</string>
+    <string name="job_unsaved">Job removed from saved</string>
+    <string name="application_deadline">Application Deadline</string>
+    <string name="posted_date">Posted %s</string>
+    <string name="applicants_count">%d applicants</string>
+    <string name="match_score">Match Score</string>
+    <string name="why_good_match">Why You\'re a Good Match</string>
+    <string name="skill_match">Skill Match</string>
+    <string name="experience_match">Experience Match</string>
+    <string name="certification_match">Certification Match</string>
+
+    <!-- Job Filter -->
+    <string name="filter">Filter</string>
+    <string name="location_type">Location Type</string>
+    <string name="remote">Remote</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="on_site">On-site</string>
+    <string name="employment_type">Employment Type</string>
+    <string name="full_time">Full-time</string>
+    <string name="part_time">Part-time</string>
+    <string name="contract">Contract</string>
+    <string name="internship">Internship</string>
+    <string name="freelance">Freelance</string>
+    <string name="experience_level">Experience Level</string>
+    <string name="entry_level">Entry Level</string>
+    <string name="mid_level">Mid Level</string>
+    <string name="senior_level">Senior Level</string>
+    <string name="lead">Lead</string>
+    <string name="executive">Executive</string>
+    <string name="skills_filter">Skills</string>
+    <string name="add_skill">Add Skill</string>
+    <string name="minimum_salary">Minimum Salary</string>
+    <string name="clear_all">Clear All</string>
+
+    <!-- Job Application -->
+    <string name="apply_to_job">Apply to Job</string>
+    <string name="cover_letter">Cover Letter</string>
+    <string name="cover_letter_placeholder">Write your cover letter here...</string>
+    <string name="include_cover_letter">Include Cover Letter</string>
+    <string name="resume_url">Resume URL</string>
+    <string name="resume_url_placeholder">Link to your resume (optional)</string>
+    <string name="upload_resume">Upload Resume</string>
+    <string name="submit_application">Submit Application</string>
+    <string name="application_submitted">Application Submitted!</string>
+    <string name="application_submitted_message">Your application has been submitted successfully.</string>
+
+    <!-- Application Status -->
+    <string name="application_status">Application Status</string>
+    <string name="status_submitted">Submitted</string>
+    <string name="status_under_review">Under Review</string>
+    <string name="status_interview_scheduled">Interview Scheduled</string>
+    <string name="status_offer_received">Offer Received</string>
+    <string name="status_rejected">Rejected</string>
+    <string name="status_withdrawn">Withdrawn</string>
+    <string name="applied_on">Applied on %s</string>
+    <string name="last_updated">Last updated %s</string>
+
+    <!-- Settings Screen -->
+    <string name="account">Account</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="email_notifications">Email Notifications</string>
+    <string name="job_alerts">Job Alerts</string>
+    <string name="quiz_reminders">Quiz Reminders</string>
+    <string name="certificate_updates">Certificate Updates</string>
+    <string name="appearance">Appearance</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="language">Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="korean">Korean</string>
+    <string name="japanese">Japanese</string>
+    <string name="chinese">Chinese</string>
+    <string name="german">German</string>
+    <string name="subscription">Subscription</string>
+    <string name="subscription_plan">Subscription Plan</string>
+    <string name="free_plan">Free</string>
+    <string name="pro_plan">Pro</string>
+    <string name="enterprise_plan">Enterprise</string>
+    <string name="upgrade_to_pro">Upgrade to Pro</string>
+    <string name="manage_subscription">Manage Subscription</string>
+    <string name="integrations">Integrations</string>
+    <string name="connect_linkedin">Connect LinkedIn</string>
+    <string name="linkedin_connected">LinkedIn Connected</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="support">Support</string>
+    <string name="help_center">Help Center</string>
+    <string name="help_faq">Help &amp; FAQ</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="contact_support">Contact Support</string>
+    <string name="report_bug">Report a Bug</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="app_version">App Version</string>
+    <string name="logout_confirmation">Logout?</string>
+    <string name="logout_confirmation_message">Are you sure you want to logout?</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="delete_account_confirmation">Delete Account?</string>
+    <string name="delete_account_message">This action cannot be undone. All your data will be permanently deleted.</string>
+    <string name="app_tagline">Your quantum career starts here</string>
+    <string name="sign_in_to_sync">Sign in to sync your data across devices</string>
+    <string name="current_plan">Current Plan</string>
+    <string name="pro_features_intro">Unlock powerful features with Pro:</string>
+    <string name="account_security">Account Security</string>
+    <string name="notifications_subtitle">Enable or disable all notifications</string>
+    <string name="email_notifications_subtitle">Receive updates via email</string>
+    <string name="push_notifications_subtitle">Receive push notifications on your device</string>
+    <string name="dark_mode_subtitle">Switch between light and dark themes</string>
+
+    <!-- Enhanced Profile Screen -->
+    <string name="overview">Overview</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="contribution_timeline">Contribution Timeline</string>
+    <string name="contribution_activity">Contribution Activity</string>
+    <string name="day_streak">%d day streak</string>
+    <string name="contributions_this_year">%d contributions this year</string>
+    <string name="current_streak">Current Streak</string>
+    <string name="longest_streak">Longest Streak</string>
+    <string name="total_contributions">Total Contributions</string>
+    <string name="days">days</string>
+    <string name="export_pdf">Export PDF</string>
+    <string name="export_pdf_portfolio">Export PDF Portfolio</string>
+    <string name="pdf_exported">PDF exported successfully</string>
+    <string name="share_on_linkedin">Share on LinkedIn</string>
+    <string name="earned_badges">Earned Badges</string>
+    <string name="in_progress_badges">In Progress</string>
+    <string name="badge_earned">Badge Earned</string>
+    <string name="progress_x_of_y">%1$d / %2$d</string>
+    <string name="skill_breakdown">Skill Breakdown</string>
+    <string name="logic">Logic</string>
+    <string name="contribution">Contribution</string>
+    <string name="stability">Stability</string>
+    <string name="speed">Speed</string>
+    <string name="circuit_stats">Circuit Stats</string>
+    <string name="views">Views</string>
+    <string name="forks">Forks</string>
+
+    <!-- Certificate Levels -->
+    <string name="foundation">Foundation</string>
+    <string name="associate">Associate</string>
+    <string name="professional">Professional</string>
+    <string name="expert">Expert</string>
+    <string name="certificate_level">Certificate Level</string>
+    <string name="valid_until">Valid until %s</string>
+    <string name="expired_on">Expired on %s</string>
+    <string name="certificate_id">Certificate ID</string>
+    <string name="credential_id">Credential ID: %s</string>
+    <string name="issue_date">Issue Date</string>
+    <string name="expiry_date">Expiry Date</string>
+
+    <!-- Ranking Periods -->
+    <string name="all_time">All Time</string>
+    <string name="this_week">This Week</string>
+    <string name="monthly">Monthly</string>
+    <string name="quarterly">Quarterly</string>
+    <string name="yearly">Yearly</string>
+    <string name="rank_change">%+d positions</string>
+    <string name="percentile">Top %d%%</string>
+
+    <!-- Auth Screen Extended -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="create_account">Create Account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="or_continue_with">Or continue with</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_apple">Sign in with Apple</string>
+    <string name="sign_in_with_linkedin">Sign in with LinkedIn</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="by_signing_up">By signing up, you agree to our</string>
+    <string name="and">and</string>
+
+    <!-- Profile Privacy -->
+    <string name="privacy_settings">Privacy Settings</string>
+    <string name="public_profile_subtitle">Allow others to view your profile and portfolio</string>
+    <string name="available_for_hire">Available for Hire</string>
+    <string name="available_for_hire_subtitle">Let recruiters know you\'re looking for opportunities</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in_to_build_portfolio">Sign in to build your quantum career portfolio</string>
+
+    <!-- Additional Job/Application Strings -->
+    <string name="optional">Optional</string>
+    <string name="or_paste_url">Or paste URL</string>
+    <string name="application_info_message">Your profile data and quantum portfolio will be shared with the employer along with your application.</string>
+    <string name="submitting">Submitting...</string>
+    <string name="add_skill_placeholder">Type skill and press Add</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="skills">Skills</string>
+    <string name="certifications">Certifications</string>
+    <string name="circuits_waiting">circuits waiting for review</string>
+    <string name="timestamp">Timestamp</string>
+
+    <!-- Error Messages -->
+    <string name="error_loading_jobs">Error loading jobs</string>
+    <string name="error_loading_job_details">Error loading job details</string>
+    <string name="error_submitting_application">Error submitting application</string>
+    <string name="error_saving_job">Error saving job</string>
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_server">Server error. Please try again later.</string>
+    <string name="error_unknown">An unknown error occurred</string>
+
+    <!-- Circuits Tab -->
+    <string name="no_circuits">No Circuits</string>
+    <string name="no_circuits_message">Publish your first circuit to showcase your quantum computing skills</string>
+
+    <!-- Certificates Tab -->
+    <string name="certificates">Certificates</string>
+    <string name="no_certificates">No Certificates</string>
+    <string name="no_certificates_message">Complete certification tests to earn verifiable credentials</string>
+    <string name="issued">Issued</string>
+    <string name="expires">Expires</string>
+    <string name="view">View</string>
+    <string name="linkedin">LinkedIn</string>
+
+    <!-- Badges Tab -->
+    <string name="no_badges">No Badges</string>
+    <string name="no_badges_message">Start contributing to earn your first badge</string>
+    <string name="in_progress">In Progress</string>
+
+    <!-- Contribution Heatmap -->
+    <string name="less">Less</string>
+    <string name="more">More</string>
+
+    <!-- Empty States -->
+    <string name="no_data">No data available</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="pull_to_refresh">Pull to refresh</string>
+    <string name="tap_to_retry">Tap to retry</string>
+    <string name="browse_available_jobs">Browse available jobs</string>
+    <string name="save_jobs_for_later">Save jobs for later</string>
+    <string name="start_applying">Start applying to jobs</string>
 </resources>
