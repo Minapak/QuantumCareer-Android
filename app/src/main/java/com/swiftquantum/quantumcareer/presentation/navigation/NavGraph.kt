@@ -8,6 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.swiftquantum.quantumcareer.presentation.ui.screen.*
+import com.swiftquantum.quantumcareer.presentation.ui.screen.LanguageSelectionScreen
 import com.swiftquantum.quantumcareer.presentation.ui.screen.auth.AuthScreen
 import com.swiftquantum.quantumcareer.presentation.ui.screen.jobs.JobDetailScreen
 import com.swiftquantum.quantumcareer.presentation.ui.screen.jobs.JobsScreen
@@ -16,6 +17,7 @@ import com.swiftquantum.quantumcareer.presentation.ui.screen.rankings.*
 import com.swiftquantum.quantumcareer.presentation.ui.screen.certificate.*
 
 sealed class Screen(val route: String) {
+    data object LanguageSelection : Screen("language_selection")
     data object Dashboard : Screen("dashboard")
     data object Publish : Screen("publish")
     data object Circuits : Screen("circuits")
@@ -58,13 +60,24 @@ sealed class Screen(val route: String) {
 @Composable
 fun NavGraph(
     navController: NavHostController,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    startDestination: String = Screen.Dashboard.route
 ) {
     NavHost(
         navController = navController,
-        startDestination = Screen.Dashboard.route,
+        startDestination = startDestination,
         modifier = modifier
     ) {
+        composable(Screen.LanguageSelection.route) {
+            LanguageSelectionScreen(
+                onContinue = {
+                    navController.navigate(Screen.Dashboard.route) {
+                        popUpTo(Screen.LanguageSelection.route) { inclusive = true }
+                    }
+                }
+            )
+        }
+
         composable(Screen.Dashboard.route) {
             DashboardScreen(
                 onNavigateToCircuits = { navController.navigate(Screen.Circuits.route) },

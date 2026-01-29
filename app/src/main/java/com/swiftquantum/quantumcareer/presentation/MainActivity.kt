@@ -23,8 +23,10 @@ import com.swiftquantum.quantumcareer.presentation.navigation.Screen
 import com.swiftquantum.quantumcareer.presentation.ui.component.DrawerMenuItem
 import com.swiftquantum.quantumcareer.presentation.ui.component.UnifiedNavigationDrawer
 import com.swiftquantum.quantumcareer.presentation.ui.theme.QuantumCareerTheme
+import com.swiftquantum.quantumcareer.presentation.viewmodel.OnboardingViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
+import androidx.hilt.navigation.compose.hiltViewModel
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -64,12 +66,25 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun QuantumCareerApp(deepLinkUri: Uri? = null) {
+fun QuantumCareerApp(
+    deepLinkUri: Uri? = null,
+    onboardingViewModel: OnboardingViewModel = hiltViewModel()
+) {
+    val onboardingState by onboardingViewModel.uiState.collectAsState()
     val navController = rememberNavController()
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
     val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
     val scope = rememberCoroutineScope()
+
+    // Determine start destination based on onboarding status
+    val startDestination = if (onboardingState.isLoading) {
+        Screen.LanguageSelection.route  // Will be updated after loading
+    } else if (onboardingState.onboardingCompleted) {
+        Screen.Dashboard.route
+    } else {
+        Screen.LanguageSelection.route
+    }
 
     // Determine if bottom bar should be shown
     val showBottomBar = currentDestination?.route in listOf(
@@ -167,10 +182,13 @@ fun QuantumCareerApp(deepLinkUri: Uri? = null) {
                 }
             }
         ) { innerPadding ->
-            NavGraph(
-                navController = navController,
-                modifier = Modifier.padding(innerPadding)
-            )
+            if (!onboardingState.isLoading) {
+                NavGraph(
+                    navController = navController,
+                    modifier = Modifier.padding(innerPadding),
+                    startDestination = startDestination
+                )
+            }
         }
     }
 }

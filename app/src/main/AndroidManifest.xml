@@ -5,6 +5,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <!-- Permissions for shared auth provider access -->
+    <uses-permission android:name="com.swiftquantum.permission.READ_AUTH" />
+    <uses-permission android:name="com.swiftquantum.permission.WRITE_AUTH" />
+
     <application
         android:name=".QuantumCareerApp"
         android:allowBackup="true"

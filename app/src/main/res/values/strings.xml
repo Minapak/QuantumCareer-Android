@@ -420,6 +420,7 @@
     <string name="dark_mode">Dark Mode</string>
     <string name="language">Language</string>
     <string name="select_language">Select Language</string>
+    <string name="select_language_desc">Choose your preferred language for learning</string>
     <string name="english">English</string>
     <string name="korean">Korean</string>
     <string name="japanese">Japanese</string>
