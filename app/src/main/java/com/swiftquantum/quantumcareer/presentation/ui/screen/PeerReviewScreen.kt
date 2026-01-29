@@ -10,9 +10,11 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.swiftquantum.quantumcareer.R
 import com.swiftquantum.quantumcareer.presentation.ui.component.*
 import com.swiftquantum.quantumcareer.presentation.viewmodel.PeerReviewViewModel
 
@@ -32,9 +34,10 @@ fun PeerReviewScreen(
         }
     }
 
+    val reviewSubmittedMessage = stringResource(R.string.review_submitted_success)
     LaunchedEffect(uiState.submitSuccess) {
         if (uiState.submitSuccess) {
-            snackbarHostState.showSnackbar("Review submitted successfully!")
+            snackbarHostState.showSnackbar(reviewSubmittedMessage)
             viewModel.clearSuccess()
         }
     }
@@ -43,19 +46,19 @@ fun PeerReviewScreen(
         topBar = {
             if (uiState.selectedReview != null) {
                 TopAppBar(
-                    title = { Text("Submit Review") },
+                    title = { Text(stringResource(R.string.submit_review_title)) },
                     navigationIcon = {
                         IconButton(onClick = { viewModel.clearSelectedReview() }) {
-                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.back))
                         }
                     }
                 )
             } else {
                 TopAppBar(
-                    title = { Text("Peer Review") },
+                    title = { Text(stringResource(R.string.peer_review_title)) },
                     actions = {
                         IconButton(onClick = { viewModel.loadData() }) {
-                            Icon(Icons.Default.Refresh, contentDescription = "Refresh")
+                            Icon(Icons.Default.Refresh, contentDescription = stringResource(R.string.refresh))
                         }
                     }
                 )
@@ -142,7 +145,7 @@ fun PeerReviewScreen(
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
                                 Text(
-                                    text = "Reviewer Stats",
+                                    text = stringResource(R.string.reviewer_stats),
                                     style = MaterialTheme.typography.titleMedium,
                                     fontWeight = FontWeight.Bold
                                 )
@@ -162,7 +165,7 @@ fun PeerReviewScreen(
                                         fontWeight = FontWeight.Bold
                                     )
                                     Text(
-                                        text = "Total",
+                                        text = stringResource(R.string.total),
                                         style = MaterialTheme.typography.labelSmall
                                     )
                                 }
@@ -173,7 +176,7 @@ fun PeerReviewScreen(
                                         fontWeight = FontWeight.Bold
                                     )
                                     Text(
-                                        text = "Approved",
+                                        text = stringResource(R.string.approved),
                                         style = MaterialTheme.typography.labelSmall
                                     )
                                 }
@@ -184,7 +187,7 @@ fun PeerReviewScreen(
                                         fontWeight = FontWeight.Bold
                                     )
                                     Text(
-                                        text = "Rejected",
+                                        text = stringResource(R.string.rejected),
                                         style = MaterialTheme.typography.labelSmall
                                     )
                                 }
@@ -193,7 +196,7 @@ fun PeerReviewScreen(
                             stats.reviewsUntilNextLevel?.let { remaining ->
                                 Spacer(modifier = Modifier.height(12.dp))
                                 Text(
-                                    text = "$remaining reviews until next level",
+                                    text = stringResource(R.string.reviews_until_next_level, remaining),
                                     style = MaterialTheme.typography.labelMedium,
                                     color = MaterialTheme.colorScheme.onPrimaryContainer
                                 )
@@ -207,12 +210,12 @@ fun PeerReviewScreen(
                     Tab(
                         selected = uiState.selectedTab == 0,
                         onClick = { viewModel.selectTab(0) },
-                        text = { Text("Pending (${uiState.pendingReviews.size})") }
+                        text = { Text(stringResource(R.string.pending_reviews_count, uiState.pendingReviews.size)) }
                     )
                     Tab(
                         selected = uiState.selectedTab == 1,
                         onClick = { viewModel.selectTab(1) },
-                        text = { Text("My Reviews") }
+                        text = { Text(stringResource(R.string.my_reviews)) }
                     )
                 }
 
@@ -222,14 +225,14 @@ fun PeerReviewScreen(
                     }
                     uiState.selectedTab == 0 && uiState.pendingReviews.isEmpty() -> {
                         EmptyView(
-                            title = "No Pending Reviews",
-                            message = "There are no circuits waiting for your review right now."
+                            title = stringResource(R.string.no_pending_reviews),
+                            message = stringResource(R.string.no_pending_reviews_message)
                         )
                     }
                     uiState.selectedTab == 1 && uiState.myReviews.isEmpty() -> {
                         EmptyView(
-                            title = "No Reviews Yet",
-                            message = "You haven't submitted any reviews yet. Start reviewing to level up!"
+                            title = stringResource(R.string.no_reviews_yet),
+                            message = stringResource(R.string.no_reviews_yet_message)
                         )
                     }
                     else -> {

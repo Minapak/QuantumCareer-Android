@@ -25,10 +25,12 @@ class CareerRepositoryImpl @Inject constructor(
                 val body = response.body()
                 Result.success(body?.circuits?.map { it.toDomain() } ?: emptyList())
             } else {
-                Result.failure(Exception("Failed to get circuits: ${response.code()}"))
+                // Return empty list for guest/offline mode
+                Result.success(emptyList())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty list on API failure
+            Result.success(emptyList())
         }
     }
 
@@ -90,13 +92,23 @@ class CareerRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let {
                     Result.success(it.toDomain())
-                } ?: Result.failure(Exception("Failed to get badges"))
+                } ?: Result.success(getDefaultBadgeCollection())
             } else {
-                Result.failure(Exception("Failed to get badges: ${response.code()}"))
+                // Return default badges for guest/offline mode
+                Result.success(getDefaultBadgeCollection())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return default badges on API failure
+            Result.success(getDefaultBadgeCollection())
         }
+    }
+
+    private fun getDefaultBadgeCollection(): BadgeCollection {
+        return BadgeCollection(
+            badges = emptyList(),
+            nextBadge = null,
+            currentTier = BadgeTier.BRONZE
+        )
     }
 
     override suspend fun getCitationStats(): Result<CitationStats> {
@@ -105,13 +117,26 @@ class CareerRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let {
                     Result.success(it.toDomain())
-                } ?: Result.failure(Exception("Failed to get citation stats"))
+                } ?: Result.success(getDefaultCitationStats())
             } else {
-                Result.failure(Exception("Failed to get citation stats: ${response.code()}"))
+                // Return default stats for guest/offline mode
+                Result.success(getDefaultCitationStats())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return default stats on API failure
+            Result.success(getDefaultCitationStats())
         }
+    }
+
+    private fun getDefaultCitationStats(): CitationStats {
+        return CitationStats(
+            totalCitations = 0,
+            hIndex = 0,
+            i10Index = 0,
+            totalPublications = 0,
+            citationHistory = emptyList(),
+            topCitedCircuits = emptyList()
+        )
     }
 
     override suspend fun getCircuitCitations(circuitId: String): Result<List<CitationDetail>> {
@@ -178,12 +203,27 @@ class CareerRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let {
                     Result.success(it.toDomain())
-                } ?: Result.failure(Exception("Failed to get dashboard stats"))
+                } ?: Result.success(getDefaultDashboardStats())
             } else {
-                Result.failure(Exception("Failed to get dashboard stats: ${response.code()}"))
+                // Return default stats for guest/offline mode
+                Result.success(getDefaultDashboardStats())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return default stats on API failure
+            Result.success(getDefaultDashboardStats())
         }
+    }
+
+    private fun getDefaultDashboardStats(): DashboardStats {
+        return DashboardStats(
+            totalPublications = 0,
+            totalCitations = 0,
+            hIndex = 0,
+            i10Index = 0,
+            pendingReviews = 0,
+            currentBadgeTier = BadgeTier.BRONZE,
+            nextBadgeProgress = 0f,
+            recentActivity = emptyList()
+        )
     }
 }

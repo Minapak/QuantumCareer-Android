@@ -34,10 +34,10 @@ fun BadgesScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Badges") },
+                title = { Text(stringResource(R.string.badges)) },
                 actions = {
                     IconButton(onClick = { viewModel.refresh() }) {
-                        Icon(Icons.Default.Refresh, contentDescription = "Refresh")
+                        Icon(Icons.Default.Refresh, contentDescription = stringResource(R.string.refresh))
                     }
                 }
             )
@@ -49,7 +49,7 @@ fun BadgesScreen(
             }
             uiState.error != null -> {
                 ErrorView(
-                    message = uiState.error ?: "Unknown error",
+                    message = uiState.error ?: stringResource(R.string.error_unknown),
                     onRetry = { viewModel.refresh() },
                     modifier = Modifier.padding(paddingValues)
                 )
@@ -95,7 +95,7 @@ fun BadgesScreen(
 
                                 Column {
                                     Text(
-                                        text = "Current Tier",
+                                        text = stringResource(R.string.current_tier),
                                         style = MaterialTheme.typography.labelMedium,
                                         color = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
@@ -105,7 +105,7 @@ fun BadgesScreen(
                                         fontWeight = FontWeight.Bold
                                     )
                                     Text(
-                                        text = "Researcher",
+                                        text = stringResource(R.string.researcher),
                                         style = MaterialTheme.typography.titleMedium,
                                         color = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
@@ -117,7 +117,7 @@ fun BadgesScreen(
                     // Next Badge Progress
                     collection.nextBadge?.let { nextBadge ->
                         item {
-                            SectionHeader(title = "Next Achievement")
+                            SectionHeader(title = stringResource(R.string.next_achievement))
                         }
 
                         item {
@@ -127,7 +127,7 @@ fun BadgesScreen(
 
                     // Badge Requirements Info
                     item {
-                        SectionHeader(title = "Badge Requirements")
+                        SectionHeader(title = stringResource(R.string.badge_requirements))
                     }
 
                     item {
@@ -160,8 +160,8 @@ fun BadgesScreen(
                                             val req = tier.requirements
                                             Text(
                                                 text = when (tier) {
-                                                    BadgeTier.BRONZE -> "First circuit published"
-                                                    else -> "${req.publications} publications + ${req.citations} citations"
+                                                    BadgeTier.BRONZE -> stringResource(R.string.first_circuit_published)
+                                                    else -> stringResource(R.string.publications_citations_format, req.publications, req.citations)
                                                 },
                                                 style = MaterialTheme.typography.bodySmall,
                                                 color = MaterialTheme.colorScheme.onSurfaceVariant
@@ -171,7 +171,7 @@ fun BadgesScreen(
                                         if (tier.ordinal <= collection.currentTier.ordinal) {
                                             Icon(
                                                 imageVector = Icons.Default.CheckCircle,
-                                                contentDescription = "Earned",
+                                                contentDescription = stringResource(R.string.earned),
                                                 tint = StatusPublished
                                             )
                                         }
@@ -187,7 +187,7 @@ fun BadgesScreen(
 
                     // All Badges Collection
                     item {
-                        SectionHeader(title = "All Badges")
+                        SectionHeader(title = stringResource(R.string.all_badges))
                     }
 
                     items(collection.badges) { badge ->
@@ -230,7 +230,7 @@ fun BadgesScreen(
                                     if (badge.earned && badge.earnedAt != null) {
                                         Spacer(modifier = Modifier.height(4.dp))
                                         Text(
-                                            text = "Earned on ${badge.earnedAt.format(DateTimeFormatter.ofPattern("MMM d, yyyy"))}",
+                                            text = stringResource(R.string.earned_on_date, badge.earnedAt.format(DateTimeFormatter.ofPattern("MMM d, yyyy"))),
                                             style = MaterialTheme.typography.labelSmall,
                                             color = StatusPublished
                                         )
@@ -243,7 +243,7 @@ fun BadgesScreen(
                                             modifier = Modifier.fillMaxWidth(),
                                         )
                                         Text(
-                                            text = "${(badge.progress.percentage * 100).toInt()}% complete",
+                                            text = stringResource(R.string.percent_complete, (badge.progress.percentage * 100).toInt()),
                                             style = MaterialTheme.typography.labelSmall,
                                             color = MaterialTheme.colorScheme.onSurfaceVariant
                                         )
@@ -253,7 +253,7 @@ fun BadgesScreen(
                                 if (badge.earned) {
                                     Icon(
                                         imageVector = Icons.Default.Verified,
-                                        contentDescription = "Earned",
+                                        contentDescription = stringResource(R.string.earned),
                                         tint = when (badge.tier) {
                                             BadgeTier.BRONZE -> BadgeBronze
                                             BadgeTier.SILVER -> BadgeSilver
@@ -264,7 +264,7 @@ fun BadgesScreen(
                                 } else {
                                     Icon(
                                         imageVector = Icons.Default.Lock,
-                                        contentDescription = "Locked",
+                                        contentDescription = stringResource(R.string.locked),
                                         tint = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
                                 }

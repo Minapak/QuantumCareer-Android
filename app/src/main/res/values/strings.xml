@@ -231,6 +231,18 @@
     <string name="no_results">No Results</string>
     <string name="received">Received</string>
     <string name="sent">Sent</string>
+    <string name="offer_sent_success">Offer sent successfully!</string>
+    <string name="offer_type">Offer Type</string>
+    <string name="received_count">Received (%1$d)</string>
+    <string name="sent_count">Sent (%1$d)</string>
+    <string name="try_adjusting_search">Try adjusting your search criteria</string>
+    <string name="no_offers_received">No Offers Received</string>
+    <string name="no_offers_sent">No Offers Sent</string>
+    <string name="no_offers_received_message">You haven\'t received any offers yet.</string>
+    <string name="no_offers_sent_message">You haven\'t sent any offers yet. Search for talent to get started.</string>
+    <string name="from_user">from %1$s</string>
+    <string name="to_researcher">to researcher</string>
+    <string name="withdraw_offer">Withdraw Offer</string>
 
     <!-- Peer Review Screen -->
     <string name="submit_review_title">Submit Review</string>
@@ -244,6 +256,14 @@
     <string name="documentation">Documentation</string>
     <string name="no_pending_reviews">No Pending Reviews</string>
     <string name="no_reviews_yet">No Reviews Yet</string>
+    <string name="review_submitted_success">Review submitted successfully!</string>
+    <string name="reviewer_stats">Reviewer Stats</string>
+    <string name="total">Total</string>
+    <string name="approved">Approved</string>
+    <string name="rejected">Rejected</string>
+    <string name="reviews_until_next_level">%1$d reviews until next level</string>
+    <string name="no_pending_reviews_message">There are no circuits waiting for your review right now.</string>
+    <string name="no_reviews_yet_message">You haven\'t submitted any reviews yet. Start reviewing to level up!</string>
 
     <!-- Rankings Screen -->
     <string name="my_rank_title">My Ranking</string>
@@ -291,11 +311,21 @@
     <string name="no_circuits_yet">No Circuits Yet</string>
     <string name="all_circuits">All Circuits</string>
     <string name="delete_circuit">Delete Circuit</string>
+    <string name="delete_circuit_confirmation">Are you sure you want to delete \"%1$s\"? This action cannot be undone.</string>
+    <string name="citations_count">%1$d citations</string>
 
     <!-- Badges Screen -->
     <string name="next_achievement">Next Achievement</string>
     <string name="badge_requirements">Badge Requirements</string>
     <string name="all_badges">All Badges</string>
+    <string name="current_tier">Current Tier</string>
+    <string name="researcher">Researcher</string>
+    <string name="earned">Earned</string>
+    <string name="locked">Locked</string>
+    <string name="first_circuit_published">First circuit published</string>
+    <string name="publications_citations_format">%1$d publications + %2$d citations</string>
+    <string name="earned_on_date">Earned on %1$s</string>
+    <string name="percent_complete">%1$d%% complete</string>
 
     <!-- Citations Screen -->
     <string name="top_cited_circuits">Top Cited Circuits</string>
@@ -303,6 +333,10 @@
     <string name="publications">Publications</string>
     <string name="this_month">+%1$d this month</string>
     <string name="recent_activity">Recent Activity</string>
+    <string name="avg_per_paper">Avg/Paper</string>
+    <string name="understanding_citation_metrics">Understanding Citation Metrics</string>
+    <string name="h_index_explanation">h-Index: You have %1$d publications with at least %2$d citations each.</string>
+    <string name="i10_index_explanation">i10-Index: You have %1$d publications with at least 10 citations each.</string>
 
     <!-- Dashboard Screen -->
     <string name="quick_actions">Quick Actions</string>

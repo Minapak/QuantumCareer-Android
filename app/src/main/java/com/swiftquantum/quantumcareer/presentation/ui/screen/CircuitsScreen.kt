@@ -10,10 +10,12 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.swiftquantum.quantumcareer.R
 import com.swiftquantum.quantumcareer.domain.model.CircuitStatus
 import com.swiftquantum.quantumcareer.domain.model.PublishedCircuit
 import com.swiftquantum.quantumcareer.presentation.ui.component.*
@@ -33,13 +35,13 @@ fun CircuitsScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("My Circuits") },
+                title = { Text(stringResource(R.string.my_circuits)) },
                 actions = {
                     IconButton(onClick = { showFilterMenu = true }) {
-                        Icon(Icons.Default.FilterList, contentDescription = "Filter")
+                        Icon(Icons.Default.FilterList, contentDescription = stringResource(R.string.filter))
                     }
                     IconButton(onClick = { viewModel.refresh() }) {
-                        Icon(Icons.Default.Refresh, contentDescription = "Refresh")
+                        Icon(Icons.Default.Refresh, contentDescription = stringResource(R.string.refresh))
                     }
 
                     DropdownMenu(
@@ -47,7 +49,7 @@ fun CircuitsScreen(
                         onDismissRequest = { showFilterMenu = false }
                     ) {
                         DropdownMenuItem(
-                            text = { Text("All Circuits") },
+                            text = { Text(stringResource(R.string.all_circuits)) },
                             onClick = {
                                 viewModel.filterByStatus(null)
                                 showFilterMenu = false
@@ -81,7 +83,7 @@ fun CircuitsScreen(
             ExtendedFloatingActionButton(
                 onClick = onNavigateToPublish,
                 icon = { Icon(Icons.Default.Add, contentDescription = null) },
-                text = { Text("Publish") }
+                text = { Text(stringResource(R.string.publish)) }
             )
         }
     ) { paddingValues ->
@@ -91,21 +93,21 @@ fun CircuitsScreen(
             }
             uiState.error != null -> {
                 ErrorView(
-                    message = uiState.error ?: "Unknown error",
+                    message = uiState.error ?: stringResource(R.string.error_unknown),
                     onRetry = { viewModel.refresh() },
                     modifier = Modifier.padding(paddingValues)
                 )
             }
             uiState.circuits.isEmpty() -> {
                 EmptyView(
-                    title = "No Circuits Yet",
-                    message = "Start publishing your quantum circuits to build your career portfolio.",
+                    title = stringResource(R.string.no_circuits_yet),
+                    message = stringResource(R.string.no_circuits_message),
                     modifier = Modifier.padding(paddingValues),
                     action = {
                         Button(onClick = onNavigateToPublish) {
                             Icon(Icons.Default.Add, contentDescription = null)
                             Spacer(modifier = Modifier.width(8.dp))
-                            Text("Publish Circuit")
+                            Text(stringResource(R.string.publish_circuit))
                         }
                     }
                 )
@@ -128,7 +130,7 @@ fun CircuitsScreen(
                                 trailingIcon = {
                                     Icon(
                                         Icons.Default.Close,
-                                        contentDescription = "Clear filter",
+                                        contentDescription = stringResource(R.string.clear_filters),
                                         modifier = Modifier.size(18.dp)
                                     )
                                 }
@@ -167,8 +169,8 @@ private fun CircuitCard(
     if (showDeleteDialog) {
         AlertDialog(
             onDismissRequest = { showDeleteDialog = false },
-            title = { Text("Delete Circuit") },
-            text = { Text("Are you sure you want to delete \"${circuit.title}\"? This action cannot be undone.") },
+            title = { Text(stringResource(R.string.delete_circuit)) },
+            text = { Text(stringResource(R.string.delete_circuit_confirmation, circuit.title)) },
             confirmButton = {
                 TextButton(
                     onClick = {
@@ -179,12 +181,12 @@ private fun CircuitCard(
                         contentColor = MaterialTheme.colorScheme.error
                     )
                 ) {
-                    Text("Delete")
+                    Text(stringResource(R.string.delete))
                 }
             },
             dismissButton = {
                 TextButton(onClick = { showDeleteDialog = false }) {
-                    Text("Cancel")
+                    Text(stringResource(R.string.cancel))
                 }
             }
         )
@@ -250,7 +252,7 @@ private fun CircuitCard(
                     )
                     Spacer(modifier = Modifier.width(4.dp))
                     Text(
-                        text = "${circuit.citationCount} citations",
+                        text = stringResource(R.string.citations_count, circuit.citationCount),
                         style = MaterialTheme.typography.labelMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -271,7 +273,7 @@ private fun CircuitCard(
                         ) {
                             Icon(
                                 imageVector = Icons.Default.Delete,
-                                contentDescription = "Delete",
+                                contentDescription = stringResource(R.string.delete),
                                 modifier = Modifier.size(18.dp),
                                 tint = MaterialTheme.colorScheme.error
                             )

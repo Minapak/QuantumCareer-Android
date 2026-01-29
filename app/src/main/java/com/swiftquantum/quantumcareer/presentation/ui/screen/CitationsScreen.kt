@@ -10,9 +10,11 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.swiftquantum.quantumcareer.R
 import com.swiftquantum.quantumcareer.presentation.ui.component.*
 import com.swiftquantum.quantumcareer.presentation.ui.theme.QuantumPurple
 import com.swiftquantum.quantumcareer.presentation.ui.theme.QuantumTeal
@@ -29,10 +31,10 @@ fun CitationsScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Citations") },
+                title = { Text(stringResource(R.string.citations)) },
                 actions = {
                     IconButton(onClick = { viewModel.refresh() }) {
-                        Icon(Icons.Default.Refresh, contentDescription = "Refresh")
+                        Icon(Icons.Default.Refresh, contentDescription = stringResource(R.string.refresh))
                     }
                 }
             )
@@ -44,7 +46,7 @@ fun CitationsScreen(
             }
             uiState.error != null -> {
                 ErrorView(
-                    message = uiState.error ?: "Unknown error",
+                    message = uiState.error ?: stringResource(R.string.error_unknown),
                     onRetry = { viewModel.refresh() },
                     modifier = Modifier.padding(paddingValues)
                 )
@@ -80,7 +82,7 @@ fun CitationsScreen(
                                     color = MaterialTheme.colorScheme.onPrimaryContainer
                                 )
                                 Text(
-                                    text = "Total Citations",
+                                    text = stringResource(R.string.total_citations),
                                     style = MaterialTheme.typography.titleMedium,
                                     color = MaterialTheme.colorScheme.onPrimaryContainer
                                 )
@@ -99,7 +101,7 @@ fun CitationsScreen(
                                             color = QuantumPurple
                                         )
                                         Text(
-                                            text = "h-Index",
+                                            text = stringResource(R.string.h_index),
                                             style = MaterialTheme.typography.labelMedium
                                         )
                                     }
@@ -111,7 +113,7 @@ fun CitationsScreen(
                                             color = QuantumTeal
                                         )
                                         Text(
-                                            text = "i10-Index",
+                                            text = stringResource(R.string.i10_index),
                                             style = MaterialTheme.typography.labelMedium
                                         )
                                     }
@@ -122,7 +124,7 @@ fun CitationsScreen(
                                             fontWeight = FontWeight.Bold
                                         )
                                         Text(
-                                            text = "Avg/Paper",
+                                            text = stringResource(R.string.avg_per_paper),
                                             style = MaterialTheme.typography.labelMedium
                                         )
                                     }
@@ -150,19 +152,19 @@ fun CitationsScreen(
                                 Spacer(modifier = Modifier.width(12.dp))
                                 Column {
                                     Text(
-                                        text = "Understanding Citation Metrics",
+                                        text = stringResource(R.string.understanding_citation_metrics),
                                         style = MaterialTheme.typography.titleSmall,
                                         fontWeight = FontWeight.Bold
                                     )
                                     Spacer(modifier = Modifier.height(8.dp))
                                     Text(
-                                        text = "h-Index: You have ${stats.hIndex} publications with at least ${stats.hIndex} citations each.",
+                                        text = stringResource(R.string.h_index_explanation, stats.hIndex, stats.hIndex),
                                         style = MaterialTheme.typography.bodySmall,
                                         color = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
                                     Spacer(modifier = Modifier.height(4.dp))
                                     Text(
-                                        text = "i10-Index: You have ${stats.i10Index} publications with at least 10 citations each.",
+                                        text = stringResource(R.string.i10_index_explanation, stats.i10Index),
                                         style = MaterialTheme.typography.bodySmall,
                                         color = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
@@ -185,7 +187,7 @@ fun CitationsScreen(
                     // Top Cited Circuits
                     if (stats.topCitedCircuits.isNotEmpty()) {
                         item {
-                            SectionHeader(title = "Top Cited Circuits")
+                            SectionHeader(title = stringResource(R.string.top_cited_circuits))
                         }
 
                         items(stats.topCitedCircuits) { circuit ->
@@ -223,7 +225,7 @@ fun CitationsScreen(
                                             color = MaterialTheme.colorScheme.primary
                                         )
                                         Text(
-                                            text = "citations",
+                                            text = stringResource(R.string.citations).lowercase(),
                                             style = MaterialTheme.typography.labelSmall,
                                             color = MaterialTheme.colorScheme.onSurfaceVariant
                                         )
@@ -235,7 +237,7 @@ fun CitationsScreen(
 
                     // Summary Stats
                     item {
-                        SectionHeader(title = "Summary")
+                        SectionHeader(title = stringResource(R.string.summary))
                     }
 
                     item {
@@ -244,12 +246,12 @@ fun CitationsScreen(
                             horizontalArrangement = Arrangement.spacedBy(12.dp)
                         ) {
                             StatCard(
-                                title = "Publications",
+                                title = stringResource(R.string.publications),
                                 value = stats.totalPublications.toString(),
                                 modifier = Modifier.weight(1f)
                             )
                             StatCard(
-                                title = "Citations",
+                                title = stringResource(R.string.citations),
                                 value = stats.totalCitations.toString(),
                                 modifier = Modifier.weight(1f)
                             )

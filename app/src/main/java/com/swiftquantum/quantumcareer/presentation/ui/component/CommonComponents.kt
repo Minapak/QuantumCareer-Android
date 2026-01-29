@@ -9,18 +9,21 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.swiftquantum.quantumcareer.R
 import com.swiftquantum.quantumcareer.domain.model.CircuitStatus
 import com.swiftquantum.quantumcareer.presentation.ui.theme.*
 
 @Composable
 fun LoadingView(
     modifier: Modifier = Modifier,
-    message: String = "Loading..."
+    message: String? = null
 ) {
+    val displayMessage = message ?: stringResource(R.string.loading)
     Box(
         modifier = modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
@@ -31,7 +34,7 @@ fun LoadingView(
             CircularProgressIndicator()
             Spacer(modifier = Modifier.height(16.dp))
             Text(
-                text = message,
+                text = displayMessage,
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -75,7 +78,7 @@ fun ErrorView(
                         modifier = Modifier.size(18.dp)
                     )
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("Retry")
+                    Text(stringResource(R.string.retry))
                 }
             }
         }
@@ -169,11 +172,17 @@ fun CircuitStatusChip(
     status: CircuitStatus,
     modifier: Modifier = Modifier
 ) {
-    val (color, text) = when (status) {
-        CircuitStatus.DRAFT -> StatusDraft to "Draft"
-        CircuitStatus.UNDER_REVIEW -> StatusUnderReview to "Under Review"
-        CircuitStatus.PUBLISHED -> StatusPublished to "Published"
-        CircuitStatus.REJECTED -> StatusRejected to "Rejected"
+    val color = when (status) {
+        CircuitStatus.DRAFT -> StatusDraft
+        CircuitStatus.UNDER_REVIEW -> StatusUnderReview
+        CircuitStatus.PUBLISHED -> StatusPublished
+        CircuitStatus.REJECTED -> StatusRejected
+    }
+    val text = when (status) {
+        CircuitStatus.DRAFT -> stringResource(R.string.draft)
+        CircuitStatus.UNDER_REVIEW -> stringResource(R.string.under_review)
+        CircuitStatus.PUBLISHED -> stringResource(R.string.published)
+        CircuitStatus.REJECTED -> stringResource(R.string.status_rejected)
     }
 
     Surface(
@@ -236,7 +245,7 @@ private fun CommonComponentsPreview() {
                 title = "Recent Activity",
                 action = {
                     TextButton(onClick = {}) {
-                        Text("See All")
+                        Text(stringResource(R.string.see_all))
                     }
                 }
             )

@@ -39,13 +39,11 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.swiftquantum.quantumcareer.R
 import com.swiftquantum.quantumcareer.presentation.ui.theme.CareerGold
 import com.swiftquantum.quantumcareer.presentation.viewmodel.OnboardingViewModel
 
@@ -110,9 +108,9 @@ fun LanguageSelectionScreen(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            // Title
+            // Title (hardcoded English for onboarding)
             Text(
-                text = stringResource(R.string.select_language),
+                text = "Select Language",
                 style = MaterialTheme.typography.headlineMedium,
                 fontWeight = FontWeight.Bold,
                 color = Color.White,
@@ -121,9 +119,9 @@ fun LanguageSelectionScreen(
 
             Spacer(modifier = Modifier.height(8.dp))
 
-            // Subtitle
+            // Subtitle (hardcoded English for onboarding)
             Text(
-                text = stringResource(R.string.select_language_desc),
+                text = "Choose your preferred language for learning",
                 style = MaterialTheme.typography.bodyMedium,
                 color = Color.White.copy(alpha = 0.7f),
                 textAlign = TextAlign.Center
@@ -149,7 +147,7 @@ fun LanguageSelectionScreen(
 
             Spacer(modifier = Modifier.weight(1f))
 
-            // Continue button
+            // Continue button (hardcoded English for onboarding)
             Button(
                 onClick = {
                     viewModel.completeOnboarding()
@@ -164,7 +162,7 @@ fun LanguageSelectionScreen(
                 shape = RoundedCornerShape(16.dp)
             ) {
                 Text(
-                    text = stringResource(R.string.continue_action),
+                    text = "Continue",
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.SemiBold,
                     color = Color.Black

@@ -14,11 +14,13 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
+import com.swiftquantum.quantumcareer.R
 import com.swiftquantum.quantumcareer.domain.model.*
 import com.swiftquantum.quantumcareer.presentation.ui.component.*
 import com.swiftquantum.quantumcareer.presentation.viewmodel.TalentViewModel
@@ -41,9 +43,10 @@ fun TalentScreen(
         }
     }
 
+    val offerSentMessage = stringResource(R.string.offer_sent_success)
     LaunchedEffect(uiState.scoutSuccess) {
         if (uiState.scoutSuccess) {
-            snackbarHostState.showSnackbar("Offer sent successfully!")
+            snackbarHostState.showSnackbar(offerSentMessage)
             viewModel.clearSuccess()
         }
     }
@@ -52,19 +55,19 @@ fun TalentScreen(
         topBar = {
             if (uiState.selectedProfile != null) {
                 TopAppBar(
-                    title = { Text("Scout Researcher") },
+                    title = { Text(stringResource(R.string.scout_researcher_title)) },
                     navigationIcon = {
                         IconButton(onClick = { viewModel.clearSelectedProfile() }) {
-                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.back))
                         }
                     }
                 )
             } else {
                 TopAppBar(
-                    title = { Text("Talent") },
+                    title = { Text(stringResource(R.string.talent_title)) },
                     actions = {
                         IconButton(onClick = { viewModel.loadOffers() }) {
-                            Icon(Icons.Default.Refresh, contentDescription = "Refresh")
+                            Icon(Icons.Default.Refresh, contentDescription = stringResource(R.string.refresh))
                         }
                     }
                 )
@@ -132,7 +135,7 @@ fun TalentScreen(
 
                 // Offer Type Selection
                 Text(
-                    text = "Offer Type",
+                    text = stringResource(R.string.offer_type),
                     style = MaterialTheme.typography.titleSmall,
                     fontWeight = FontWeight.Bold
                 )
@@ -167,8 +170,8 @@ fun TalentScreen(
                     value = scoutForm.organization,
                     onValueChange = { viewModel.updateOrganization(it) },
                     modifier = Modifier.fillMaxWidth(),
-                    label = { Text("Organization") },
-                    placeholder = { Text("Your company or institution") },
+                    label = { Text(stringResource(R.string.organization)) },
+                    placeholder = { Text(stringResource(R.string.organization_placeholder)) },
                     singleLine = true
                 )
 
@@ -177,8 +180,8 @@ fun TalentScreen(
                     value = scoutForm.position,
                     onValueChange = { viewModel.updatePosition(it) },
                     modifier = Modifier.fillMaxWidth(),
-                    label = { Text("Position (Optional)") },
-                    placeholder = { Text("e.g., Senior Quantum Researcher") },
+                    label = { Text(stringResource(R.string.position_optional)) },
+                    placeholder = { Text(stringResource(R.string.position_placeholder)) },
                     singleLine = true
                 )
 
@@ -189,8 +192,8 @@ fun TalentScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .heightIn(min = 120.dp),
-                    label = { Text("Message") },
-                    placeholder = { Text("Introduce yourself and explain why you're reaching out...") },
+                    label = { Text(stringResource(R.string.message)) },
+                    placeholder = { Text(stringResource(R.string.message_placeholder)) },
                     maxLines = 5
                 )
 
@@ -201,8 +204,8 @@ fun TalentScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .heightIn(min = 100.dp),
-                    label = { Text("Additional Details (Optional)") },
-                    placeholder = { Text("Compensation, benefits, project details...") },
+                    label = { Text(stringResource(R.string.additional_details_optional)) },
+                    placeholder = { Text(stringResource(R.string.additional_details_placeholder)) },
                     maxLines = 4
                 )
 
@@ -220,7 +223,7 @@ fun TalentScreen(
                     } else {
                         Icon(Icons.Default.Send, contentDescription = null)
                         Spacer(modifier = Modifier.width(8.dp))
-                        Text("Send Offer")
+                        Text(stringResource(R.string.send_offer))
                     }
                 }
             }
@@ -236,17 +239,17 @@ fun TalentScreen(
                     Tab(
                         selected = uiState.selectedTab == 0,
                         onClick = { viewModel.selectTab(0) },
-                        text = { Text("Search") }
+                        text = { Text(stringResource(R.string.search)) }
                     )
                     Tab(
                         selected = uiState.selectedTab == 1,
                         onClick = { viewModel.selectTab(1) },
-                        text = { Text("Received (${uiState.receivedOffers.size})") }
+                        text = { Text(stringResource(R.string.received_count, uiState.receivedOffers.size)) }
                     )
                     Tab(
                         selected = uiState.selectedTab == 2,
                         onClick = { viewModel.selectTab(2) },
-                        text = { Text("Sent (${uiState.sentOffers.size})") }
+                        text = { Text(stringResource(R.string.sent_count, uiState.sentOffers.size)) }
                     )
                 }
 
@@ -304,7 +307,7 @@ private fun SearchTabContent(
                 value = searchForm.query,
                 onValueChange = onQueryChange,
                 modifier = Modifier.fillMaxWidth(),
-                placeholder = { Text("Search by name, institution...") },
+                placeholder = { Text(stringResource(R.string.search_by_name)) },
                 leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
                 singleLine = true
             )
@@ -319,7 +322,7 @@ private fun SearchTabContent(
                     value = searchForm.minHIndex,
                     onValueChange = onMinHIndexChange,
                     modifier = Modifier.weight(1f),
-                    label = { Text("Min h-Index") },
+                    label = { Text(stringResource(R.string.min_h_index)) },
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     singleLine = true
                 )
@@ -327,7 +330,7 @@ private fun SearchTabContent(
                     value = searchForm.minPublications,
                     onValueChange = onMinPublicationsChange,
                     modifier = Modifier.weight(1f),
-                    label = { Text("Min Publications") },
+                    label = { Text(stringResource(R.string.min_publications)) },
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     singleLine = true
                 )
@@ -341,7 +344,7 @@ private fun SearchTabContent(
                 FilterChip(
                     selected = searchForm.badgeTier == null,
                     onClick = { onBadgeTierChange(null) },
-                    label = { Text("All") }
+                    label = { Text(stringResource(R.string.all)) }
                 )
                 BadgeTier.entries.forEach { tier ->
                     FilterChip(
@@ -367,7 +370,7 @@ private fun SearchTabContent(
                 } else {
                     Icon(Icons.Default.Search, contentDescription = null)
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("Search")
+                    Text(stringResource(R.string.search))
                 }
             }
         }
@@ -375,8 +378,8 @@ private fun SearchTabContent(
         if (searchResults.isEmpty() && !isLoading) {
             item {
                 EmptyView(
-                    title = "No Results",
-                    message = "Try adjusting your search criteria",
+                    title = stringResource(R.string.no_results),
+                    message = stringResource(R.string.try_adjusting_search),
                     modifier = Modifier.height(200.dp)
                 )
             }
@@ -457,7 +460,7 @@ private fun TalentProfileCard(
             if (profile.isAvailable) {
                 Icon(
                     imageVector = Icons.Default.CheckCircle,
-                    contentDescription = "Available",
+                    contentDescription = stringResource(R.string.available_for_hire),
                     tint = com.swiftquantum.quantumcareer.presentation.ui.theme.StatusPublished
                 )
             }
@@ -475,12 +478,8 @@ private fun OffersTabContent(
 ) {
     if (offers.isEmpty()) {
         EmptyView(
-            title = if (isReceived) "No Offers Received" else "No Offers Sent",
-            message = if (isReceived) {
-                "You haven't received any offers yet."
-            } else {
-                "You haven't sent any offers yet. Search for talent to get started."
-            }
+            title = stringResource(if (isReceived) R.string.no_offers_received else R.string.no_offers_sent),
+            message = stringResource(if (isReceived) R.string.no_offers_received_message else R.string.no_offers_sent_message)
         )
     } else {
         LazyColumn(
@@ -528,9 +527,9 @@ private fun OfferCard(
                     )
                     Text(
                         text = if (isReceived) {
-                            "from ${offer.fromUserName}"
+                            stringResource(R.string.from_user, offer.fromUserName)
                         } else {
-                            "to researcher"
+                            stringResource(R.string.to_researcher)
                         },
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
@@ -597,20 +596,20 @@ private fun OfferCard(
                             onClick = { onDecline(offer.id) },
                             modifier = Modifier.weight(1f)
                         ) {
-                            Text("Decline")
+                            Text(stringResource(R.string.decline))
                         }
                         Button(
                             onClick = { onAccept(offer.id) },
                             modifier = Modifier.weight(1f)
                         ) {
-                            Text("Accept")
+                            Text(stringResource(R.string.accept))
                         }
                     } else if (!isReceived && onWithdraw != null) {
                         OutlinedButton(
                             onClick = { onWithdraw(offer.id) },
                             modifier = Modifier.fillMaxWidth()
                         ) {
-                            Text("Withdraw Offer")
+                            Text(stringResource(R.string.withdraw_offer))
                         }
                     }
                 }
