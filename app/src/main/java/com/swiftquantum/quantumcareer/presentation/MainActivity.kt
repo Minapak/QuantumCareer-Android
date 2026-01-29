@@ -13,10 +13,12 @@ import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.swiftquantum.quantumcareer.R
 import com.swiftquantum.quantumcareer.presentation.navigation.BottomNavItem
 import com.swiftquantum.quantumcareer.presentation.navigation.NavGraph
 import com.swiftquantum.quantumcareer.presentation.navigation.Screen
@@ -101,35 +103,33 @@ fun QuantumCareerApp(
     )
 
     // QuantumCareer app-specific drawer menu items
-    val drawerMenuItems = remember {
-        listOf(
-            DrawerMenuItem(
-                title = "Dashboard",
-                icon = Icons.Filled.Dashboard,
-                route = Screen.Dashboard.route
-            ),
-            DrawerMenuItem(
-                title = "My Circuits",
-                icon = Icons.Filled.Memory,
-                route = Screen.Circuits.route
-            ),
-            DrawerMenuItem(
-                title = "Peer Review",
-                icon = Icons.Filled.RateReview,
-                route = Screen.PeerReview.route
-            ),
-            DrawerMenuItem(
-                title = "Certificates",
-                icon = Icons.Filled.Verified,
-                route = Screen.Certificates.route
-            ),
-            DrawerMenuItem(
-                title = "Talent Pool",
-                icon = Icons.Filled.Groups,
-                route = Screen.Talent.route
-            )
+    val drawerMenuItems = listOf(
+        DrawerMenuItem(
+            title = stringResource(R.string.drawer_dashboard),
+            icon = Icons.Filled.Dashboard,
+            route = Screen.Dashboard.route
+        ),
+        DrawerMenuItem(
+            title = stringResource(R.string.drawer_my_circuits),
+            icon = Icons.Filled.Memory,
+            route = Screen.Circuits.route
+        ),
+        DrawerMenuItem(
+            title = stringResource(R.string.drawer_peer_review),
+            icon = Icons.Filled.RateReview,
+            route = Screen.PeerReview.route
+        ),
+        DrawerMenuItem(
+            title = stringResource(R.string.drawer_certificates),
+            icon = Icons.Filled.Verified,
+            route = Screen.Certificates.route
+        ),
+        DrawerMenuItem(
+            title = stringResource(R.string.drawer_talent_pool),
+            icon = Icons.Filled.Groups,
+            route = Screen.Talent.route
         )
-    }
+    )
 
     ModalNavigationDrawer(
         drawerState = drawerState,
@@ -157,6 +157,7 @@ fun QuantumCareerApp(
                     NavigationBar {
                         BottomNavItem.items.forEach { item ->
                             val selected = currentDestination?.hierarchy?.any { it.route == item.route } == true
+                            val title = stringResource(item.titleResId)
 
                             NavigationBarItem(
                                 selected = selected,
@@ -172,10 +173,10 @@ fun QuantumCareerApp(
                                 icon = {
                                     Icon(
                                         imageVector = if (selected) item.selectedIcon else item.unselectedIcon,
-                                        contentDescription = item.title
+                                        contentDescription = title
                                     )
                                 },
-                                label = { Text(item.title) }
+                                label = { Text(title) }
                             )
                         }
                     }
