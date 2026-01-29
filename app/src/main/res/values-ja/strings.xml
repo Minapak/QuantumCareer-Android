@@ -696,4 +696,13 @@
     <string name="labscript_description">Pythonベースの量子実験制御スイート</string>
     <string name="microqiskit_name">MicroQiskit</string>
     <string name="microqiskit_description">最小量子コンピューティングフレームワーク</string>
+
+    <!-- Cloud Processing -->
+    <string name="cloud_connecting">量子クラウドに接続中...</string>
+    <string name="cloud_processing">量子計算を実行中...</string>
+    <string name="cloud_success">計算が正常に完了しました！</string>
+    <string name="cloud_error">エラーが発生しました。もう一度お試しください。</string>
+    <string name="cloud_chip_connecting">接続中...</string>
+    <string name="cloud_chip_processing">処理中...</string>
+    <string name="cloud_chip_complete">完了</string>
 </resources>

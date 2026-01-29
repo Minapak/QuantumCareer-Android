@@ -696,4 +696,13 @@
     <string name="labscript_description">基于Python的量子实验控制套件</string>
     <string name="microqiskit_name">MicroQiskit</string>
     <string name="microqiskit_description">最小量子计算框架</string>
+
+    <!-- Cloud Processing -->
+    <string name="cloud_connecting">正在连接量子云...</string>
+    <string name="cloud_processing">量子计算进行中...</string>
+    <string name="cloud_success">计算成功完成！</string>
+    <string name="cloud_error">发生错误。请重试。</string>
+    <string name="cloud_chip_connecting">连接中...</string>
+    <string name="cloud_chip_processing">处理中...</string>
+    <string name="cloud_chip_complete">完成</string>
 </resources>

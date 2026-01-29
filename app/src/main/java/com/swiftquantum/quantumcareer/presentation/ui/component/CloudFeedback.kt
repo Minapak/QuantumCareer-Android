@@ -13,10 +13,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.airbnb.lottie.compose.*
+import com.swiftquantum.quantumcareer.R
 import com.swiftquantum.quantumcareer.presentation.ui.theme.*
 
 /**
@@ -48,10 +50,10 @@ fun CloudProcessingAnimation(
     onDismiss: (() -> Unit)? = null
 ) {
     val defaultMessage = when (state) {
-        CloudProcessingState.Connecting -> "Connecting to quantum cloud..."
-        CloudProcessingState.Processing -> "Quantum computation in progress..."
-        CloudProcessingState.Success -> "Computation completed successfully!"
-        CloudProcessingState.Error -> "An error occurred. Please try again."
+        CloudProcessingState.Connecting -> stringResource(R.string.cloud_connecting)
+        CloudProcessingState.Processing -> stringResource(R.string.cloud_processing)
+        CloudProcessingState.Success -> stringResource(R.string.cloud_success)
+        CloudProcessingState.Error -> stringResource(R.string.cloud_error)
     }
 
     val displayMessage = message ?: defaultMessage
@@ -121,7 +123,7 @@ fun CloudProcessingAnimation(
                 ) {
                     onDismiss?.let {
                         OutlinedButton(onClick = it) {
-                            Text("Dismiss")
+                            Text(stringResource(R.string.dismiss))
                         }
                     }
                     Button(
@@ -137,7 +139,7 @@ fun CloudProcessingAnimation(
                             tint = Color.Black
                         )
                         Spacer(modifier = Modifier.width(8.dp))
-                        Text("Retry", color = Color.Black)
+                        Text(stringResource(R.string.retry), color = Color.Black)
                     }
                 }
             }
@@ -151,7 +153,7 @@ fun CloudProcessingAnimation(
                         containerColor = SuccessGreen
                     )
                 ) {
-                    Text("Continue")
+                    Text(stringResource(R.string.continue_action))
                 }
             }
         }
@@ -377,10 +379,10 @@ fun CloudProcessingChip(
     }
 
     val label = when (state) {
-        CloudProcessingState.Connecting -> "Connecting..."
-        CloudProcessingState.Processing -> "Processing..."
-        CloudProcessingState.Success -> "Complete"
-        CloudProcessingState.Error -> "Error"
+        CloudProcessingState.Connecting -> stringResource(R.string.cloud_chip_connecting)
+        CloudProcessingState.Processing -> stringResource(R.string.cloud_chip_processing)
+        CloudProcessingState.Success -> stringResource(R.string.cloud_chip_complete)
+        CloudProcessingState.Error -> stringResource(R.string.error)
     }
 
     Surface(

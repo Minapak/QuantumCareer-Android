@@ -696,4 +696,13 @@
     <string name="labscript_description">Python 기반 양자 실험 제어 스위트</string>
     <string name="microqiskit_name">MicroQiskit</string>
     <string name="microqiskit_description">최소 양자 컴퓨팅 프레임워크</string>
+
+    <!-- Cloud Processing -->
+    <string name="cloud_connecting">양자 클라우드에 연결 중...</string>
+    <string name="cloud_processing">양자 계산 진행 중...</string>
+    <string name="cloud_success">계산이 성공적으로 완료되었습니다!</string>
+    <string name="cloud_error">오류가 발생했습니다. 다시 시도해 주세요.</string>
+    <string name="cloud_chip_connecting">연결 중...</string>
+    <string name="cloud_chip_processing">처리 중...</string>
+    <string name="cloud_chip_complete">완료</string>
 </resources>

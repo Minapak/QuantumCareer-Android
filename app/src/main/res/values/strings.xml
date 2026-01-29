@@ -695,4 +695,13 @@
     <string name="labscript_description">Python-based quantum experiment control suite</string>
     <string name="microqiskit_name">MicroQiskit</string>
     <string name="microqiskit_description">Minimal quantum computing framework</string>
+
+    <!-- Cloud Processing -->
+    <string name="cloud_connecting">Connecting to quantum cloud...</string>
+    <string name="cloud_processing">Quantum computation in progress...</string>
+    <string name="cloud_success">Computation completed successfully!</string>
+    <string name="cloud_error">An error occurred. Please try again.</string>
+    <string name="cloud_chip_connecting">Connecting...</string>
+    <string name="cloud_chip_processing">Processing...</string>
+    <string name="cloud_chip_complete">Complete</string>
 </resources>
