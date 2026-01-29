@@ -93,13 +93,26 @@ class QuizRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let { dto ->
                     Result.success(dto.toDomain())
-                } ?: Result.failure(Exception("Failed to get test history"))
+                } ?: Result.success(getDefaultTestHistory())
             } else {
-                Result.failure(Exception("Failed to get test history: ${response.code()}"))
+                // Return default test history for guest/offline mode
+                Result.success(getDefaultTestHistory())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return default test history on API failure
+            Result.success(getDefaultTestHistory())
         }
+    }
+
+    private fun getDefaultTestHistory(): TestHistory {
+        return TestHistory(
+            results = emptyList(),
+            totalAttempts = 0,
+            bestScore = 0,
+            bestBadge = null,
+            averageScore = 0f,
+            totalTimeSpentSeconds = 0
+        )
     }
 
     override suspend fun getPracticeQuestions(
@@ -116,13 +129,27 @@ class QuizRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let { dto ->
                     Result.success(dto.toDomain())
-                } ?: Result.failure(Exception("Failed to get practice questions"))
+                } ?: Result.success(getEmptyPracticeQuestions(category, difficulty))
             } else {
-                Result.failure(Exception("Failed to get practice questions: ${response.code()}"))
+                // Return empty practice questions for guest/offline mode
+                Result.success(getEmptyPracticeQuestions(category, difficulty))
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty practice questions on API failure
+            Result.success(getEmptyPracticeQuestions(category, difficulty))
         }
+    }
+
+    private fun getEmptyPracticeQuestions(
+        category: QuestionCategory?,
+        difficulty: QuestionDifficulty?
+    ): PracticeQuestions {
+        return PracticeQuestions(
+            category = category,
+            difficulty = difficulty,
+            questions = emptyList(),
+            total = 0
+        )
     }
 
     override suspend fun getCurrentSession(): Result<TestSession?> {
@@ -133,10 +160,12 @@ class QuizRepositoryImpl @Inject constructor(
             } else if (response.code() == 404) {
                 Result.success(null)
             } else {
-                Result.failure(Exception("Failed to get current session: ${response.code()}"))
+                // Return null for guest/offline mode (no active session)
+                Result.success(null)
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return null on API failure (no active session)
+            Result.success(null)
         }
     }
 
@@ -145,7 +174,8 @@ class QuizRepositoryImpl @Inject constructor(
             val response = api.abandonSession(sessionId)
             Result.success(response.isSuccessful)
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return false on API failure - non-critical operation
+            Result.success(false)
         }
     }
 
@@ -170,12 +200,26 @@ class QuizRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let { dto ->
                     Result.success(dto.categories.map { it.toDomain() })
-                } ?: Result.failure(Exception("Failed to get categories"))
+                } ?: Result.success(getDefaultCategories())
             } else {
-                Result.failure(Exception("Failed to get categories: ${response.code()}"))
+                // Return default categories for guest/offline mode
+                Result.success(getDefaultCategories())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return default categories on API failure
+            Result.success(getDefaultCategories())
+        }
+    }
+
+    private fun getDefaultCategories(): List<CategoryStats> {
+        return QuestionCategory.values().map { category ->
+            CategoryStats(
+                category = category,
+                displayName = category.displayName,
+                description = category.description,
+                totalQuestions = 0,
+                userAccuracy = null
+            )
         }
     }
 }

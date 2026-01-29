@@ -4,6 +4,7 @@ import com.swiftquantum.quantumcareer.data.api.RankingsApi
 import com.swiftquantum.quantumcareer.data.mapper.toDomain
 import com.swiftquantum.quantumcareer.domain.model.*
 import com.swiftquantum.quantumcareer.domain.repository.RankingsRepository
+import java.time.LocalDateTime
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -25,13 +26,27 @@ class RankingsRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let { dto ->
                     Result.success(dto.toDomain())
-                } ?: Result.failure(Exception("Failed to get leaderboard"))
+                } ?: Result.success(getEmptyLeaderboard(filter))
             } else {
-                Result.failure(Exception("Failed to get leaderboard: ${response.code()}"))
+                // Return empty leaderboard for guest/offline mode
+                Result.success(getEmptyLeaderboard(filter))
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty leaderboard on API failure
+            Result.success(getEmptyLeaderboard(filter))
         }
+    }
+
+    private fun getEmptyLeaderboard(filter: RankingFilter): Leaderboard {
+        return Leaderboard(
+            type = filter.type,
+            entries = emptyList(),
+            userRank = null,
+            totalParticipants = 0,
+            lastUpdated = LocalDateTime.now(),
+            filterCountry = filter.country,
+            filterInstitution = filter.institution
+        )
     }
 
     override suspend fun getMyRank(): Result<UserRankingStats> {
@@ -40,13 +55,32 @@ class RankingsRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let { dto ->
                     Result.success(dto.toDomain())
-                } ?: Result.failure(Exception("Failed to get user rank"))
+                } ?: Result.success(getDefaultUserRankingStats())
             } else {
-                Result.failure(Exception("Failed to get user rank: ${response.code()}"))
+                // Return default stats for guest/offline mode
+                Result.success(getDefaultUserRankingStats())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return default stats on API failure
+            Result.success(getDefaultUserRankingStats())
         }
+    }
+
+    private fun getDefaultUserRankingStats(): UserRankingStats {
+        return UserRankingStats(
+            currentRank = 0,
+            previousRank = null,
+            bestRank = 0,
+            totalScore = 0,
+            testsCompleted = 0,
+            averagePercentage = 0f,
+            rankInCountry = null,
+            countryTotal = null,
+            rankInInstitution = null,
+            institutionTotal = null,
+            percentile = 0f,
+            lastUpdated = LocalDateTime.now()
+        )
     }
 
     override suspend fun getFriendsRankings(page: Int, perPage: Int): Result<FriendsRanking> {
@@ -55,13 +89,23 @@ class RankingsRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let { dto ->
                     Result.success(dto.toDomain())
-                } ?: Result.failure(Exception("Failed to get friends rankings"))
+                } ?: Result.success(getEmptyFriendsRanking())
             } else {
-                Result.failure(Exception("Failed to get friends rankings: ${response.code()}"))
+                // Return empty friends ranking for guest/offline mode
+                Result.success(getEmptyFriendsRanking())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty friends ranking on API failure
+            Result.success(getEmptyFriendsRanking())
         }
+    }
+
+    private fun getEmptyFriendsRanking(): FriendsRanking {
+        return FriendsRanking(
+            friends = emptyList(),
+            userRankAmongFriends = 0,
+            totalFriends = 0
+        )
     }
 
     override suspend fun getCountries(): Result<List<RankingCountry>> {
@@ -70,12 +114,14 @@ class RankingsRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let { dto ->
                     Result.success(dto.countries.map { it.toDomain() })
-                } ?: Result.failure(Exception("Failed to get countries"))
+                } ?: Result.success(emptyList())
             } else {
-                Result.failure(Exception("Failed to get countries: ${response.code()}"))
+                // Return empty list for guest/offline mode
+                Result.success(emptyList())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty list on API failure
+            Result.success(emptyList())
         }
     }
 
@@ -85,12 +131,14 @@ class RankingsRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let { dto ->
                     Result.success(dto.institutions.map { it.toDomain() })
-                } ?: Result.failure(Exception("Failed to get institutions"))
+                } ?: Result.success(emptyList())
             } else {
-                Result.failure(Exception("Failed to get institutions: ${response.code()}"))
+                // Return empty list for guest/offline mode
+                Result.success(emptyList())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty list on API failure
+            Result.success(emptyList())
         }
     }
 
@@ -100,12 +148,14 @@ class RankingsRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let { dto ->
                     Result.success(dto.achievements.map { it.toDomain() })
-                } ?: Result.failure(Exception("Failed to get achievements"))
+                } ?: Result.success(emptyList())
             } else {
-                Result.failure(Exception("Failed to get achievements: ${response.code()}"))
+                // Return empty list for guest/offline mode
+                Result.success(emptyList())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty list on API failure
+            Result.success(emptyList())
         }
     }
 

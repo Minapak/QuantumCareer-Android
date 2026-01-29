@@ -184,6 +184,9 @@ Full compliance with Standards for Quantum Computing (SQC) from the Australian Q
 - Japanese (日本語)
 - Chinese (中文)
 - German (Deutsch)
+- **Instant Language Switching**: Uses AppCompatDelegate.setApplicationLocales() for immediate UI updates without restart
+- **Language Selection Onboarding**: First-launch language selection screen
+- **Graceful Offline Mode**: Returns default data when API is unavailable (no 404 errors shown)
 
 ### Navigation
 - Bottom navigation bar

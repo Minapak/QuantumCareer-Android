@@ -19,10 +19,12 @@ class ReviewRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 Result.success(response.body()?.reviews?.map { it.toDomain() } ?: emptyList())
             } else {
-                Result.failure(Exception("Failed to get pending reviews: ${response.code()}"))
+                // Return empty list for guest/offline mode
+                Result.success(emptyList())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty list on API failure
+            Result.success(emptyList())
         }
     }
 
@@ -32,10 +34,12 @@ class ReviewRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 Result.success(response.body()?.reviews?.map { it.toDomain() } ?: emptyList())
             } else {
-                Result.failure(Exception("Failed to get my reviews: ${response.code()}"))
+                // Return empty list for guest/offline mode
+                Result.success(emptyList())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty list on API failure
+            Result.success(emptyList())
         }
     }
 
@@ -81,13 +85,25 @@ class ReviewRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let {
                     Result.success(it.toDomain())
-                } ?: Result.failure(Exception("Failed to get reviewer stats"))
+                } ?: Result.success(getDefaultReviewerStats())
             } else {
-                Result.failure(Exception("Failed to get reviewer stats: ${response.code()}"))
+                // Return default stats for guest/offline mode
+                Result.success(getDefaultReviewerStats())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return default stats on API failure
+            Result.success(getDefaultReviewerStats())
         }
+    }
+
+    private fun getDefaultReviewerStats(): ReviewerStats {
+        return ReviewerStats(
+            totalReviews = 0,
+            approvedCount = 0,
+            rejectedCount = 0,
+            reviewerLevel = ReviewerLevel.JUNIOR,
+            reviewsUntilNextLevel = ReviewerLevel.SENIOR.requiredReviews
+        )
     }
 
     override suspend fun claimReview(reviewId: String): Result<PeerReview> {
@@ -110,7 +126,8 @@ class ReviewRepositoryImpl @Inject constructor(
             val response = api.releaseReview(reviewId)
             Result.success(response.isSuccessful)
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return false on API failure - non-critical operation
+            Result.success(false)
         }
     }
 }

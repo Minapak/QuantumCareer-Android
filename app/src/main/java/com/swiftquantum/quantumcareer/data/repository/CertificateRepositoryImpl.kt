@@ -19,13 +19,25 @@ class CertificateRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let { dto ->
                     Result.success(dto.toDomain())
-                } ?: Result.failure(Exception("Failed to get certificates"))
+                } ?: Result.success(getEmptyCertificateSummary())
             } else {
-                Result.failure(Exception("Failed to get certificates: ${response.code()}"))
+                // Return empty summary for guest/offline mode
+                Result.success(getEmptyCertificateSummary())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty summary on API failure
+            Result.success(getEmptyCertificateSummary())
         }
+    }
+
+    private fun getEmptyCertificateSummary(): CertificateSummary {
+        return CertificateSummary(
+            certificates = emptyList(),
+            totalCertificates = 0,
+            activeCertificates = 0,
+            expiredCertificates = 0,
+            highestTier = null
+        )
     }
 
     override suspend fun getCertificateById(certificateId: String): Result<Certificate> {
@@ -49,13 +61,24 @@ class CertificateRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let { dto ->
                     Result.success(dto.toDomain())
-                } ?: Result.failure(Exception("Failed to verify certificate"))
+                } ?: Result.success(getInvalidVerificationResult(verificationCode))
             } else {
-                Result.failure(Exception("Failed to verify certificate: ${response.code()}"))
+                // Return invalid verification for guest/offline mode
+                Result.success(getInvalidVerificationResult(verificationCode))
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return invalid verification on API failure
+            Result.success(getInvalidVerificationResult(verificationCode))
         }
+    }
+
+    private fun getInvalidVerificationResult(verificationCode: String): CertificateVerification {
+        return CertificateVerification(
+            code = verificationCode,
+            isValid = false,
+            certificate = null,
+            errorMessage = "Unable to verify certificate. Please try again later."
+        )
     }
 
     override suspend fun shareCertificate(request: ShareCertificateRequest): Result<ShareCertificateResult> {

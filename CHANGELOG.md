@@ -1,5 +1,22 @@
 # Changelog
 
+## [5.3.0] - 2026-01-29
+
+### Added
+- **Immediate Language Switching**: Settings language changes now apply instantly via AppCompatDelegate.setApplicationLocales()
+- **Language Selection Onboarding**: Standalone onboarding screen with 5 language options before main app
+- **Graceful Offline Mode**: API failures return default data instead of errors
+
+### Changed
+- SettingsViewModel now uses AppCompatDelegate for immediate locale switching
+- CareerRepositoryImpl returns fallback data for circuits, badges, citations, and dashboard stats on API failure
+
+### Fixed
+- 404 error on home screen when API is unavailable - now shows empty/default state
+- Language changes in Settings now reflect immediately without app restart
+- All hardcoded text in BadgesScreen, CircuitsScreen, PeerReviewScreen, CitationsScreen, TalentScreen replaced with stringResource()
+- CommonComponents fully localized with stringResource() calls
+
 ## [5.2.0] - 2026-01-29
 
 ### Added

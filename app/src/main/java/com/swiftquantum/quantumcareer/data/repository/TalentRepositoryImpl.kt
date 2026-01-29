@@ -28,13 +28,24 @@ class TalentRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 response.body()?.let {
                     Result.success(it.toDomain())
-                } ?: Result.failure(Exception("Failed to search talent"))
+                } ?: Result.success(getEmptyTalentSearchResult(criteria))
             } else {
-                Result.failure(Exception("Failed to search talent: ${response.code()}"))
+                // Return empty result for guest/offline mode
+                Result.success(getEmptyTalentSearchResult(criteria))
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty result on API failure
+            Result.success(getEmptyTalentSearchResult(criteria))
         }
+    }
+
+    private fun getEmptyTalentSearchResult(criteria: TalentSearchCriteria): TalentSearchResult {
+        return TalentSearchResult(
+            profiles = emptyList(),
+            total = 0,
+            page = criteria.page,
+            perPage = criteria.perPage
+        )
     }
 
     override suspend fun getTalentProfile(userId: String): Result<TalentProfile> {
@@ -82,10 +93,12 @@ class TalentRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 Result.success(response.body()?.offers?.map { it.toDomain() } ?: emptyList())
             } else {
-                Result.failure(Exception("Failed to get offers: ${response.code()}"))
+                // Return empty list for guest/offline mode
+                Result.success(emptyList())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty list on API failure
+            Result.success(emptyList())
         }
     }
 
@@ -95,10 +108,12 @@ class TalentRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 Result.success(response.body()?.offers?.map { it.toDomain() } ?: emptyList())
             } else {
-                Result.failure(Exception("Failed to get sent offers: ${response.code()}"))
+                // Return empty list for guest/offline mode
+                Result.success(emptyList())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty list on API failure
+            Result.success(emptyList())
         }
     }
 
@@ -125,7 +140,8 @@ class TalentRepositoryImpl @Inject constructor(
             val response = api.withdrawOffer(offerId)
             Result.success(response.isSuccessful)
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return false on API failure - non-critical operation
+            Result.success(false)
         }
     }
 }

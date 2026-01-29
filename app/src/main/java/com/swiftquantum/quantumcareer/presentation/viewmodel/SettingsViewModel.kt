@@ -1,6 +1,8 @@
 package com.swiftquantum.quantumcareer.presentation.viewmodel
 
 import android.content.Context
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.swiftquantum.quantumcareer.data.auth.SharedAuthManager
@@ -155,8 +157,9 @@ class SettingsViewModel @Inject constructor(
                 showLanguageDialog = false
             )
 
-            // Note: In a real app, you would also update the app's locale
-            // and potentially restart the activity
+            // Apply the language change immediately
+            val localeList = LocaleListCompat.forLanguageTags(language.code)
+            AppCompatDelegate.setApplicationLocales(localeList)
         }
     }
 

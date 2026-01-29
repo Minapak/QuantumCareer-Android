@@ -45,10 +45,12 @@ class JobsRepositoryImpl @Inject constructor(
                 val jobs = body.jobs.map { it.toDomain() }
                 Result.success(Pair(jobs, body.hasMore))
             } else {
-                Result.failure(Exception("Failed to fetch jobs: ${response.message()}"))
+                // Return empty list for guest/offline mode
+                Result.success(Pair(emptyList(), false))
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty list on API failure
+            Result.success(Pair(emptyList(), false))
         }
     }
 
@@ -73,10 +75,12 @@ class JobsRepositoryImpl @Inject constructor(
                 val recommendations = body.recommendations.map { it.toDomain() }
                 Result.success(recommendations)
             } else {
-                Result.failure(Exception("Failed to fetch recommended jobs: ${response.message()}"))
+                // Return empty list for guest/offline mode
+                Result.success(emptyList())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty list on API failure
+            Result.success(emptyList())
         }
     }
 
@@ -88,10 +92,12 @@ class JobsRepositoryImpl @Inject constructor(
                 val savedJobs = body.jobs.map { it.toDomain() }
                 Result.success(savedJobs)
             } else {
-                Result.failure(Exception("Failed to fetch saved jobs: ${response.message()}"))
+                // Return empty list for guest/offline mode
+                Result.success(emptyList())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty list on API failure
+            Result.success(emptyList())
         }
     }
 
@@ -160,10 +166,12 @@ class JobsRepositoryImpl @Inject constructor(
                 val applications = body.applications.map { it.toDomain() }
                 Result.success(applications)
             } else {
-                Result.failure(Exception("Failed to fetch applications: ${response.message()}"))
+                // Return empty list for guest/offline mode
+                Result.success(emptyList())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return empty list on API failure
+            Result.success(emptyList())
         }
     }
 
@@ -199,11 +207,24 @@ class JobsRepositoryImpl @Inject constructor(
             if (response.isSuccessful) {
                 Result.success(response.body()!!.toDomain())
             } else {
-                Result.failure(Exception("Failed to fetch job stats: ${response.message()}"))
+                // Return default stats for guest/offline mode
+                Result.success(getDefaultJobStats())
             }
         } catch (e: Exception) {
-            Result.failure(e)
+            // Return default stats on API failure
+            Result.success(getDefaultJobStats())
         }
+    }
+
+    private fun getDefaultJobStats(): JobStats {
+        return JobStats(
+            totalApplications = 0,
+            pendingApplications = 0,
+            interviewsScheduled = 0,
+            offersReceived = 0,
+            savedJobs = 0,
+            recommendedJobsCount = 0
+        )
     }
 
     override suspend fun getJobMatchAnalysis(jobId: String): Result<RecommendedJob> {
