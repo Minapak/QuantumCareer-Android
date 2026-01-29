@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">QuantumCareer</string>
+    <string name="app_name">Quantum\nCareer</string>
     <string name="dashboard">대시보드</string>
     <string name="publish">발행</string>
     <string name="circuits">회로</string>
@@ -142,6 +142,31 @@
     <string name="rankings">랭킹</string>
     <string name="certs">자격증</string>
     <string name="settings">설정</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">홈</string>
+    <string name="nav_quiz">퀴즈</string>
+    <string name="nav_rankings">랭킹</string>
+    <string name="nav_jobs">채용</string>
+    <string name="nav_certs">자격증</string>
+    <string name="nav_profile">프로필</string>
+
+    <!-- Drawer Menu -->
+    <string name="drawer_dashboard">대시보드</string>
+    <string name="drawer_my_circuits">내 회로</string>
+    <string name="drawer_peer_review">피어 리뷰</string>
+    <string name="drawer_certificates">자격증</string>
+    <string name="drawer_talent_pool">인재 풀</string>
+    <string name="drawer_features">기능</string>
+    <string name="drawer_ecosystem">SwiftQuantum 생태계</string>
+    <string name="drawer_settings">설정</string>
+    <string name="drawer_current">현재</string>
+
+    <!-- Ecosystem App Descriptions -->
+    <string name="ecosystem_quantumnative_desc">네이티브 양자 학습</string>
+    <string name="ecosystem_swiftquantum_desc">양자 회로 설계</string>
+    <string name="ecosystem_qbridge_desc">실제 양자 하드웨어</string>
+    <string name="ecosystem_quantumcareer_desc">커리어 및 자격증</string>
 
     <!-- Status -->
     <string name="online">온라인</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">QuantumCareer</string>
+    <string name="app_name">Quantum\nCareer</string>
     <string name="dashboard">ダッシュボード</string>
     <string name="publish">発行</string>
     <string name="circuits">回路</string>
@@ -142,6 +142,31 @@
     <string name="rankings">ランキング</string>
     <string name="certs">認定証</string>
     <string name="settings">設定</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">ホーム</string>
+    <string name="nav_quiz">クイズ</string>
+    <string name="nav_rankings">ランキング</string>
+    <string name="nav_jobs">求人</string>
+    <string name="nav_certs">認定証</string>
+    <string name="nav_profile">プロフィール</string>
+
+    <!-- Drawer Menu -->
+    <string name="drawer_dashboard">ダッシュボード</string>
+    <string name="drawer_my_circuits">マイ回路</string>
+    <string name="drawer_peer_review">ピアレビュー</string>
+    <string name="drawer_certificates">認定証</string>
+    <string name="drawer_talent_pool">人材プール</string>
+    <string name="drawer_features">機能</string>
+    <string name="drawer_ecosystem">SwiftQuantumエコシステム</string>
+    <string name="drawer_settings">設定</string>
+    <string name="drawer_current">現在</string>
+
+    <!-- Ecosystem App Descriptions -->
+    <string name="ecosystem_quantumnative_desc">ネイティブ量子学習</string>
+    <string name="ecosystem_swiftquantum_desc">量子回路デザイナー</string>
+    <string name="ecosystem_qbridge_desc">実機量子ハードウェア</string>
+    <string name="ecosystem_quantumcareer_desc">キャリア＆認定証</string>
 
     <!-- Status -->
     <string name="online">オンライン</string>

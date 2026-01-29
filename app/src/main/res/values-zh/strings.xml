@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">QuantumCareer</string>
+    <string name="app_name">Quantum\nCareer</string>
     <string name="dashboard">仪表板</string>
     <string name="publish">发布</string>
     <string name="circuits">电路</string>
@@ -142,6 +142,31 @@
     <string name="rankings">排名</string>
     <string name="certs">证书</string>
     <string name="settings">设置</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">首页</string>
+    <string name="nav_quiz">测验</string>
+    <string name="nav_rankings">排名</string>
+    <string name="nav_jobs">职位</string>
+    <string name="nav_certs">证书</string>
+    <string name="nav_profile">个人资料</string>
+
+    <!-- Drawer Menu -->
+    <string name="drawer_dashboard">仪表板</string>
+    <string name="drawer_my_circuits">我的电路</string>
+    <string name="drawer_peer_review">同行评审</string>
+    <string name="drawer_certificates">证书</string>
+    <string name="drawer_talent_pool">人才库</string>
+    <string name="drawer_features">功能</string>
+    <string name="drawer_ecosystem">SwiftQuantum生态系统</string>
+    <string name="drawer_settings">设置</string>
+    <string name="drawer_current">当前</string>
+
+    <!-- Ecosystem App Descriptions -->
+    <string name="ecosystem_quantumnative_desc">原生量子学习</string>
+    <string name="ecosystem_swiftquantum_desc">量子电路设计器</string>
+    <string name="ecosystem_qbridge_desc">真实量子硬件</string>
+    <string name="ecosystem_quantumcareer_desc">职业与证书</string>
 
     <!-- Status -->
     <string name="online">在线</string>

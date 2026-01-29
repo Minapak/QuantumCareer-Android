@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">QuantumCareer</string>
+    <string name="app_name">Quantum\nCareer</string>
     <string name="dashboard">Dashboard</string>
     <string name="publish">Veröffentlichen</string>
     <string name="circuits">Schaltkreise</string>
@@ -142,6 +142,31 @@
     <string name="rankings">Ranglisten</string>
     <string name="certs">Zertifikate</string>
     <string name="settings">Einstellungen</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Startseite</string>
+    <string name="nav_quiz">Quiz</string>
+    <string name="nav_rankings">Ranglisten</string>
+    <string name="nav_jobs">Jobs</string>
+    <string name="nav_certs">Zertifikate</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Drawer Menu -->
+    <string name="drawer_dashboard">Dashboard</string>
+    <string name="drawer_my_circuits">Meine Schaltkreise</string>
+    <string name="drawer_peer_review">Peer-Review</string>
+    <string name="drawer_certificates">Zertifikate</string>
+    <string name="drawer_talent_pool">Talentpool</string>
+    <string name="drawer_features">Funktionen</string>
+    <string name="drawer_ecosystem">SwiftQuantum-Ökosystem</string>
+    <string name="drawer_settings">Einstellungen</string>
+    <string name="drawer_current">Aktuell</string>
+
+    <!-- Ecosystem App Descriptions -->
+    <string name="ecosystem_quantumnative_desc">Natives Quantenlernen</string>
+    <string name="ecosystem_swiftquantum_desc">Quantenschaltkreis-Designer</string>
+    <string name="ecosystem_qbridge_desc">Echte Quantenhardware</string>
+    <string name="ecosystem_quantumcareer_desc">Karriere &amp; Zertifizierungen</string>
 
     <!-- Status -->
     <string name="online">Online</string>
