@@ -626,4 +626,47 @@
     <string name="browse_available_jobs">Browse available jobs</string>
     <string name="save_jobs_for_later">Save jobs for later</string>
     <string name="start_applying">Start applying to jobs</string>
+
+    <!-- SQC Fidelity Grading (Australian Standards v5.2.0) -->
+    <string name="sqc_fidelity_grading">SQC Fidelity Grading</string>
+    <string name="sqc_fidelity_grade">SQC Fidelity Grade</string>
+    <string name="sqc_fidelity_grades">SQC Fidelity Grades</string>
+    <string name="australian_standards_version">Australian Standards v%1$s</string>
+    <string name="fidelity_metrics">Fidelity Metrics</string>
+    <string name="overall_fidelity">Overall Fidelity</string>
+    <string name="single_qubit_fidelity">Single-Qubit Gate Fidelity</string>
+    <string name="two_qubit_fidelity">Two-Qubit Gate Fidelity</string>
+    <string name="readout_fidelity">Readout Fidelity</string>
+    <string name="progress_to_next_grade">Progress to %1$s</string>
+    <string name="points_needed_format">%1$s%% needed to reach next grade</string>
+    <string name="sqc_certified">SQC Certified</string>
+    <string name="certificate_id_format">Certificate ID: %1$s</string>
+    <string name="standards_version_format">Standards Version %1$s</string>
+    <string name="australian_quantum_credits">Australian Quantum Credits</string>
+
+    <!-- Fidelity Grade Names -->
+    <string name="fidelity_platinum">Platinum</string>
+    <string name="fidelity_gold">Gold</string>
+    <string name="fidelity_silver">Silver</string>
+    <string name="fidelity_bronze">Bronze</string>
+    <string name="fidelity_standard">Standard</string>
+    <string name="fidelity_developing">Developing</string>
+
+    <!-- Fidelity Grade Descriptions -->
+    <string name="fidelity_platinum_desc">World-class quantum fidelity exceeding 99.9%</string>
+    <string name="fidelity_gold_desc">Excellent quantum fidelity between 99.5% and 99.9%</string>
+    <string name="fidelity_silver_desc">High quantum fidelity between 99.0% and 99.5%</string>
+    <string name="fidelity_bronze_desc">Good quantum fidelity between 98.0% and 99.0%</string>
+    <string name="fidelity_standard_desc">Baseline quantum fidelity between 95.0% and 98.0%</string>
+    <string name="fidelity_developing_desc">Quantum fidelity below 95.0%, room for improvement</string>
+
+    <!-- Australian Quantum Organizations -->
+    <string name="sqc_full_name">Silicon Quantum Computing</string>
+    <string name="sqc_description">Silicon-based quantum computing technology</string>
+    <string name="qctrl_name">Q-CTRL</string>
+    <string name="qctrl_description">Quantum firmware and infrastructure software</string>
+    <string name="labscript_name">LabScript</string>
+    <string name="labscript_description">Python-based quantum experiment control suite</string>
+    <string name="microqiskit_name">MicroQiskit</string>
+    <string name="microqiskit_description">Minimal quantum computing framework</string>
 </resources>

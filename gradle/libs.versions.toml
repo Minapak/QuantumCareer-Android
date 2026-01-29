@@ -17,6 +17,7 @@ coroutines = "1.9.0"
 coil = "2.7.0"
 vico = "2.0.0-beta.2"
 datastore = "1.1.1"
+zxing = "3.5.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -54,6 +55,8 @@ coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coi
 vico-compose = { group = "com.patrykandpatrick.vico", name = "compose", version.ref = "vico" }
 vico-compose-m3 = { group = "com.patrykandpatrick.vico", name = "compose-m3", version.ref = "vico" }
 vico-core = { group = "com.patrykandpatrick.vico", name = "core", version.ref = "vico" }
+
+zxing-core = { group = "com.google.zxing", name = "core", version.ref = "zxing" }
 
 junit = { group = "junit", name = "junit", version = "4.13.2" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version = "1.2.1" }

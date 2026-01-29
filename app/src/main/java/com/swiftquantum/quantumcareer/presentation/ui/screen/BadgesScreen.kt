@@ -9,10 +9,16 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.swiftquantum.quantumcareer.R
+import com.swiftquantum.quantumcareer.domain.model.AustralianQuantumCredits
+import com.swiftquantum.quantumcareer.domain.model.AustralianStandardsCertification
 import com.swiftquantum.quantumcareer.domain.model.BadgeTier
+import com.swiftquantum.quantumcareer.domain.model.FidelityGrade
+import com.swiftquantum.quantumcareer.domain.model.SQCFidelityMetrics
 import com.swiftquantum.quantumcareer.presentation.ui.component.*
 import com.swiftquantum.quantumcareer.presentation.ui.theme.*
 import com.swiftquantum.quantumcareer.presentation.viewmodel.BadgesViewModel
@@ -264,6 +270,72 @@ fun BadgesScreen(
                                 }
                             }
                         }
+                    }
+
+                    // SQC Fidelity Grading Section (Australian Standards v5.2.0)
+                    item {
+                        Spacer(modifier = Modifier.height(8.dp))
+                        HorizontalDivider()
+                        Spacer(modifier = Modifier.height(16.dp))
+                    }
+
+                    item {
+                        SectionHeader(title = stringResource(R.string.sqc_fidelity_grading))
+                    }
+
+                    // Sample SQC Fidelity Card - In a real app, this would come from ViewModel
+                    item {
+                        val sampleMetrics = SQCFidelityMetrics(
+                            singleQubitGateFidelity = 99.8,
+                            twoQubitGateFidelity = 99.5,
+                            readoutFidelity = 99.7,
+                            overallFidelity = 99.6,
+                            coherenceTime = 100.0,
+                            gateTime = 50.0,
+                            measurementDate = "2026-01-29"
+                        )
+
+                        val sampleCertification = AustralianStandardsCertification(
+                            fidelityGrade = FidelityGrade.GOLD,
+                            measuredFidelity = 99.6,
+                            certificationDate = "2026-01-01",
+                            expiryDate = "2027-01-01",
+                            certificateId = "SQC-2026-12345"
+                        )
+
+                        SQCFidelityCard(
+                            metrics = sampleMetrics,
+                            certification = sampleCertification
+                        )
+                    }
+
+                    // SQC Fidelity Grade Legend
+                    item {
+                        Spacer(modifier = Modifier.height(8.dp))
+                    }
+
+                    item {
+                        SQCFidelityGradeLegend()
+                    }
+
+                    // Australian Quantum Credits
+                    item {
+                        Spacer(modifier = Modifier.height(8.dp))
+                    }
+
+                    item {
+                        SectionHeader(title = stringResource(R.string.australian_quantum_credits))
+                    }
+
+                    item {
+                        AustralianQuantumCreditsCard(
+                            credits = AustralianQuantumCredits.createDefault()
+                        )
+                    }
+
+                    // Bottom spacing
+                    item {
+                        Spacer(modifier = Modifier.height(16.dp))
                     }
                 }
             }

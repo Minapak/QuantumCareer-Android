@@ -628,4 +628,47 @@
     <string name="error_get_career_passport">キャリアパスポートの取得中にエラーが発生しました</string>
     <string name="error_update_profile">プロフィールの更新中にエラーが発生しました</string>
     <string name="error_get_profile">プロフィールの取得中にエラーが発生しました</string>
+
+    <!-- SQC Fidelity Grading (Australian Standards v5.2.0) -->
+    <string name="sqc_fidelity_grading">SQC忠実度グレーディング</string>
+    <string name="sqc_fidelity_grade">SQC忠実度グレード</string>
+    <string name="sqc_fidelity_grades">SQC忠実度グレード</string>
+    <string name="australian_standards_version">オーストラリア規格 v%1$s</string>
+    <string name="fidelity_metrics">忠実度メトリクス</string>
+    <string name="overall_fidelity">全体忠実度</string>
+    <string name="single_qubit_fidelity">単一量子ビットゲート忠実度</string>
+    <string name="two_qubit_fidelity">2量子ビットゲート忠実度</string>
+    <string name="readout_fidelity">読み出し忠実度</string>
+    <string name="progress_to_next_grade">%1$sへの進捗</string>
+    <string name="points_needed_format">次のグレードまで%1$s%%必要</string>
+    <string name="sqc_certified">SQC認定</string>
+    <string name="certificate_id_format">認定証ID: %1$s</string>
+    <string name="standards_version_format">規格バージョン %1$s</string>
+    <string name="australian_quantum_credits">オーストラリア量子クレジット</string>
+
+    <!-- Fidelity Grade Names -->
+    <string name="fidelity_platinum">プラチナ</string>
+    <string name="fidelity_gold">ゴールド</string>
+    <string name="fidelity_silver">シルバー</string>
+    <string name="fidelity_bronze">ブロンズ</string>
+    <string name="fidelity_standard">スタンダード</string>
+    <string name="fidelity_developing">開発中</string>
+
+    <!-- Fidelity Grade Descriptions -->
+    <string name="fidelity_platinum_desc">99.9%を超える世界最高水準の量子忠実度</string>
+    <string name="fidelity_gold_desc">99.5%から99.9%の間の優れた量子忠実度</string>
+    <string name="fidelity_silver_desc">99.0%から99.5%の間の高い量子忠実度</string>
+    <string name="fidelity_bronze_desc">98.0%から99.0%の間の良好な量子忠実度</string>
+    <string name="fidelity_standard_desc">95.0%から98.0%の間の基準量子忠実度</string>
+    <string name="fidelity_developing_desc">95.0%未満の量子忠実度、改善の余地あり</string>
+
+    <!-- Australian Quantum Organizations -->
+    <string name="sqc_full_name">Silicon Quantum Computing</string>
+    <string name="sqc_description">シリコンベースの量子コンピューティング技術</string>
+    <string name="qctrl_name">Q-CTRL</string>
+    <string name="qctrl_description">量子ファームウェアとインフラソフトウェア</string>
+    <string name="labscript_name">LabScript</string>
+    <string name="labscript_description">Pythonベースの量子実験制御スイート</string>
+    <string name="microqiskit_name">MicroQiskit</string>
+    <string name="microqiskit_description">最小量子コンピューティングフレームワーク</string>
 </resources>

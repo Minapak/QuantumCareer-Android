@@ -628,4 +628,47 @@
     <string name="error_get_career_passport">Fehler beim Abrufen des Karrierepasses</string>
     <string name="error_update_profile">Fehler beim Aktualisieren des Profils</string>
     <string name="error_get_profile">Fehler beim Abrufen des Profils</string>
+
+    <!-- SQC Fidelity Grading (Australian Standards v5.2.0) -->
+    <string name="sqc_fidelity_grading">SQC-Treue-Bewertung</string>
+    <string name="sqc_fidelity_grade">SQC-Treue-Grad</string>
+    <string name="sqc_fidelity_grades">SQC-Treue-Grade</string>
+    <string name="australian_standards_version">Australischer Standard v%1$s</string>
+    <string name="fidelity_metrics">Treue-Metriken</string>
+    <string name="overall_fidelity">Gesamttreue</string>
+    <string name="single_qubit_fidelity">Einzel-Qubit-Gatter-Treue</string>
+    <string name="two_qubit_fidelity">Zwei-Qubit-Gatter-Treue</string>
+    <string name="readout_fidelity">Auslesetreue</string>
+    <string name="progress_to_next_grade">Fortschritt zu %1$s</string>
+    <string name="points_needed_format">%1$s%% bis zum nächsten Grad erforderlich</string>
+    <string name="sqc_certified">SQC-Zertifiziert</string>
+    <string name="certificate_id_format">Zertifikats-ID: %1$s</string>
+    <string name="standards_version_format">Standards-Version %1$s</string>
+    <string name="australian_quantum_credits">Australische Quanten-Credits</string>
+
+    <!-- Fidelity Grade Names -->
+    <string name="fidelity_platinum">Platin</string>
+    <string name="fidelity_gold">Gold</string>
+    <string name="fidelity_silver">Silber</string>
+    <string name="fidelity_bronze">Bronze</string>
+    <string name="fidelity_standard">Standard</string>
+    <string name="fidelity_developing">In Entwicklung</string>
+
+    <!-- Fidelity Grade Descriptions -->
+    <string name="fidelity_platinum_desc">Weltklasse-Quantentreue über 99,9%</string>
+    <string name="fidelity_gold_desc">Ausgezeichnete Quantentreue zwischen 99,5% und 99,9%</string>
+    <string name="fidelity_silver_desc">Hohe Quantentreue zwischen 99,0% und 99,5%</string>
+    <string name="fidelity_bronze_desc">Gute Quantentreue zwischen 98,0% und 99,0%</string>
+    <string name="fidelity_standard_desc">Basis-Quantentreue zwischen 95,0% und 98,0%</string>
+    <string name="fidelity_developing_desc">Quantentreue unter 95,0%, Verbesserungspotenzial</string>
+
+    <!-- Australian Quantum Organizations -->
+    <string name="sqc_full_name">Silicon Quantum Computing</string>
+    <string name="sqc_description">Siliziumbasierte Quantencomputing-Technologie</string>
+    <string name="qctrl_name">Q-CTRL</string>
+    <string name="qctrl_description">Quanten-Firmware und Infrastruktur-Software</string>
+    <string name="labscript_name">LabScript</string>
+    <string name="labscript_description">Python-basierte Quantenexperiment-Steuerungssuite</string>
+    <string name="microqiskit_name">MicroQiskit</string>
+    <string name="microqiskit_description">Minimales Quantencomputing-Framework</string>
 </resources>

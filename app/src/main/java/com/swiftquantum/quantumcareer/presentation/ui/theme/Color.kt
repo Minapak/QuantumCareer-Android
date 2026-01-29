@@ -49,3 +49,16 @@ val WarningOrange = Color(0xFFFF9800)
 val NativeBlue = Color(0xFF0066FF)
 val SwiftPurple = Color(0xFF7B2FFF)
 val BridgeCyan = Color(0xFF00D4FF)
+
+// ========== SQC Fidelity Grade Colors (Australian Standards v5.2.0) ==========
+val FidelityPlatinum = Color(0xFFE5E4E2)  // Platinum - >= 99.9%
+val FidelityGold = Color(0xFFFFD700)       // Gold - >= 99.5%
+val FidelitySilver = Color(0xFFC0C0C0)     // Silver - >= 99.0%
+val FidelityBronze = Color(0xFFCD7F32)     // Bronze - >= 98.0%
+val FidelityStandard = Color(0xFF4A90D9)   // Standard - >= 95.0%
+val FidelityDeveloping = Color(0xFF808080) // Developing - < 95.0%
+
+// SQC Brand Colors
+val SQCBlue = Color(0xFF0052CC)
+val SQCLightBlue = Color(0xFF2684FF)
+val SQCAustralianGold = Color(0xFFFFCD00)

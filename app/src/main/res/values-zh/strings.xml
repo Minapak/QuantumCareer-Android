@@ -628,4 +628,47 @@
     <string name="error_get_career_passport">获取职业护照时出错</string>
     <string name="error_update_profile">更新个人资料时出错</string>
     <string name="error_get_profile">获取个人资料时出错</string>
+
+    <!-- SQC Fidelity Grading (Australian Standards v5.2.0) -->
+    <string name="sqc_fidelity_grading">SQC保真度评级</string>
+    <string name="sqc_fidelity_grade">SQC保真度等级</string>
+    <string name="sqc_fidelity_grades">SQC保真度等级</string>
+    <string name="australian_standards_version">澳大利亚标准 v%1$s</string>
+    <string name="fidelity_metrics">保真度指标</string>
+    <string name="overall_fidelity">整体保真度</string>
+    <string name="single_qubit_fidelity">单量子比特门保真度</string>
+    <string name="two_qubit_fidelity">双量子比特门保真度</string>
+    <string name="readout_fidelity">读出保真度</string>
+    <string name="progress_to_next_grade">到%1$s的进度</string>
+    <string name="points_needed_format">距离下一等级还需%1$s%%</string>
+    <string name="sqc_certified">SQC认证</string>
+    <string name="certificate_id_format">证书ID: %1$s</string>
+    <string name="standards_version_format">标准版本 %1$s</string>
+    <string name="australian_quantum_credits">澳大利亚量子贡献</string>
+
+    <!-- Fidelity Grade Names -->
+    <string name="fidelity_platinum">铂金</string>
+    <string name="fidelity_gold">金</string>
+    <string name="fidelity_silver">银</string>
+    <string name="fidelity_bronze">铜</string>
+    <string name="fidelity_standard">标准</string>
+    <string name="fidelity_developing">发展中</string>
+
+    <!-- Fidelity Grade Descriptions -->
+    <string name="fidelity_platinum_desc">超过99.9%的世界级量子保真度</string>
+    <string name="fidelity_gold_desc">99.5%到99.9%之间的优秀量子保真度</string>
+    <string name="fidelity_silver_desc">99.0%到99.5%之间的高量子保真度</string>
+    <string name="fidelity_bronze_desc">98.0%到99.0%之间的良好量子保真度</string>
+    <string name="fidelity_standard_desc">95.0%到98.0%之间的基准量子保真度</string>
+    <string name="fidelity_developing_desc">低于95.0%的量子保真度,仍有改进空间</string>
+
+    <!-- Australian Quantum Organizations -->
+    <string name="sqc_full_name">Silicon Quantum Computing</string>
+    <string name="sqc_description">硅基量子计算技术</string>
+    <string name="qctrl_name">Q-CTRL</string>
+    <string name="qctrl_description">量子固件和基础设施软件</string>
+    <string name="labscript_name">LabScript</string>
+    <string name="labscript_description">基于Python的量子实验控制套件</string>
+    <string name="microqiskit_name">MicroQiskit</string>
+    <string name="microqiskit_description">最小量子计算框架</string>
 </resources>

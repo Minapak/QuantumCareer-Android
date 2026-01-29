@@ -628,4 +628,47 @@
     <string name="error_get_career_passport">커리어 패스포트를 가져오는 중 오류가 발생했습니다</string>
     <string name="error_update_profile">프로필 업데이트 중 오류가 발생했습니다</string>
     <string name="error_get_profile">프로필을 가져오는 중 오류가 발생했습니다</string>
+
+    <!-- SQC Fidelity Grading (Australian Standards v5.2.0) -->
+    <string name="sqc_fidelity_grading">SQC 충실도 등급</string>
+    <string name="sqc_fidelity_grade">SQC 충실도 등급</string>
+    <string name="sqc_fidelity_grades">SQC 충실도 등급</string>
+    <string name="australian_standards_version">호주 표준 v%1$s</string>
+    <string name="fidelity_metrics">충실도 지표</string>
+    <string name="overall_fidelity">전체 충실도</string>
+    <string name="single_qubit_fidelity">단일 큐비트 게이트 충실도</string>
+    <string name="two_qubit_fidelity">이중 큐비트 게이트 충실도</string>
+    <string name="readout_fidelity">판독 충실도</string>
+    <string name="progress_to_next_grade">%1$s까지 진행률</string>
+    <string name="points_needed_format">다음 등급까지 %1$s%% 필요</string>
+    <string name="sqc_certified">SQC 인증</string>
+    <string name="certificate_id_format">인증서 ID: %1$s</string>
+    <string name="standards_version_format">표준 버전 %1$s</string>
+    <string name="australian_quantum_credits">호주 양자 크레딧</string>
+
+    <!-- Fidelity Grade Names -->
+    <string name="fidelity_platinum">플래티넘</string>
+    <string name="fidelity_gold">골드</string>
+    <string name="fidelity_silver">실버</string>
+    <string name="fidelity_bronze">브론즈</string>
+    <string name="fidelity_standard">표준</string>
+    <string name="fidelity_developing">개발 중</string>
+
+    <!-- Fidelity Grade Descriptions -->
+    <string name="fidelity_platinum_desc">99.9%를 초과하는 세계 최고 수준의 양자 충실도</string>
+    <string name="fidelity_gold_desc">99.5%에서 99.9% 사이의 우수한 양자 충실도</string>
+    <string name="fidelity_silver_desc">99.0%에서 99.5% 사이의 높은 양자 충실도</string>
+    <string name="fidelity_bronze_desc">98.0%에서 99.0% 사이의 양호한 양자 충실도</string>
+    <string name="fidelity_standard_desc">95.0%에서 98.0% 사이의 기준 양자 충실도</string>
+    <string name="fidelity_developing_desc">95.0% 미만의 양자 충실도, 개선 여지 있음</string>
+
+    <!-- Australian Quantum Organizations -->
+    <string name="sqc_full_name">Silicon Quantum Computing</string>
+    <string name="sqc_description">실리콘 기반 양자 컴퓨팅 기술</string>
+    <string name="qctrl_name">Q-CTRL</string>
+    <string name="qctrl_description">양자 펌웨어 및 인프라 소프트웨어</string>
+    <string name="labscript_name">LabScript</string>
+    <string name="labscript_description">Python 기반 양자 실험 제어 스위트</string>
+    <string name="microqiskit_name">MicroQiskit</string>
+    <string name="microqiskit_description">최소 양자 컴퓨팅 프레임워크</string>
 </resources>
