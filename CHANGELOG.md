@@ -1,5 +1,20 @@
 # Changelog
 
+## [5.2.0] - 2026-01-29
+
+### Added
+- **Australian Quantum Standards Integration**: Full SQC (Standards for Quantum Computing) compliance
+- **FidelityGrade Enum**: Six-tier grading system (Platinum, Gold, Silver, Bronze, Standard, Developing)
+- **SQCFidelityBadge.kt**: New composable component for displaying SQC fidelity badges
+- **AustralianQuantumCredits.kt**: Model for Australian quantum credit tracking and validation
+- **AustralianStandards.kt**: Model for Australian quantum computing standards compliance
+- **BadgesScreen.kt**: Updated with SQC Fidelity Badge integration
+- **5-Language Localization**: SQC strings added for EN, KO, JA, ZH, DE
+
+### Changed
+- Badge system now includes SQC Fidelity grading alongside existing tier badges
+- Profile badges section displays both career badges and SQC fidelity badges
+
 ## [1.1.1] - 2026-01-29
 
 ### Added

@@ -11,6 +11,7 @@ QuantumCareer Android is the Android port of the iOS QuantumCareer app, providin
 - **DOI Publishing**: Circuit publishing with DOI (10.5281/sqc.2026.XXXXX)
 - **Peer Review**: Junior/Senior/Expert reviewer system
 - **Badge Tiers**: Bronze, Silver, Gold, Platinum achievements
+- **SQC Fidelity Grading**: Australian Quantum Standards compliance (Platinum/Gold/Silver/Bronze/Standard/Developing)
 - **Citation Tracking**: h-Index and i10-Index metrics
 - **Talent Matching**: Search and scout quantum talent
 - **Public Profile**: Shareable career profiles
@@ -40,12 +41,23 @@ QuantumCareer Android is the Android port of the iOS QuantumCareer app, providin
 
 ## Badge Requirements
 
+### Career Badges
 | Tier | Requirements |
 |------|--------------|
 | Bronze | First circuit published |
 | Silver | 5 publications + 10 citations |
 | Gold | 20 publications + 50 citations |
 | Platinum | 50 publications + 200 citations |
+
+### SQC Fidelity Grades (Australian Standards)
+| Grade | Fidelity Range |
+|-------|----------------|
+| Platinum | 99.9%+ |
+| Gold | 99.0-99.9% |
+| Silver | 95.0-99.0% |
+| Bronze | 90.0-95.0% |
+| Standard | 80.0-90.0% |
+| Developing | Below 80.0% |
 
 ## Build & Run
 

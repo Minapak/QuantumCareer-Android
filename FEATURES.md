@@ -28,13 +28,38 @@
 
 ## Badge System
 
-### Tiers
+### Career Tiers
 | Tier | Icon | Requirements | Benefits |
 |------|------|--------------|----------|
 | Bronze | 🥉 | First publication | Basic badge |
 | Silver | 🥈 | 5 pubs + 10 cites | Peer review access |
 | Gold | 🥇 | 20 pubs + 50 cites | Senior reviewer |
 | Platinum | 💎 | 50 pubs + 200 cites | Expert + priority |
+
+## SQC Fidelity Grading (v5.2.0)
+
+### Australian Quantum Standards Integration
+Full compliance with Standards for Quantum Computing (SQC) from the Australian Quantum Computing Standards Authority.
+
+### FidelityGrade Tiers
+| Grade | Icon | Fidelity Range | Description |
+|-------|------|----------------|-------------|
+| Platinum | 🏆 | 99.9%+ | Exceptional quantum fidelity |
+| Gold | 🥇 | 99.0-99.9% | Excellent quantum fidelity |
+| Silver | 🥈 | 95.0-99.0% | High quantum fidelity |
+| Bronze | 🥉 | 90.0-95.0% | Good quantum fidelity |
+| Standard | ✓ | 80.0-90.0% | Acceptable quantum fidelity |
+| Developing | ○ | Below 80.0% | Fidelity improvement needed |
+
+### SQC Components
+- **SQCFidelityBadge.kt**: Composable component displaying fidelity grade with visual indicator
+- **AustralianQuantumCredits.kt**: Model for tracking quantum credits earned under Australian standards
+- **AustralianStandards.kt**: Model defining compliance rules and validation logic
+
+### Badge Display
+- SQC Fidelity badges appear in BadgesScreen alongside career badges
+- Visual distinction between career achievements and fidelity grades
+- Localized descriptions in all 5 supported languages (EN, KO, JA, ZH, DE)
 
 ## Citation Tracking
 
