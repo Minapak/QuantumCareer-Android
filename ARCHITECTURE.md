@@ -1,5 +1,7 @@
 # QuantumCareer Android Architecture
 
+**Version 5.6.0** | **2026-01-31**
+
 ## Overview
 
 QuantumCareer Android follows Clean Architecture with MVVM pattern.
@@ -14,11 +16,16 @@ QuantumCareer Android follows Clean Architecture with MVVM pattern.
 - Talent models (TalentProfile, ScoutRequest, TalentOffer)
 - Profile models (PublicProfile)
 - Australian Standards models (AustralianQuantumCredits, AustralianStandards)
+- Skill Verification models (SkillAssessment, CompetencyLevel, VerificationResult)
+- Job Matching models (MatchScore, CareerPath, RecommendationResult)
 
 ### Data Layer
 - CareerPassportApi, PeerReviewApi, TalentApi
 - Repository implementations
 - DTO mappers
+- CacheManager (3-Layer Cache)
+- RedisClient integration
+- SentryErrorHandler
 
 ### Presentation Layer
 - 8 ViewModels (Dashboard, Circuits, Publish, PeerReview, Badges, Citations, Talent, Profile)
@@ -129,3 +136,163 @@ SQCFidelityBadge.kt (Composable)
 ### Component Integration
 - BadgesScreen displays SQCFidelityBadge alongside career badges
 - Localization strings in: strings.xml (EN), strings-ko.xml, strings-ja.xml, strings-zh.xml, strings-de.xml
+
+## 3-Layer Cache Architecture (v5.6.0)
+
+### Cache Layers
+```
+Request
+    │
+    ▼
+┌─────────────────────────────────────────────────┐
+│  L1: Memory Cache (LRU)                         │
+│  - Hot data with TTL                            │
+│  - Max 100MB heap allocation                    │
+│  - Sub-millisecond access                       │
+└─────────────────────────────────────────────────┘
+    │ Cache Miss
+    ▼
+┌─────────────────────────────────────────────────┐
+│  L2: Disk Cache (Room + DataStore)              │
+│  - Persistent storage                           │
+│  - Max 500MB disk allocation                    │
+│  - Offline support                              │
+└─────────────────────────────────────────────────┘
+    │ Cache Miss
+    ▼
+┌─────────────────────────────────────────────────┐
+│  L3: Redis Network Cache                        │
+│  - Distributed caching                          │
+│  - Session management                           │
+│  - Real-time synchronization                    │
+└─────────────────────────────────────────────────┘
+    │ Cache Miss
+    ▼
+  API Request
+```
+
+### CacheManager Implementation
+```kotlin
+class CacheManager @Inject constructor(
+    private val memoryCache: MemoryCache,
+    private val diskCache: DiskCache,
+    private val redisClient: RedisClient
+) {
+    suspend fun <T> get(key: String): T?
+    suspend fun <T> put(key: String, value: T, ttl: Duration)
+    suspend fun invalidate(key: String)
+    suspend fun invalidateAll()
+}
+```
+
+## Redis Integration (v5.6.0)
+
+### Redis Client Architecture
+```
+RedisClient
+    │
+    ├── ConnectionPool (max 10 connections)
+    │
+    ├── Operations
+    │     ├── get/set/delete
+    │     ├── publish/subscribe
+    │     └── transaction support
+    │
+    └── Fallback
+          └── Graceful degradation to L2 cache
+```
+
+### Use Cases
+- User session management
+- Real-time job matching updates
+- Cross-device synchronization
+- Cache invalidation broadcasts
+
+## Sentry Error Monitoring (v5.6.0)
+
+### Integration Architecture
+```
+SentryErrorHandler
+    │
+    ├── Crash Reporting
+    │     ├── Automatic exception capture
+    │     ├── Stack trace symbolication
+    │     └── Device/OS context
+    │
+    ├── Performance Monitoring
+    │     ├── Transaction tracing
+    │     ├── API call duration
+    │     └── Screen load times
+    │
+    └── User Feedback
+          ├── Session replay
+          └── Breadcrumb trails
+```
+
+### Configuration
+```kotlin
+SentryAndroid.init(context) { options ->
+    options.dsn = BuildConfig.SENTRY_DSN
+    options.environment = BuildConfig.BUILD_TYPE
+    options.tracesSampleRate = 1.0
+    options.isEnableAutoSessionTracking = true
+}
+```
+
+## Operations Readiness (v5.6.0)
+
+### Checklist Architecture
+```
+OperationsReadinessChecker
+    │
+    ├── Infrastructure Checks
+    │     ├── API endpoint health
+    │     ├── Redis connectivity
+    │     └── CDN availability
+    │
+    ├── Service Checks
+    │     ├── Authentication service
+    │     ├── Job matching service
+    │     └── Notification service
+    │
+    └── Configuration Checks
+          ├── Feature flags
+          ├── Remote config sync
+          └── Version compatibility
+```
+
+## Skill Verification & Job Matching (v5.6.0)
+
+### Skill Verification Flow
+```
+SkillVerificationManager
+    │
+    ├── Assessment Engine
+    │     ├── AI-powered skill analysis
+    │     ├── Certification validation
+    │     └── Experience verification
+    │
+    └── Competency Mapping
+          ├── Industry standards alignment
+          ├── Role-specific requirements
+          └── Growth path identification
+```
+
+### Enhanced Job Matching
+```
+JobMatchingEngine
+    │
+    ├── Multi-factor Analysis
+    │     ├── Skill match (40%)
+    │     ├── Experience match (30%)
+    │     ├── Certification match (20%)
+    │     └── Culture fit (10%)
+    │
+    ├── Real-time Updates
+    │     ├── Redis pub/sub for new jobs
+    │     └── Push notifications
+    │
+    └── Career Path Suggestions
+          ├── Skill gap analysis
+          └── Learning recommendations
+```
