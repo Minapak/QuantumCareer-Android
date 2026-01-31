@@ -62,3 +62,53 @@ val FidelityDeveloping = Color(0xFF808080) // Developing - < 95.0%
 val SQCBlue = Color(0xFF0052CC)
 val SQCLightBlue = Color(0xFF2684FF)
 val SQCAustralianGold = Color(0xFFFFCD00)
+
+// ========== QuantumColors Object for Admin/UI ==========
+object QuantumColors {
+    // Core colors
+    val Primary = CareerGold
+    val primaryVariant = CareerGoldDark
+    val Secondary = QuantumTeal
+    val secondaryVariant = QuantumTealDark
+    val Accent = CareerGoldLight
+
+    // Background colors
+    val Background = BackgroundDark
+    val Surface = SurfaceDark
+    val surfaceVariant = SurfaceDarkVariant
+    val CardBackground = SurfaceDarkVariant
+
+    // Text colors
+    val TextPrimary = com.swiftquantum.quantumcareer.presentation.ui.theme.TextPrimary
+    val TextSecondary = com.swiftquantum.quantumcareer.presentation.ui.theme.TextSecondary
+    val TextTertiary = com.swiftquantum.quantumcareer.presentation.ui.theme.TextDisabled
+    val TextDisabled = com.swiftquantum.quantumcareer.presentation.ui.theme.TextDisabled
+
+    // On colors
+    val onPrimary = Color(0xFF000000)
+    val onSecondary = Color(0xFF000000)
+    val onBackground = com.swiftquantum.quantumcareer.presentation.ui.theme.TextPrimary
+    val onSurface = OnSurfaceDark
+    val onSurfaceVariant = OnSurfaceDarkVariant
+
+    // Status colors
+    val Error = ErrorRed
+    val onError = Color(0xFFFFFFFF)
+    val Success = SuccessGreen
+    val Warning = WarningOrange
+
+    // Border/Divider
+    val Border = Color(0xFF2D2D2D)
+    val Divider = Color(0xFF2D2D2D)
+
+    // Badge colors
+    val Gold = BadgeGold
+    val badgeBronze = BadgeBronze
+    val badgeSilver = BadgeSilver
+    val badgeGold = BadgeGold
+    val badgePlatinum = BadgePlatinum
+
+    // Additional colors for onboarding
+    val Info = Color(0xFF2196F3)
+    val BackgroundSecondary = Color(0xFF161616)
+}

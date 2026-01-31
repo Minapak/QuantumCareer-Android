@@ -2,7 +2,7 @@
 
 Quantum Computing Career Portfolio Platform for Android
 
-**Version 5.6.0** | **2026-01-31**
+**Version 5.8.0** | **2026-01-31**
 
 ## Overview
 
@@ -20,6 +20,12 @@ QuantumCareer Android is the Android port of the iOS QuantumCareer app, providin
 - **Jobs Feature**: Full job search, filtering, and application system
 - **Enhanced Profile**: Contribution heatmap, skill breakdown, portfolio tabs
 - **Settings Screen**: Full configuration with account, notifications, language
+- **Admin Panel**: Complete admin dashboard for platform management
+  - Dashboard with system stats and health monitoring
+  - User management (search, premium grants, bans)
+  - Content management (questions, jobs, badges)
+  - System settings and security configuration
+- **Onboarding Screen**: Animated introduction with 5-page pager
 - **Certification Tests**: Timed quizzes with multiple tiers
 - **Rankings System**: Global and local leaderboards
 - **5 Languages**: EN, KO, JA, ZH, DE

@@ -2,6 +2,8 @@ package com.swiftquantum.quantumcareer.di
 
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import com.swiftquantum.quantumcareer.BuildConfig
+import com.swiftquantum.quantumcareer.data.api.AdminApi
+import com.swiftquantum.quantumcareer.data.api.AuthApi
 import com.swiftquantum.quantumcareer.data.api.CareerPassportApi
 import com.swiftquantum.quantumcareer.data.api.CertificateApi
 import com.swiftquantum.quantumcareer.data.api.JobsApi
@@ -114,5 +116,17 @@ object NetworkModule {
     @Singleton
     fun provideJobsApi(retrofit: Retrofit): JobsApi {
         return retrofit.create(JobsApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideAuthApi(retrofit: Retrofit): AuthApi {
+        return retrofit.create(AuthApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideAdminApi(retrofit: Retrofit): AdminApi {
+        return retrofit.create(AdminApi::class.java)
     }
 }

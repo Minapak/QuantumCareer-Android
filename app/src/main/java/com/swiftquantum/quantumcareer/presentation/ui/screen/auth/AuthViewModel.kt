@@ -2,8 +2,12 @@ package com.swiftquantum.quantumcareer.presentation.ui.screen.auth
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.swiftquantum.quantumcareer.data.api.AuthApi
 import com.swiftquantum.quantumcareer.data.auth.AuthData
 import com.swiftquantum.quantumcareer.data.auth.SharedAuthManager
+import com.swiftquantum.quantumcareer.data.dto.LoginRequest
+import com.swiftquantum.quantumcareer.data.dto.RegisterRequest
+import com.swiftquantum.quantumcareer.data.dto.UserDto
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -18,6 +22,7 @@ data class AuthUiState(
     val isLoading: Boolean = false,
     val isLoggedIn: Boolean = false,
     val authData: AuthData? = null,
+    val currentUser: UserDto? = null,
     val error: String? = null
 )
 
@@ -31,7 +36,8 @@ sealed class AuthEvent {
 
 @HiltViewModel
 class AuthViewModel @Inject constructor(
-    private val sharedAuthManager: SharedAuthManager
+    private val sharedAuthManager: SharedAuthManager,
+    private val authApi: AuthApi
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(AuthUiState())
@@ -65,28 +71,32 @@ class AuthViewModel @Inject constructor(
             _uiState.value = _uiState.value.copy(isLoading = true, error = null)
 
             try {
-                // TODO: Replace with actual API call
-                kotlinx.coroutines.delay(1000)
+                // SwiftQuantumBackend API 호출
+                println("🌐 QuantumCareer: Logging in with $email")
+                val response = authApi.login(LoginRequest(email, password))
 
-                val userId = "user_${System.currentTimeMillis()}"
-                val accessToken = "token_${System.currentTimeMillis()}"
-                val refreshToken = "refresh_${System.currentTimeMillis()}"
+                // 사용자 정보 가져오기
+                val user = response.user ?: authApi.getCurrentUser()
 
                 sharedAuthManager.saveAuth(
-                    accessToken = accessToken,
-                    refreshToken = refreshToken,
-                    userId = userId,
-                    userEmail = email,
-                    userName = email.substringBefore("@")
+                    accessToken = response.accessToken,
+                    refreshToken = response.refreshToken ?: "",
+                    userId = user.id.toString(),
+                    userEmail = user.email,
+                    userName = user.fullName ?: user.username
                 )
 
                 _uiState.value = _uiState.value.copy(
                     isLoading = false,
-                    isLoggedIn = true
+                    isLoggedIn = true,
+                    currentUser = user
                 )
+
+                println("✅ QuantumCareer: Login successful for ${user.email}, isPro=${user.isPro}")
                 _events.emit(AuthEvent.LoginSuccess)
 
             } catch (e: Exception) {
+                println("❌ QuantumCareer: Login failed: ${e.message}")
                 _uiState.value = _uiState.value.copy(
                     isLoading = false,
                     error = e.message ?: "Login failed"
@@ -116,27 +126,32 @@ class AuthViewModel @Inject constructor(
             _uiState.value = _uiState.value.copy(isLoading = true, error = null)
 
             try {
-                kotlinx.coroutines.delay(1000)
+                // SwiftQuantumBackend API 호출
+                println("🌐 QuantumCareer: Registering $email")
+                val response = authApi.register(RegisterRequest(email, password, name))
 
-                val userId = "user_${System.currentTimeMillis()}"
-                val accessToken = "token_${System.currentTimeMillis()}"
-                val refreshToken = "refresh_${System.currentTimeMillis()}"
+                // 사용자 정보 가져오기
+                val user = response.user ?: authApi.getCurrentUser()
 
                 sharedAuthManager.saveAuth(
-                    accessToken = accessToken,
-                    refreshToken = refreshToken,
-                    userId = userId,
-                    userEmail = email,
-                    userName = name
+                    accessToken = response.accessToken,
+                    refreshToken = response.refreshToken ?: "",
+                    userId = user.id.toString(),
+                    userEmail = user.email,
+                    userName = user.fullName ?: user.username
                 )
 
                 _uiState.value = _uiState.value.copy(
                     isLoading = false,
-                    isLoggedIn = true
+                    isLoggedIn = true,
+                    currentUser = user
                 )
+
+                println("✅ QuantumCareer: Registration successful for ${user.email}")
                 _events.emit(AuthEvent.RegisterSuccess)
 
             } catch (e: Exception) {
+                println("❌ QuantumCareer: Registration failed: ${e.message}")
                 _uiState.value = _uiState.value.copy(
                     isLoading = false,
                     error = e.message ?: "Registration failed"
@@ -151,8 +166,16 @@ class AuthViewModel @Inject constructor(
             _uiState.value = _uiState.value.copy(isLoading = true)
 
             try {
+                // 백엔드 로그아웃 호출 (실패해도 로컬 로그아웃 진행)
+                try {
+                    authApi.logout()
+                } catch (e: Exception) {
+                    println("⚠️ QuantumCareer: Backend logout failed: ${e.message}")
+                }
+
                 sharedAuthManager.clearAuth()
                 _uiState.value = AuthUiState()
+                println("🔓 QuantumCareer: User logged out")
                 _events.emit(AuthEvent.LogoutSuccess)
             } catch (e: Exception) {
                 _uiState.value = _uiState.value.copy(
@@ -161,6 +184,28 @@ class AuthViewModel @Inject constructor(
                 )
             }
         }
+    }
+
+    /**
+     * 사용자 프로필 동기화 (백엔드에서 최신 정보 로드)
+     */
+    fun syncUserProfile() {
+        viewModelScope.launch {
+            try {
+                val user = authApi.getCurrentUser()
+                _uiState.value = _uiState.value.copy(currentUser = user)
+                println("✅ QuantumCareer: User profile synced, isPro=${user.isPro}")
+            } catch (e: Exception) {
+                println("⚠️ QuantumCareer: Failed to sync user profile: ${e.message}")
+            }
+        }
+    }
+
+    /**
+     * 현재 사용자가 Pro 구독자인지 확인
+     */
+    fun isPro(): Boolean {
+        return _uiState.value.currentUser?.isPro ?: _uiState.value.authData?.isPro ?: false
     }
 
     fun forgotPassword(email: String) {

@@ -1,5 +1,64 @@
 # Changelog
 
+## [5.8.1] - 2026-01-31
+
+### Changed
+- **OnboardingScreen**: Completely redesigned to match iOS OnboardingView 1:1
+  - App icon (mipmap) displayed in splash and all pages
+  - Language selection page with 5 languages (EN, KO, JA, ZH, DE)
+  - Welcome page with app logo and description
+  - Features page with 4 feature cards (iOS style)
+  - Get Started page with success icon
+  - Immediate language switching via AppCompatDelegate
+- **Onboarding Strings**: iOS-identical localization for all 5 languages
+  - splash_tagline, splash_feature1/2/3, splash_edition
+  - select_language, select_language_subtitle
+  - welcome_title, welcome_subtitle
+  - features_title, feature1-4_title/desc
+  - get_started_title/subtitle/button
+  - continue, back, next buttons
+
+### Fixed
+- OnboardingScreen now uses actual app icon instead of generic icons
+- Language selection integrated into onboarding flow (page 0)
+- All onboarding strings match iOS LocalizationManager exactly
+
+## [5.8.0] - 2026-01-31
+
+### Added
+- **Admin Panel**: Complete admin dashboard for platform management (iOS parity)
+  - Admin Dashboard: System overview with stats, health status, and quick actions
+  - User Management: Search, filter, grant premium, ban users
+  - Content Management: Questions, Jobs, and Badges CRUD operations
+  - Admin Settings: Maintenance mode, registration controls, security settings
+- **Onboarding Screen**: Animated splash and 5-page pager introduction (iOS parity)
+  - Animated pulse effect splash screen
+  - Welcome, Quiz mastery, Certificates, Jobs, Community pages
+  - Skip and Get Started navigation
+- **Admin API Integration**: Full AdminApi with endpoints for stats, users, content, and settings
+- **Admin DTOs**: Complete data transfer objects for admin operations
+- **QuantumColors Theme Object**: Centralized color palette for Admin/Onboarding screens
+
+### Changed
+- NetworkModule updated with AdminApi provider
+- Color.kt enhanced with QuantumColors object for consistent theming
+- strings.xml updated with 100+ Admin/Onboarding localized strings in 5 languages
+
+### Fixed
+- Duplicate string resource keys in localization files
+- CategoryStatsDto naming conflict resolved (AdminCategoryStatsDto)
+
+## [5.7.1] - 2026-01-31
+
+### Changed
+- Replaced IBM Quantum references with generic "Quantum Hardware" in strings.xml
+
+### Fixed
+- Trademark compliance - removed IBM branding from user-visible strings
+
+### Note
+- Educational content describing IBM technology preserved (factual references)
+
 ## [5.6.0] - 2026-01-31
 
 ### Added

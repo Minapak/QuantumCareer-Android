@@ -16,6 +16,8 @@ import javax.inject.Singleton
 
 /**
  * Authentication data class containing all user auth information
+ * v5.4.2: 구독 티어 필드 추가 (SwiftQuantumBackend 동기화)
+ * QuantumCareer 티어: Free, Pro ($14.99)
  */
 data class AuthData(
     val accessToken: String? = null,
@@ -24,8 +26,54 @@ data class AuthData(
     val userEmail: String? = null,
     val userName: String? = null,
     val loginTimestamp: Long = 0L,
-    val isLoggedIn: Boolean = false
-)
+    val isLoggedIn: Boolean = false,
+    // Backend subscription fields (SwiftQuantumBackend sync)
+    val tier: String? = null,
+    val isPremium: Boolean? = null,
+    val subscriptionType: String? = null,
+    val subscriptionTier: String? = null,
+    val isAdmin: Boolean? = null
+) {
+    /**
+     * Pro 구독자 여부 (Free, Pro 티어 체크)
+     */
+    val isPro: Boolean
+        get() {
+            println("🔐 QuantumCareer Android Checking isPro for user: $userName")
+            println("   - isPremium: $isPremium")
+            println("   - subscriptionType: $subscriptionType")
+            println("   - subscriptionTier: $subscriptionTier")
+            println("   - tier: $tier")
+
+            // 1. isPremium 직접 체크
+            if (isPremium == true) {
+                println("🔐 isPro: true (isPremium: true)")
+                return true
+            }
+
+            // 2. subscription_type 체크
+            val proTiers = listOf("pro", "master", "career", "scholar", "professional", "enterprise")
+            if (subscriptionType?.lowercase() in proTiers) {
+                println("🔐 isPro: true (subscriptionType: $subscriptionType)")
+                return true
+            }
+
+            // 3. subscription_tier 체크
+            if (subscriptionTier?.lowercase() in proTiers) {
+                println("🔐 isPro: true (subscriptionTier: $subscriptionTier)")
+                return true
+            }
+
+            // 4. tier 체크
+            if (tier?.lowercase() in proTiers) {
+                println("🔐 isPro: true (tier: $tier)")
+                return true
+            }
+
+            println("🔐 isPro: false")
+            return false
+        }
+}
 
 /**
  * SharedAuthManager - Manages cross-app authentication using UnifiedAuthProvider
